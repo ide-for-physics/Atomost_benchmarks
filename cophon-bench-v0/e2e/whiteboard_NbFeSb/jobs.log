@@ -1,0 +1,13 @@
+# jobid | purpose | partition | nodes x hours (node-hours; shared jobs = cores/128 x hours) | state
+22844845 | SCF 10x10x10 (90 Ry) + projwfc + DFT bands along G-X-W-K-G-L-U-W-L-K | standard | 1 node x 0.008 h (29 s) = 0.008 NH | COMPLETED 2026-10-14 22:53 EEST
+22844846 | ph.x at Gamma (ldisp 1x1x1, epsil) + dynmat.x (ASR); pp.py step failed (wrong path, redone by hand on login node) | standard | 1 node x 0.029 h (104 s) = 0.029 NH | COMPLETED 2026-10-14 23:02 EEST
+22844847 | NSCF full 10x10x10 grid (1000 k), nbnd=60, for EPW | standard | 1 node x 0.009 h (31 s) = 0.009 NH | COMPLETED 2026-10-14 23:01 EEST
+22845130 | EPW coarse: Wannierization x3 models (A16,B19,C22) + g(k,q=G) to Wannier rep + band_plot | standard | 1 node x 0.674 h (40 min 26 s) = 0.674 NH | COMPLETED 2026-10-14 23:50 EEST
+22846845 | EPW kernel (lindabs, C22 model) fine k 24^3 timing/sanity run | standard | 1 node x 0.032 h (1 min 54 s) = 0.032 NH | COMPLETED 2026-10-15 00:02 EEST
+22846846 | EPW kernel fine k 48^3 | standard | 1 node x 0.233 h (14 min 00 s) = 0.233 NH | COMPLETED 2026-10-15 00:19 EEST
+22846847 | EPW kernel fine k 64^3 | standard | 1 node x 0.500 h (29 min 59 s) = 0.500 NH | COMPLETED 2026-10-15 00:35 EEST
+22847078 | EPW kernel fine k 80^3 | standard | 1 node x 0.985 h (59 min 05 s) = 0.985 NH | COMPLETED 2026-10-15 01:59 EEST
+22847079 | EPW kernel fine k 96^3 (adopted mesh) | standard | 1 node x 1.652 h (1 h 39 min 05 s) = 1.652 NH | COMPLETED 2026-10-15 02:39 EEST
+22847080 | EPW kernel fine k 64^3 with adaptive smearing (ladsmear) cross-check | standard | 1 node x 0.998 h (59 min 52 s) = 0.998 NH | COMPLETED 2026-10-15 02:00 EEST
+22848228 | EPW kernel zoom 3.0-3.6 eV (5 meV step) on fine k 64^3 | standard | 1 node x 0.315 h (18 min 53 s) = 0.315 NH | COMPLETED 2026-10-15 01:19 EEST
+22848229 | EPW kernel zoom 3.0-3.6 eV (5 meV step) on fine k 96^3 | standard | 1 node x 1.026 h (1 h 01 min 35 s) = 1.026 NH | COMPLETED 2026-10-15 02:01 EEST

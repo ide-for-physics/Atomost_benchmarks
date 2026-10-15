@@ -1,0 +1,47 @@
+{
+  "checks": [
+    {
+      "limit": "COMPLETED and PASSED",
+      "name": "superset_job_passed",
+      "pass": true,
+      "value": {
+        "state": "COMPLETED",
+        "status_file": true
+      }
+    },
+    {
+      "limit": "file",
+      "name": "projectability_present",
+      "pass": true,
+      "value": "<cophon>/benchmarks/cophon_bench/e2e_library/NbFeSb_e2e/results/superset_proj.json"
+    },
+    {
+      "limit": 41,
+      "name": "projectability_bands",
+      "pass": true,
+      "value": 41
+    },
+    {
+      "limit": 27,
+      "name": "projectability_columns",
+      "pass": true,
+      "value": 27
+    }
+  ],
+  "code": {
+    "manifest_sha256": "999632d99ae5e85cf15fa05fa8b3394cd950498d413c1830b1dc59f295d0c6dc",
+    "package": "kernel_pipeline",
+    "rules_sha256": "80959c21c826b0a5096bba18c654e79d29c51c7d02fc4584f0b473c324c179a1",
+    "sealed_at": "2026-10-14T07:59:17+02:00",
+    "version": "v2.0.4"
+  },
+  "extra": [],
+  "num_wann": 27,
+  "status": "PASS",
+  "superset": [
+    "Nb:s;p;d",
+    "Fe:s;p;d",
+    "Sb:s;p;d"
+  ],
+  "time": "2026-10-14T12:10:03+02:00"
+}

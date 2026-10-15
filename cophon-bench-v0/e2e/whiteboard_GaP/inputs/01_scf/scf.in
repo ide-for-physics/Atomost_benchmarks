@@ -1,0 +1,34 @@
+&control
+  calculation = 'scf'
+  prefix = 'gap'
+  outdir = './'
+  pseudo_dir = '../pseudo'
+  verbosity = 'high'
+  tprnfor = .true.
+  tstress = .true.
+/
+&system
+  ibrav = 0
+  nat = 2
+  ntyp = 2
+  ecutwfc = 90.0
+  occupations = 'fixed'
+  nbnd = 16
+/
+&electrons
+  conv_thr = 1.0d-12
+  diago_thr_init = 5.0d-6
+  mixing_beta = 0.7
+/
+ATOMIC_SPECIES
+Ga 69.723     Ga.upf
+P  30.973762  P.upf
+CELL_PARAMETERS angstrom
+0.0000000000000000 2.7258124944548801 2.7258124944548801
+2.7258124944548801 0.0000000000000000 2.7258124944548801
+2.7258124944548805 2.7258124944548801 0.0000000000000000
+ATOMIC_POSITIONS crystal
+Ga 0.00 0.00 0.00
+P  0.25 0.25 0.25
+K_POINTS automatic
+12 12 12 0 0 0

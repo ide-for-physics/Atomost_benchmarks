@@ -1,0 +1,217 @@
+{
+  "checks": [
+    {
+      "limit": "file",
+      "name": "wout_present",
+      "pass": true,
+      "value": "<cophon>/benchmarks/cophon_bench/e2e_library/NbFeSb_e2e/logs/wannier_round1.wout"
+    },
+    {
+      "limit": true,
+      "name": "final_state",
+      "pass": true,
+      "value": true
+    },
+    {
+      "limit": 24,
+      "name": "num_wann_in_wout",
+      "pass": true,
+      "value": 24
+    },
+    {
+      "limit": 10.0,
+      "name": "spread_max",
+      "pass": true,
+      "value": 3.75346924
+    },
+    {
+      "limit": 0.001,
+      "name": "plateau_drift",
+      "pass": true,
+      "value": 5.0141642068673475e-06
+    },
+    {
+      "limit": 0.0001,
+      "name": "localisation_converged",
+      "pass": true,
+      "value": 5.0141642068673475e-06
+    },
+    {
+      "limit": "last_iteration < num_iter=1000 or plateau flat",
+      "name": "ran_out_of_steps",
+      "pass": true,
+      "value": {
+        "hit_num_iter_cap": true,
+        "last_iteration": 1000,
+        "plateau_flat": true
+      }
+    },
+    {
+      "limit": true,
+      "name": "all_done",
+      "pass": true,
+      "value": true
+    },
+    {
+      "limit": "file",
+      "name": "comparison_present",
+      "pass": true,
+      "value": "<cophon>/benchmarks/cophon_bench/e2e_library/NbFeSb_e2e/results/band_comparison_round1.json"
+    },
+    {
+      "limit": "lumi-w90-band-compare-py36-stdlib-v6",
+      "name": "comparator_build",
+      "pass": true,
+      "value": "lumi-w90-band-compare-py36-stdlib-v6"
+    },
+    {
+      "limit": true,
+      "name": "dense_reference_certified",
+      "pass": true,
+      "value": true
+    },
+    {
+      "limit": 50.0,
+      "name": "band_rms_meV",
+      "note": "reported only: the score gates (W7)",
+      "pass": true,
+      "value": 0.64477
+    },
+    {
+      "limit": 25.0,
+      "name": "band_worst_meV",
+      "note": "reported only: the score gates (W7)",
+      "pass": true,
+      "value": 7.686992
+    },
+    {
+      "limit": 703,
+      "name": "grids_equal",
+      "pass": true,
+      "value": {
+        "qe": 703,
+        "wannier": 703
+      }
+    },
+    {
+      "limit": 24,
+      "name": "num_wann_compared",
+      "pass": true,
+      "value": 24
+    },
+    {
+      "limit": 0.9,
+      "name": "score",
+      "pass": true,
+      "start_rung": 64,
+      "value": 0.072
+    },
+    {
+      "limit": 50.0,
+      "name": "rms_le5_meV",
+      "pass": true,
+      "value": 0.49
+    },
+    {
+      "limit": 10.0,
+      "name": "outlier_ratio",
+      "note": "noted on the card, not gated (A5 default)",
+      "pass": true,
+      "value": 9.2
+    }
+  ],
+  "code": {
+    "manifest_sha256": "999632d99ae5e85cf15fa05fa8b3394cd950498d413c1830b1dc59f295d0c6dc",
+    "package": "kernel_pipeline",
+    "rules_sha256": "80959c21c826b0a5096bba18c654e79d29c51c7d02fc4584f0b473c324c179a1",
+    "sealed_at": "2026-10-14T07:59:17+02:00",
+    "version": "v2.0.4"
+  },
+  "comparison": "<cophon>/benchmarks/cophon_bench/e2e_library/NbFeSb_e2e/results/band_comparison_round1.json",
+  "comparison_summary": {
+    "build_id": "lumi-w90-band-compare-py36-stdlib-v6",
+    "dense_reference_certified": true,
+    "max_abs_deviation_in_window_meV": 7.686992,
+    "nk_compared": 703,
+    "num_wann_compared": 24,
+    "qe_grid_points": 703,
+    "rms_target_window_meV": 0.64477,
+    "status": "ANALYSIS",
+    "wannier_grid_points": 703
+  },
+  "limits": {
+    "band_rms_meV": 50.0,
+    "band_worst_meV": 25.0,
+    "comparator_build": "lumi-w90-band-compare-py36-stdlib-v6",
+    "num_iter": 1000,
+    "plateau_drift": 0.001,
+    "rms_le5_meV": 50.0,
+    "score": 0.9,
+    "spread_A2": 10.0
+  },
+  "reasons": [],
+  "schema": "cophon-gate-wannier-v1",
+  "scheme": "score-v1",
+  "score": {
+    "bz_length": 1.6923,
+    "eta_eV": 0.03,
+    "median_le5_meV": 0.29,
+    "n_points": 15304,
+    "outlier_ratio": 9.2,
+    "range_eV": 5.0,
+    "rms_le5_meV": 0.49,
+    "score_128": 0.081,
+    "score_no_mesh": 0.09,
+    "score_start": 0.072,
+    "shift_eV": -3e-05,
+    "start_rung": 64,
+    "worst_le5_meV": 2.7,
+    "worst_point": {
+      "band": 25,
+      "energy_eV": 19.865,
+      "err_meV": 2.5,
+      "k_index": 10,
+      "reach_eV": 3.86,
+      "slope_eV_A": 0.7
+    }
+  },
+  "status": "PASS",
+  "wout": "<cophon>/benchmarks/cophon_bench/e2e_library/NbFeSb_e2e/logs/wannier_round1.wout",
+  "wout_summary": {
+    "all_done": true,
+    "converged_banner": "Disentanglement convergence criteria not satisfied",
+    "final_state_found": true,
+    "last_iteration": 1000,
+    "num_wann": 24,
+    "omega_total": 51.556029946,
+    "plateau_drift": 5.0141642068673475e-06,
+    "spread_max": 3.75346924,
+    "spread_sum": 51.556029960000004,
+    "spreads": [
+      3.75346924,
+      1.68427029,
+      1.38291197,
+      1.38405625,
+      1.67451398,
+      1.38045627,
+      3.42358675,
+      3.25998138,
+      3.07713794,
+      3.17584655,
+      0.58192262,
+      0.65643927,
+      0.67340228,
+      0.58231834,
+      0.66583447,
+      0.19010299,
+      2.66114809,
+      2.66105328,
+      2.63155535,
+      3.4388229,
+      3.0839625,
+      3.00138547,
+      3.39346023,
+      3.13839155
+    ]
+  }
+}

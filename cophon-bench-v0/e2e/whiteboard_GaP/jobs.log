@@ -1,0 +1,43 @@
+# jobs.log: one line per Slurm job: jobid | purpose | partition | nodes x hours (node-hours; shared jobs = core-hours/128)
+22821757 | SCF 12^3 + DFPT 2x2x2 (eps,Z*) + dynmat ASR | small | 3 nodes shared, 128 cpus x 0.061 h = 0.061 node-h
+22821759 | bands along path (387 k) + NSCF 12^3 full grid nbnd=32 | small | 3 nodes shared, 256 cpus x 0.0078 h = 0.016 node-h
+22822175 | EPW wannierize 18 WFs (Ga,P s;p;d) + epb/epmatwp write + band interpolation on path | small | 3 nodes shared, 256 cpus x 0.8525 h = 0.853 node-h
+22826257 | Wannier-only test A: 13 WFs Ga s;p + P s;p;d | small | 16 cpus, (running)
+22826258 | Wannier-only test B: 8 WFs Ga sp3 + P sp3 | small | 16 cpus, (running)
+22826259 | Wannier-only test C: 9 WFs SCDM erfc mu=15.5 sigma=1.5 | small | 16 cpus, (running)
+22826260 | Wannier-only test D: 13 WFs SCDM erfc mu=15.5 sigma=2.0 | small | 16 cpus, (running)
+22826261 | Wannier-only test E: 8 WFs SCDM erfc mu=14.9 sigma=1.5 | small | 16 cpus, (running)
+22829316 | backup: all five Wannier-only tests concurrently on 1 exclusive node (race with 22826257-61; loser cancelled) | standard | 1 node, (pending)
+22826257 | Wannier-only test A (13 WFs Ga s;p + P s;p;d): RMS 126 meV -> rejected | small | 32 cpus x 0.178 h = 0.045 node-h
+22826258 | Wannier-only test B (8 WFs sp3+sp3): VB 2 meV but CB3-4 up to 0.7 eV off -> rejected | small | 32 cpus x 0.038 h = 0.010 node-h
+22826259 | Wannier-only test C (9 WFs SCDM mu 15.5 s 1.5): RMS 11.6 meV, VB 1.8, CB1-4 4-12 meV -> candidate | small | 32 cpus x 0.124 h = 0.031 node-h
+22826260 | Wannier-only test D (13 WFs SCDM mu 15.5 s 2.0): RMS 13.8 meV, max 90 meV | small | 32 cpus x 0.163 h = 0.041 node-h
+22826261 | Wannier-only test E (8 WFs SCDM mu 14.9 s 1.5): CB3-4 up to 0.47 eV off -> rejected | small | 32 cpus x 0.060 h = 0.015 node-h
+22829316 | backup job for the five tests: cancelled before start (0 node-h) | standard | 0
+22831204 | EPW elph with set C: FAILED at start (EPW forces filukk = prefix.ukk in cwd; relative path ignored) | small | 128 cpus x 0.002 h = 0.002 node-h
+22831205 | Wannier-only test F (9 WFs SCDM mu 15.0 sigma 1.0): RMS 11.3 meV, VB 1.0, CB5 still off | small | 32 cpus x 0.119 h = 0.030 node-h
+22831206 | Wannier-only test G (10 WFs SCDM mu 16.0 sigma 1.5, outer 24): RMS 4.3 meV, max 61 meV -> CHOSEN | small | 32 cpus x 0.127 h = 0.032 node-h
+22831207 | NSCF on 16^3 full grid (4096 k, nbnd 32) | small | 256 cpus x 0.0117 h = 0.023 node-h
+22831255 | Wannier-only set C on 16^3: cancelled before start (superseded by set G) | small | 0
+22831256 | cancelled before start (wrong nbndsub/ukk link), resubmitted as the next line | small | 0
+22831263 | kernel timing test 24^3 (set C): cancelled before start (elph-C failed) | small | 0
+22831586 | EPW elph with set G (10 SCDM WFs, 12^3 coarse): coarse g, epmatwp, band.eig on 387-point path | small | 64 cpus, (pending)
+22831587 | kernel timing test: 24^3 fine mesh, set G 12^3 (after 22831586) | small | 128 cpus, (pending)
+22831588 | wrong-directory 16^3 Wannier job: cancelled before start | small | 0
+22831589 | chained elph for 22831588: cancelled before start | small | 0
+22831592 | Wannier-only set G on the 16^3 coarse grid | small | 16 cpus, (pending)
+22831593 | EPW elph with set G on 16^3 coarse (after 22831592), band.eig on path | small | 128 cpus, (pending)
+22831586 | EPW elph set G 12^3: FAILED (no gap.dyn0 in cwd -> wrong irreducible-q order -> read error on dyn_q3) | small | 128 cpus x 0.022 h = 0.022 node-h
+22831587 | kernel timing 24^3 (chained to 22831586): cancelled | small | 0
+22831592 | Wannier-only set G on 16^3 coarse grid (4096 k): RMS 1.3 meV, max 19 meV -> PRODUCTION SET | small | 32 cpus x 0.335 h = 0.084 node-h
+22835783 | kernel timing test: 24^3 fine mesh, set G on 16^3 coarse (after 22831593) | small | 128 cpus, (pending)
+22831593 | EPW elph set G on 16^3 coarse: coarse g on 4096 k x 8 q, epmatwp (820 MB), band.eig on 387-point path (RMS 1.7 meV) | small | 256 cpus x 0.063 h = 0.126 node-h
+22835783 | kernel timing test 24^3 (13824 k): 20.5 s wall on 128 ranks -> ~0.1 core-s per fine k-point | small | 256 cpus x 0.0069 h = 0.014 node-h
+22838842 | kernel production 48^3 (110592 k) | small | 256 cpus(ht) x 0.0292 h = 0.058 node-h (0.029 by physical cores)
+22838843 | kernel production 72^3 (373248 k) | small | 256 cpus(ht) x 0.0872 h = 0.174 node-h (0.087)
+22838844 | kernel production 96^3 (884736 k) | small | 256 cpus(ht) x 0.2017 h = 0.403 node-h (0.202)
+22838845 | kernel production 120^3 (1728000 k) | small | 256 cpus(ht) x 0.3731 h = 0.746 node-h (0.373)
+22838846 | kernel production 144^3 (2985984 k) | small | 256 cpus(ht) x 0.6508 h = 1.302 node-h (0.651)
+22842951 | kernel production 168^3 (4741632 k) | small | 256 cpus(ht) x 1.0294 h = 2.059 node-h (1.029)
+22842952 | kernel production 192^3 (7077888 k), 2 nodes, 256 ranks | small | 512 cpus(ht) x 0.7847 h = 3.139 node-h (1.569)
+TOTAL | all jobs above | | 9.29 node-hours counted conservatively (sacct hyperthread CPUs x hours / 128); 4.64 node-hours by physical cores (128 cores = 1 node)

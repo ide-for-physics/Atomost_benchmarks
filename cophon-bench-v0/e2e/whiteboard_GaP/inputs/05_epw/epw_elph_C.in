@@ -1,0 +1,44 @@
+&inputepw
+  prefix      = 'gap'
+  amass(1)    = 69.723
+  amass(2)    = 30.973762
+  outdir      = './'
+  dvscf_dir   = './save'
+  iverbosity  = 0
+
+  elph        = .true.
+  epbwrite    = .true.
+  epbread     = .false.
+  epwwrite    = .true.
+  epwread     = .false.
+  etf_mem     = 1
+  lpolar      = .true.
+  vme         = 'wannier'
+
+  nbndsub     = 9
+  bands_skipped = 'exclude_bands = 1:5'
+  wannierize  = .false.
+  filukk      = '../wan_C_s9/gap.ukk'
+
+  elecselfen  = .false.
+  phonselfen  = .false.
+  a2f         = .false.
+  band_plot   = .true.
+  filkf       = 'kpath.txt'
+  nqf1        = 1
+  nqf2        = 1
+  nqf3        = 1
+
+  efermi_read = .true.
+  fermi_energy = 8.40
+  fsthick     = 7.0
+  temps       = 300
+  degaussw    = 0.025
+
+  nk1         = 12
+  nk2         = 12
+  nk3         = 12
+  nq1         = 2
+  nq2         = 2
+  nq3         = 2
+ /

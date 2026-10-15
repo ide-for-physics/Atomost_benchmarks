@@ -1,0 +1,12 @@
+Gamma-point DFPT of NbFeSb (phonons + dielectric tensor + Born charges)
+&inputph
+  prefix   = 'nbfesb'
+  outdir   = './tmp'
+  fildyn   = 'nbfesb.dyn'
+  fildvscf = 'dvscf'
+  ldisp    = .true.
+  nq1 = 1, nq2 = 1, nq3 = 1
+  epsil    = .true.
+  trans    = .true.
+  tr2_ph   = 1.0d-16
+/

@@ -1,0 +1,313 @@
+{
+  "agent": {
+    "by_agent": {},
+    "rule": "sessions started in this repo, turns after the material entered the workflow, attributed to the material named in the tool call (sticky until another material is named); code-editing turns excluded (Machine B)",
+    "sessions": [],
+    "tokens": {},
+    "unpriced_models": [],
+    "usd": 0.0
+  },
+  "compute": {
+    "by_stage": {
+      "electron": {
+        "clean_node_seconds": 67,
+        "core_hours": 2.382,
+        "jobs": 1,
+        "node_seconds": 67
+      },
+      "epw1": {
+        "clean_node_seconds": 895,
+        "core_hours": 31.822,
+        "jobs": 1,
+        "node_seconds": 895
+      },
+      "kernel": {
+        "clean_node_seconds": 3150,
+        "core_hours": 112.0,
+        "jobs": 4,
+        "node_seconds": 3150
+      },
+      "phonon": {
+        "clean_node_seconds": 57,
+        "core_hours": 2.027,
+        "jobs": 1,
+        "node_seconds": 57
+      },
+      "relax": {
+        "clean_node_seconds": 14,
+        "core_hours": 1.458,
+        "exploration_node_seconds": 27,
+        "jobs": 2,
+        "node_seconds": 41
+      },
+      "superset": {
+        "clean_node_seconds": 97,
+        "core_hours": 3.449,
+        "jobs": 1,
+        "node_seconds": 97
+      },
+      "wannier": {
+        "clean_node_seconds": 788,
+        "core_hours": 28.018,
+        "jobs": 1,
+        "node_seconds": 788
+      }
+    },
+    "core_hours_per_node_hour": 128.0,
+    "jobs": [
+      {
+        "class": "exploration",
+        "core_hours": 0.96,
+        "elapsed_s": 27,
+        "energy_kwh": 0.0037,
+        "job": "22819776",
+        "name": "SnS2_e2e_relax",
+        "node_seconds": 27,
+        "nodes": 1,
+        "partition": "debug",
+        "stage": "relax",
+        "state": "COMPLETED",
+        "time": "2026-10-14T11:48:49+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.0375
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 0.498,
+        "elapsed_s": 14,
+        "energy_kwh": 0.0014,
+        "job": "22819885",
+        "name": "SnS2_e2e_relax",
+        "node_seconds": 14,
+        "nodes": 1,
+        "partition": "debug",
+        "stage": "relax",
+        "state": "COMPLETED",
+        "time": "2026-10-14T11:52:59+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.0194
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 2.382,
+        "elapsed_s": 67,
+        "energy_kwh": 0.0066,
+        "job": "22819970",
+        "name": "SnS2_e2e_electron",
+        "node_seconds": 67,
+        "nodes": 1,
+        "partition": "debug",
+        "stage": "electron",
+        "state": "COMPLETED",
+        "time": "2026-10-14T11:57:14+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.0931
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 3.449,
+        "elapsed_s": 97,
+        "energy_kwh": 0.0178,
+        "job": "22820116",
+        "name": "SnS2_e2e_superset",
+        "node_seconds": 97,
+        "nodes": 1,
+        "partition": "small",
+        "stage": "superset",
+        "state": "COMPLETED",
+        "time": "2026-10-14T12:01:31+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.1347
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 2.027,
+        "elapsed_s": 57,
+        "energy_kwh": 0.0079,
+        "job": "22820119",
+        "name": "SnS2_e2e_phonon",
+        "node_seconds": 57,
+        "nodes": 1,
+        "partition": "debug",
+        "stage": "phonon",
+        "state": "COMPLETED",
+        "time": "2026-10-14T12:01:35+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.0792
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 28.018,
+        "elapsed_s": 788,
+        "energy_kwh": 0.1561,
+        "job": "22820444",
+        "name": "SnS2_e2e_wannier_r1",
+        "node_seconds": 788,
+        "nodes": 1,
+        "partition": "small",
+        "stage": "wannier",
+        "state": "COMPLETED",
+        "time": "2026-10-14T12:05:55+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 1.0944
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 31.822,
+        "elapsed_s": 895,
+        "energy_kwh": 0.1571,
+        "job": "22821598",
+        "name": "SnS2_e2e_epw1",
+        "node_seconds": 895,
+        "nodes": 1,
+        "partition": "standard",
+        "stage": "epw1",
+        "state": "COMPLETED",
+        "time": "2026-10-14T12:22:26+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 1.2431
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 10.738,
+        "elapsed_s": 302,
+        "energy_kwh": 0.057,
+        "job": "22840188",
+        "name": "SnS2_e2e_kernel",
+        "node_seconds": 302,
+        "nodes": 1,
+        "partition": "debug",
+        "stage": "kernel",
+        "state": "COMPLETED",
+        "time": "2026-10-14T20:01:44+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.4194
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 17.813,
+        "elapsed_s": 501,
+        "energy_kwh": 0.0952,
+        "job": "22840529",
+        "name": "SnS2_e2e_kernel",
+        "node_seconds": 501,
+        "nodes": 1,
+        "partition": "debug",
+        "stage": "kernel",
+        "state": "COMPLETED",
+        "time": "2026-10-14T20:09:59+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.6958
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 42.062,
+        "elapsed_s": 1183,
+        "energy_kwh": 0.2272,
+        "job": "22841327",
+        "name": "SnS2_e2e_kernel",
+        "node_seconds": 1183,
+        "nodes": 1,
+        "partition": "standard",
+        "stage": "kernel",
+        "state": "COMPLETED",
+        "time": "2026-10-14T20:22:18+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 1.6431
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 41.387,
+        "elapsed_s": 1164,
+        "energy_kwh": 0.2175,
+        "job": "22843666",
+        "name": "SnS2_e2e_kernel",
+        "node_seconds": 1164,
+        "nodes": 1,
+        "partition": "standard",
+        "stage": "kernel",
+        "state": "COMPLETED",
+        "time": "2026-10-14T21:02:54+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 1.6167
+        }
+      }
+    ],
+    "missing_in_accounting": [],
+    "scenario": "commercial",
+    "totals": {
+      "all": {
+        "core_hours": 181.156,
+        "energy_kwh": 0.948,
+        "jobs": 11,
+        "node_seconds": 5095,
+        "usd": 7.076
+      },
+      "clean": {
+        "core_hours": 180.196,
+        "energy_kwh": 0.944,
+        "jobs": 10,
+        "node_seconds": 5068,
+        "usd": 7.039
+      },
+      "exploration": {
+        "core_hours": 0.96,
+        "energy_kwh": 0.004,
+        "jobs": 1,
+        "node_seconds": 27,
+        "usd": 0.037
+      }
+    },
+    "unit": "node-seconds; core_hours = node_seconds/3600 x core_hours_per_node_hour",
+    "usd_per_node_hour": 5.0
+  },
+  "currency": "USD",
+  "generated": "2026-10-14T21:42:01+02:00",
+  "human_assumed": {
+    "minutes": 20,
+    "usd": 26.67,
+    "usd_per_hour": 80.0
+  },
+  "material": "SnS2_e2e",
+  "rates_version": "2026-09-19",
+  "storage": {
+    "bank_gb": 0.316,
+    "bank_path": "/projappl/project_<id>/<user>/cphon_bank/SnS2_e2e/epw1_22821598",
+    "local_gb": 0.035,
+    "usd_per_gb_month": 0.02,
+    "usd_per_month": 0.007
+  },
+  "summary": {
+    "agent_usd": 0.0,
+    "compute_core_hours_all": 181.2,
+    "compute_core_hours_clean": 180.2,
+    "compute_node_hours_all": 1.415,
+    "compute_node_hours_clean": 1.408,
+    "compute_usd_all": 7.08,
+    "compute_usd_clean": 7.04,
+    "storage_usd_per_month": 0.007,
+    "unit_cost_note": "compute (all jobs) + operating-agent tokens + one month of storage; human review shown separately as assumed",
+    "unit_cost_usd": 7.08
+  }
+}

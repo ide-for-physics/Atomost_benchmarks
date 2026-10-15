@@ -1,0 +1,53 @@
+&inputepw
+  prefix      = 'gap'
+  amass(1)    = 69.723
+  amass(2)    = 30.973762
+  outdir      = './'
+  dvscf_dir   = './save'
+  iverbosity  = 0
+
+  elph        = .true.
+  epbwrite    = .false.
+  epbread     = .false.
+  epwwrite    = .false.
+  epwread     = .true.
+  etf_mem     = 1
+  lpolar      = .true.
+  vme         = 'wannier'
+
+  nbndsub     = 10
+  bands_skipped = 'exclude_bands = 1:5'
+  wannierize  = .false.
+
+  elecselfen  = .false.
+  phonselfen  = .false.
+  a2f         = .false.
+
+  ! ---- coherent-phonon generation kernel (kernel variant: computed inside indabs when lindabs = .true.)
+  lindabs     = .true.
+  ladsmear    = .false.
+  omegamin    = 0.01
+  omegamax    = 6.0
+  omegastep   = 0.01
+  degaussw    = 0.025
+  eps_acoustic = 20.0
+
+  efermi_read = .true.
+  fermi_energy = 8.40
+  fsthick     = 7.0
+  temps       = 300
+
+  nkf1        = 48
+  nkf2        = 48
+  nkf3        = 48
+  nqf1        = 1
+  nqf2        = 1
+  nqf3        = 1
+
+  nk1         = 16
+  nk2         = 16
+  nk3         = 16
+  nq1         = 2
+  nq2         = 2
+  nq3         = 2
+ /

@@ -1,0 +1,32 @@
+{
+ "rule": "pipeline W7 score bounded from above with slope = 0 (denominator >= eta = 0.03 eV); DFT states within 5 eV of the band edges = [0.60, 12.17] eV; errors taken from the arm's own comparison table wannier_vs_dft_v1.txt (nearest-band matching on its 360-point path), windows [-5,0] .. [12,12.5]",
+ "VBM_eV": 5.6,
+ "CBM_eV": 7.17,
+ "worst_le5_meV": 5.927,
+ "rms_note": "RMS 0.16-1.6 meV per window",
+ "score_upper_bound": 0.198,
+ "score_limit": 0.9,
+ "spreads_A2": [
+  2.55060804,
+  2.7422921,
+  2.39615854,
+  2.46448817,
+  3.67882955,
+  2.72472158,
+  1.98871325,
+  1.79574103,
+  3.20069923,
+  1.57062898,
+  1.87463955,
+  2.00564961,
+  1.85473298,
+  2.04938496,
+  1.61045071,
+  1.62966367,
+  1.49876022
+ ],
+ "spread_max_A2": 3.67882955,
+ "spread_limit_A2": 10.0,
+ "wannierisation_converged_line": false,
+ "verdict": "PASS"
+}

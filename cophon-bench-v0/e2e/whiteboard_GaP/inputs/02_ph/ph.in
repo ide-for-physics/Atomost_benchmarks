@@ -1,0 +1,15 @@
+phonons of GaP on a 2x2x2 q-mesh (Gamma, X, L) with dielectric tensor and Born charges at Gamma
+&inputph
+  prefix = 'gap'
+  outdir = './'
+  fildyn = 'gap.dyn'
+  fildvscf = 'dvscf'
+  ldisp = .true.
+  epsil = .true.
+  nq1 = 2
+  nq2 = 2
+  nq3 = 2
+  tr2_ph = 1.0d-16
+  amass(1) = 69.723
+  amass(2) = 30.973762
+/

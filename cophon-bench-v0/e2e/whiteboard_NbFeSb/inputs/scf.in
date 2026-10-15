@@ -1,0 +1,36 @@
+&control
+  calculation = 'scf'
+  prefix      = 'nbfesb'
+  outdir      = './tmp'
+  pseudo_dir  = './pseudo'
+  tprnfor     = .true.
+  tstress     = .true.
+  verbosity   = 'high'
+/
+&system
+  ibrav   = 0
+  nat     = 3
+  ntyp    = 3
+  ecutwfc = 90.0
+  ecutrho = 360.0
+  occupations = 'fixed'
+  nbnd    = 40
+/
+&electrons
+  conv_thr    = 1.0d-10
+  mixing_beta = 0.5
+/
+ATOMIC_SPECIES
+Nb  92.90638  Nb.upf
+Fe  55.845    Fe.upf
+Sb  121.760   Sb.upf
+CELL_PARAMETERS angstrom
+  0.0000000000000000    2.9706715200828389    2.9706715200828389
+  2.9706715200828389    0.0000000000000000    2.9706715200828389
+  2.9706715200828393    2.9706715200828389    0.0000000000000000
+ATOMIC_POSITIONS crystal
+Nb  0.00 0.00 0.00
+Fe  0.25 0.25 0.25
+Sb  0.50 0.50 0.50
+K_POINTS automatic
+10 10 10 0 0 0

@@ -1,0 +1,69 @@
+&inputepw
+  prefix      = 'gap'
+  amass(1)    = 69.723
+  amass(2)    = 30.973762
+  outdir      = './'
+  dvscf_dir   = './save'
+  iverbosity  = 0
+
+  elph        = .true.
+  epbwrite    = .true.
+  epbread     = .false.
+  epwwrite    = .true.
+  epwread     = .false.
+  etf_mem     = 1
+  lpolar      = .true.
+  vme         = 'wannier'
+
+  nbndsub     = 18
+  bands_skipped = 'exclude_bands = 1:5'
+  wannierize  = .true.
+  num_iter    = 3000
+  iprint      = 2
+  dis_win_min = -6.0
+  dis_win_max = 32.0
+  dis_froz_min = -6.0
+  dis_froz_max = 15.5
+  proj(1)     = 'Ga:s;p;d'
+  proj(2)     = 'P:s;p;d'
+  wdata(1)  = 'bands_plot = .true.'
+  wdata(2)  = 'begin kpoint_path'
+  wdata(3)  = 'G 0.000 0.000 0.000 X 0.000 0.500 0.500'
+  wdata(4)  = 'X 0.000 0.500 0.500 W 0.250 0.500 0.750'
+  wdata(5)  = 'W 0.250 0.500 0.750 K 0.375 0.375 0.750'
+  wdata(6)  = 'K 0.375 0.375 0.750 G 0.000 0.000 0.000'
+  wdata(7)  = 'G 0.000 0.000 0.000 L 0.500 0.500 0.500'
+  wdata(8)  = 'end kpoint_path'
+  wdata(9)  = 'bands_num_points = 60'
+  wdata(10) = 'bands_plot_format = gnuplot'
+  wdata(11) = 'guiding_centres = .true.'
+  wdata(12) = 'dis_num_iter = 5000'
+  wdata(13) = 'dis_mix_ratio = 0.5'
+  wdata(14) = 'dis_conv_tol = 1.0d-10'
+  wdata(15) = 'conv_tol = 1.0d-10'
+  wdata(16) = 'conv_window = 5'
+  wdata(17) = 'num_print_cycles = 100'
+  wdata(18) = 'use_ws_distance = .true.'
+
+  elecselfen  = .false.
+  phonselfen  = .false.
+  a2f         = .false.
+  band_plot   = .true.
+  filkf       = 'kpath.txt'
+  nqf1        = 1
+  nqf2        = 1
+  nqf3        = 1
+
+  efermi_read = .true.
+  fermi_energy = 8.40
+  fsthick     = 7.0
+  temps       = 300
+  degaussw    = 0.025
+
+  nk1         = 12
+  nk2         = 12
+  nk3         = 12
+  nq1         = 2
+  nq2         = 2
+  nq3         = 2
+ /

@@ -1,0 +1,31 @@
+{
+ "rule": "pipeline W7 score = max err / sqrt(eta^2 + (slope dk)^2) at the start rung; here bounded from above with slope = 0 (denominator >= eta = 0.03 eV), over DFT states within 5 eV of the band edges (the pipeline's SCORE_RANGE_EV)",
+ "VBM_eV": 7.6046,
+ "CBM_eV": 9.2019,
+ "n_points": 2020,
+ "worst_le5_meV": 11.63,
+ "worst_point": {
+  "E_dft_eV": 14.1509,
+  "band": 8,
+  "ik": 289
+ },
+ "rms_le5_meV": 0.92,
+ "score_upper_bound": 0.388,
+ "score_limit": 0.9,
+ "spreads_A2": [
+  2.48352004,
+  2.21775224,
+  2.40848471,
+  2.41532694,
+  2.70079249,
+  2.89044464,
+  2.88231258,
+  2.89018276,
+  2.81793888,
+  2.69890561
+ ],
+ "spread_max_A2": 2.89044464,
+ "spread_limit_A2": 10.0,
+ "wannierisation_converged": false,
+ "verdict": "PASS"
+}

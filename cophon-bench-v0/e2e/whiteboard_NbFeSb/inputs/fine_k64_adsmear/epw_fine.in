@@ -1,0 +1,48 @@
+--
+&inputepw
+  prefix      = 'nbfesb'
+  amass(1)    = 92.90638
+  amass(2)    = 55.845
+  amass(3)    = 121.760
+  outdir      = '../tmp_nscf'
+  dvscf_dir   = '../save'
+
+  elph        = .true.
+  epbwrite    = .false.
+  epbread     = .false.
+  epwwrite    = .false.
+  epwread     = .true.
+  etf_mem     = 1
+  vme         = 'wannier'
+  lpolar      = .false.
+  asr_typ     = 'crystal'
+
+  nbndsub     = 22
+  bands_skipped = 'exclude_bands = 1-13'
+  wannierize  = .false.
+  filukk      = './nbfesb.ukk'
+
+  elecselfen  = .false.
+  phonselfen  = .false.
+  band_plot   = .false.
+
+  ! --- coherent-phonon generation kernel (kernel variant: lindabs driver) ---
+  lindabs     = .true.
+  ladsmear    = .true.
+  omegamin    = 0.025   ! eV (must be > 0: kernel prefactor has 1/omega^2)
+  omegamax    = 6.0   ! eV
+  omegastep   = 0.025  ! eV
+  degaussw    = 0.025      ! eV, electronic broadening eta (paper: 0.025 eV)
+  fsthick     = 100.0      ! eV: keep every Wannier band in the band sums
+  eps_acoustic= 5.0        ! cm-1: skip the 3 acoustic modes at Gamma
+  nstemp      = 1
+  temps       = 300
+  efermi_read = .true.
+  fermi_energy= 16.7522
+
+  nk1 = 10, nk2 = 10, nk3 = 10
+  nq1 = 1,  nq2 = 1,  nq3 = 1
+  nkf1 = 64, nkf2 = 64, nkf3 = 64
+  filqf       = '../qgamma.kpt'
+  mp_mesh_k   = .false.
+ /

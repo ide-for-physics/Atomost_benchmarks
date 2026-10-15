@@ -1,0 +1,10 @@
+# Wannier (EPW band_plot, band.eig) vs DFT (pw.x bands) along G-X-W-K-G-L-U-W-L-K (153 k), 13 semicore bands skipped
+wanA16   5.0_23.02    window [5.0,23.02] eV: N=2298, RMS=9.169 meV, MAX=154.548 meV
+wanA16   5.0_16.5     window [5.0,16.5] eV: N=1377, RMS=2.518 meV, MAX=18.332 meV
+wanA16   17.0_23.02   window [17.0,23.02] eV: N=921, RMS=14.152 meV, MAX=154.548 meV
+wanB19   5.0_23.02    window [5.0,23.02] eV: N=2312, RMS=61.843 meV, MAX=795.893 meV
+wanB19   5.0_16.5     window [5.0,16.5] eV: N=1377, RMS=65.615 meV, MAX=795.893 meV
+wanB19   17.0_23.02   window [17.0,23.02] eV: N=935, RMS=55.825 meV, MAX=698.633 meV
+wanC22   5.0_23.02    window [5.0,23.02] eV: N=2312, RMS=0.610 meV, MAX=4.877 meV
+wanC22   5.0_16.5     window [5.0,16.5] eV: N=1377, RMS=0.531 meV, MAX=2.891 meV
+wanC22   17.0_23.02   window [17.0,23.02] eV: N=935, RMS=0.711 meV, MAX=4.877 meV

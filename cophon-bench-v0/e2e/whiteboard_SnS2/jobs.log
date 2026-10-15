@@ -1,0 +1,19 @@
+# jobs.log — one line per Slurm job. Columns: jobid | purpose | partition | allocation x hours = node-hours | outcome
+# Node-hours: full node = 1 node x hours. Shared jobs: Slurm AllocCPUS (hardware threads, 2 per physical core on LUMI-C) x hours / 128
+# (conservative; per-physical-core numbers are half of these). sacct Elapsed times.
+22844786 | pw.x SCF test; died at once (wrong relative pseudo_dir), 4 s | debug | 32 CPUs x 0.0011 h / 128 = 0.0003 | failed, my error
+22844796 | pw.x SCF 12x12x6, 80 Ry; converged, 19 s | debug | 32 CPUs x 0.0053 h / 128 = 0.0013 | ok
+22844824 | ph.x DFPT at Gamma (epsil + trans, tr2_ph 1e-16) + dynmat.x ASR; 2 m 47 s | small | 64 CPUs x 0.0464 h / 128 = 0.023 | ok
+22844840 | pw.x NSCF 12x12x6 explicit list, nbnd 40; 37 s; pw.x expanded the list to 1320 k (lattice vs crystal symmetry) | small | 128 CPUs x 0.0103 h / 128 = 0.010 | unusable, redone
+22845108 | epw.x run 1 (chained on the bad NSCF); cancelled before it started | small | 0 | cancelled
+22845135 | pw.x NSCF 12x12x6 with nosym/noinv (864 k), nbnd 40; 27 s | small | 128 CPUs x 0.0075 h / 128 = 0.008 | ok
+22845136 | epw.x run 1: Wannierize 17 WFs (v1, final) + epmatwp write + kernel 24x24x12; 29 m 45 s | small | 64 CPUs x 0.496 h / 128 = 0.248 | ok
+22846642 | epw.x run 2 (36/48/60 meshes); died at once, input files not copied to LUMI; 7 s | small | 128 CPUs x 0.002 h / 128 = 0.002 | failed, my error
+22846643 | epw.x run 3: kernel 72x72x36 (11 m 46 s) + 96x96x48 (27 m 44 s), v1 WFs; 39 m 39 s | standard | 1 node x 0.661 h = 0.661 | ok
+22846644 | pw.x bands on the 360-point Wannier90 path (DFT reference); 17 s | small | 128 CPUs x 0.0047 h / 128 = 0.005 | ok
+22848335 | epw.x run 2 rerun: kernel 36x36x18 + 48x48x24 + 60x60x30, v1 WFs; 22 m 21 s | small | 128 CPUs x 0.3725 h / 128 = 0.373 | ok
+22848481 | epw.x v2: re-Wannierize (frozen top 14.3 eV) + kernel 48x48x24; 39 m 08 s | small | 128 CPUs x 0.652 h / 128 = 0.652 | ran; v2 rejected
+22848482 | epw.x v2: kernel 72x72x36 + 96x96x48 done, 120x120x60 cancelled at 1 h 06 m (v2 rejected) | standard | 1 node x 1.105 h = 1.105 | cancelled, not used
+22852082 | epw.x v1: kernel 120x120x60 (adopted mesh), reading the stored v1 epmatwp copy; 51 m 43 s | standard | 1 node x 0.862 h = 0.862 | ok
+22852083 | epw.x v3: Wannier trial (frozen top 13.9 eV, mix 0.5) + kernel 48x48x24; 46 m 11 s | small | 128 CPUs x 0.770 h / 128 = 0.770 | ran; v3 rejected
+# TOTAL: 4.72 node-hours (conservative, threads) = 2.63 full-node + 2.09 shared; per physical core the shared part is 1.05 -> 3.67 node-hours. Budget 20.

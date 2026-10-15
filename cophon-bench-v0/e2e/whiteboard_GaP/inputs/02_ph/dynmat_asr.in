@@ -1,0 +1,6 @@
+&input
+  fildyn = 'gap.dyn1'
+  asr = 'crystal'
+  filout = 'gap.dynmat_asr.axsf.out'
+  fileig = 'gap.dynmat_asr.eig'
+/

@@ -1,0 +1,8 @@
+&projwfc
+  prefix  = 'nbfesb'
+  outdir  = './tmp'
+  degauss = 0.01
+  DeltaE  = 0.02
+  filpdos = 'nbfesb.pdos'
+  filproj = 'nbfesb.proj'
+/

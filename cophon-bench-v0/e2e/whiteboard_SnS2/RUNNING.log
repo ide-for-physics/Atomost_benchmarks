@@ -1,0 +1,17 @@
+# RUNNING.log — date · what ran · result · cost
+2026-10-14 22:40 · SCF test (job 22844786) · failed: wrong relative pseudo_dir · 0.0000 node-h
+2026-10-14 22:45 · SCF (job 22844796) 12x12x6 k, 80 Ry · converged in 10 iterations, E=-201.75933 Ry, gap(PBE) VBM 5.6009 / CBM 7.1723 eV, P=24 kbar, Davidson did not abort down to ethr~1e-11 · 0.0002 node-h
+2026-10-14 22:50 · ph.x Gamma (job 22844824) submitted on small, 32 cores
+2026-10-14 22:56 · ph.x Gamma (job 22844824) · D_3d; Eg 203.31 cm-1 (6.095 THz), Eu 208.08 (6.238), A1g 306.94 (9.202), A2u 340.55 (10.209) after ASR (dynmat.x crystal); eps_inf 7.87/4.68; Z*(Sn) 4.92/1.50 · 0.023 node-h
+2026-10-14 22:54 · pw.x NSCF 12x12x6, 40 bands (job 22844840) · done, 37 s · 0.010 node-h
+2026-10-14 23:xx · epw.x first run (wannierize + kernel 24x24x12) submitted
+2026-10-14 23:05 · NSCF had 1320 k (list expanded by pw.x, lattice group D6h vs crystal D3d) · fix nosym=noinv=.true., NSCF rerun + EPW chained
+2026-10-15 00:35 · epw.x v1 meshes 72x72x36, 96x96x48 (job 22846643, standard node) · A_1g max 53.2 @4.02 eV, 53.1 @4.10 eV · 0.661 node-h
+2026-10-15 01:00 · pw.x bands on 360-point path (job 22846644) · DFT reference for the Wannier comparison · 0.005 node-h
+2026-10-15 02:20 · epw.x v1 meshes 36/48/60 (job 22848335) · A_1g max 58.1/56.1/57.1 · 0.373 node-h
+2026-10-15 02:20 · epw.x v2 Wannierize + k48 (job 22848481) · rejected (spread 59.5 Ang^2, bands RMS 36 meV) · 0.652 node-h
+2026-10-15 02:45 · epw.x v2 meshes 72/96 + cancelled 120 (job 22848482) · not used · 1.105 node-h
+2026-10-15 03:38 · epw.x v1 mesh 120x120x60 (job 22852082) · A_1g max 53.74 @4.08 eV; adopted · 0.862 node-h
+2026-10-15 03:33 · epw.x v3 Wannierize + k48 (job 22852083) · rejected (spread 57.6, bands RMS 67 meV) · 0.770 node-h
+2026-10-15 03:50 · clean-up of LUMI scratch (wavefunctions, epb, duplicate epmatwp) · remote root 2.2 GB · 0
+2026-10-15 04:00 · TOTAL compute 4.72 node-h (conservative) / 3.67 (per core); REPORT.md final; DONE written

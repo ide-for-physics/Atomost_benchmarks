@@ -1,0 +1,13 @@
+# Wannier (v1: frozen window top 13.5 eV) vs DFT bands on the 360-point path G-M-K-G-A-L-H-A
+# DFT: run/05_bands/bands.out ; Wannier: run/04_epw/sns2_band.dat ; script: scripts/compare_bands.py
+window [-9,13.2] eV: RMS deviation = 1.380 meV, max deviation = 28.216 meV (at k index 125, E=13.1855 eV)
+window [-9,8.7] eV: RMS deviation = 0.264 meV, max deviation = 1.086 meV (at k index 103, E=2.8449 eV)
+window [-9,-5] eV: RMS deviation = 0.173 meV, max deviation = 0.750 meV (at k index 220, E=-5.8549 eV)
+window [-5,0] eV: RMS deviation = 0.161 meV, max deviation = 0.519 meV (at k index 119, E=-0.5911 eV)
+window [0,6] eV: RMS deviation = 0.281 meV, max deviation = 1.086 meV (at k index 103, E=2.8449 eV)
+window [6,9] eV: RMS deviation = 0.351 meV, max deviation = 1.063 meV (at k index 117, E=8.2602 eV)
+window [9,11] eV: RMS deviation = 0.519 meV, max deviation = 2.169 meV (at k index 330, E=10.9080 eV)
+window [11,12] eV: RMS deviation = 1.347 meV, max deviation = 5.756 meV (at k index 67, E=11.7736 eV)
+window [12,12.5] eV: RMS deviation = 1.586 meV, max deviation = 5.927 meV (at k index 44, E=12.0927 eV)
+window [12.5,13.0] eV: RMS deviation = 3.352 meV, max deviation = 12.182 meV (at k index 334, E=12.9903 eV)
+window [13.0,13.2] eV: RMS deviation = 7.536 meV, max deviation = 28.216 meV (at k index 125, E=13.1855 eV)

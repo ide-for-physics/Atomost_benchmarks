@@ -1,0 +1,100 @@
+{
+  "checks": [
+    {
+      "limit": "parseable",
+      "name": "kernel_parse",
+      "pass": true,
+      "value": "ok"
+    },
+    {
+      "limit": 6,
+      "name": "kernel_n_modes",
+      "pass": true,
+      "value": 6
+    },
+    {
+      "limit": 200,
+      "name": "kernel_n_omega",
+      "pass": true,
+      "value": 200
+    },
+    {
+      "limit": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "name": "kernel_mode_labels",
+      "pass": true,
+      "value": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "limit": true,
+      "name": "kernel_finite",
+      "pass": true,
+      "value": true
+    },
+    {
+      "limit": "> 0",
+      "name": "kernel_phonon_energies_positive",
+      "pass": true,
+      "value": [
+        24.7150931,
+        24.7150931,
+        24.9809269,
+        24.9809269,
+        37.9662904,
+        41.9244454
+      ]
+    },
+    {
+      "limit": [
+        0.03,
+        6.0,
+        0.03
+      ],
+      "name": "kernel_photon_grid",
+      "pass": true,
+      "value": [
+        0.03,
+        6.0,
+        0.030000000000000027
+      ]
+    },
+    {
+      "limit": 0.1,
+      "name": "kernel_mode_energies_match_dfpt",
+      "pass": true,
+      "value": 0.0009
+    },
+    {
+      "limit": 0.1,
+      "name": "kernel_silent_modes_share",
+      "pass": true,
+      "silent_modes": [],
+      "value": 0.0
+    }
+  ],
+  "code": {
+    "manifest_sha256": "e8c7d1a330829420689a5358a670db4b20da9736255ca5317d8c8f12409a8dc1",
+    "package": "kernel_pipeline",
+    "rules_sha256": "cdec0b3a0d77560e68347fe0b62a5a6929dfe676be3ee0ac8db88652c601956b",
+    "sealed_at": "2026-10-14T14:51:06+02:00",
+    "version": "v2.0.7"
+  },
+  "convergence_vs_next": null,
+  "convergence_vs_previous": null,
+  "mesh": 40,
+  "status": "PASS",
+  "time": "2026-10-14T20:09:53+02:00"
+}

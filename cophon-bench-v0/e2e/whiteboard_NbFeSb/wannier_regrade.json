@@ -1,0 +1,43 @@
+{
+ "rule": "pipeline W7 score bounded from above with slope = 0 (denominator >= eta = 0.03 eV), DFT states within 5 eV of the band edges",
+ "VBM_eV": 16.49,
+ "CBM_eV": 17.02,
+ "n_points": 2056,
+ "worst_le5_meV": 4.88,
+ "worst_point": {
+  "E_dft_eV": 21.6424,
+  "band": 28,
+  "ik": 85
+ },
+ "rms_le5_meV": 0.58,
+ "score_upper_bound": 0.163,
+ "score_limit": 0.9,
+ "spreads_A2": [
+  2.96916686,
+  2.96847341,
+  2.96950199,
+  2.97134007,
+  1.37618683,
+  1.51955955,
+  1.51343006,
+  1.3670742,
+  1.50854132,
+  2.75690888,
+  2.75627506,
+  2.75567178,
+  2.75605279,
+  0.59052491,
+  0.74270946,
+  0.73998923,
+  0.58423834,
+  0.7396063,
+  2.13691103,
+  2.13690127,
+  2.13690768,
+  2.13688322
+ ],
+ "spread_max_A2": 2.97134007,
+ "spread_limit_A2": 10.0,
+ "wannierisation_converged_line": true,
+ "verdict": "PASS"
+}
