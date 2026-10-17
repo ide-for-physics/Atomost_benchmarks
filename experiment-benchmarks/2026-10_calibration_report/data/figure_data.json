@@ -1,0 +1,253 @@
+{
+ "fig2": {
+  "shift_ev": 1.4749999999999999,
+  "kernel_peak_measured_scale_ev": 3.785,
+  "kernel_peak_value": 261.29224236539625
+ },
+ "fig4": {
+  "pump_ev_measured": 2.58,
+  "pump_ev_pbe": 1.11,
+  "pulse_fs": 150,
+  "measured_huang2025_thz": {
+   "pump_probe_oscillation": 3.125,
+   "absorption_peak": 3.13,
+   "weak_absorption": 1.78
+  },
+  "modes": [
+   {
+    "thz": 2.828,
+    "kernel": 4.76,
+    "pulse_weighted": 2.508,
+    "share": 0.695
+   },
+   {
+    "thz": 1.783,
+    "kernel": 0.627,
+    "pulse_weighted": 0.486,
+    "share": 0.135
+   },
+   {
+    "thz": 4.206,
+    "kernel": 0.839,
+    "pulse_weighted": 0.203,
+    "share": 0.056
+   },
+   {
+    "thz": 3.192,
+    "kernel": 0.399,
+    "pulse_weighted": 0.176,
+    "share": 0.049
+   },
+   {
+    "thz": 6.221,
+    "kernel": 1.502,
+    "pulse_weighted": 0.068,
+    "share": 0.019
+   },
+   {
+    "thz": 2.99,
+    "kernel": 0.093,
+    "pulse_weighted": 0.045,
+    "share": 0.013
+   },
+   {
+    "thz": 2.393,
+    "kernel": 0.052,
+    "pulse_weighted": 0.033,
+    "share": 0.009
+   },
+   {
+    "thz": 5.971,
+    "kernel": 0.414,
+    "pulse_weighted": 0.024,
+    "share": 0.007
+   }
+  ]
+ },
+ "fig5b_k32": {
+  "measured_axis_ev": [
+   2.3,
+   2.35,
+   2.4,
+   2.45,
+   2.5,
+   2.55,
+   2.6,
+   2.65,
+   2.7,
+   2.75,
+   2.8,
+   2.85,
+   2.9,
+   2.95,
+   3.0,
+   3.05,
+   3.1,
+   3.15,
+   3.2,
+   3.25,
+   3.3
+  ],
+  "share_2p83": [
+   0.264,
+   0.331,
+   0.411,
+   0.42,
+   0.416,
+   0.674,
+   0.695,
+   0.71,
+   0.693,
+   0.665,
+   0.609,
+   0.585,
+   0.521,
+   0.43,
+   0.417,
+   0.443,
+   0.496,
+   0.499,
+   0.505,
+   0.505,
+   0.53
+  ]
+ },
+ "fig6": {
+  "computed_Zt_2p83_abs": [
+   0.3769,
+   0.0,
+   0.0
+  ],
+  "measured_OD_b_peak": 2.0417,
+  "measured_OD_c_peak": 0.6756,
+  "emission_Eb_over_Ec": 6.0
+ },
+ "fig7": {
+  "computed_peak_ev": 2.825,
+  "largest_measured_ev": 2.94944,
+  "mode_cm1": 396.65828014898,
+  "unbroadened": {
+   "least_squares_vertical_scale": 0.047210669489269746,
+   "pearson_at_7_points": 0.4276325350190672,
+   "relative_l2_after_vertical_scale": 0.6854604610014953
+  },
+  "bandwidth_0p10": {
+   "least_squares_vertical_scale": 0.060740908008870775,
+   "pearson_at_7_points": 0.5769971123992386,
+   "relative_l2_after_vertical_scale": 0.591332804616004
+  }
+ },
+ "fig8": {
+  "scenarios": [
+   {
+    "label": "480 nm (2.58 eV) 150 fs [Huang 2025] observed: 3.125 THz",
+    "pump_ev": 2.58,
+    "pulse_fs": 150.0
+   },
+   {
+    "label": "480 nm 35 fs  not yet measured",
+    "pump_ev": 2.58,
+    "pulse_fs": 35.0
+   },
+   {
+    "label": "400 nm (3.10 eV) 35 fs [narrowband setup, pump doubled] proposed (\u00a75.2)",
+    "pump_ev": 3.1,
+    "pulse_fs": 35.0
+   },
+   {
+    "label": "400 nm 30 fs [Subedi 2025] observed: 1.78, 2.86 THz (detection cut-off 4 THz)",
+    "pump_ev": 3.1,
+    "pulse_fs": 30.0
+   },
+   {
+    "label": "$\\sim$3.8 eV (kernel peak) 35 fs  not yet measured",
+    "pump_ev": 3.785,
+    "pulse_fs": 35.0
+   }
+  ],
+  "modes_thz": [
+   1.783,
+   2.393,
+   2.828,
+   2.99,
+   3.192,
+   4.206,
+   5.971,
+   6.221,
+   7.932,
+   14.362
+  ],
+  "share_pct": [
+   [
+    13.5,
+    4.8,
+    3.8,
+    3.6,
+    3.5
+   ],
+   [
+    0.9,
+    0.4,
+    2.1,
+    2.0,
+    4.1
+   ],
+   [
+    69.5,
+    35.6,
+    24.2,
+    23.1,
+    5.1
+   ],
+   [
+    1.3,
+    0.7,
+    4.6,
+    4.4,
+    17.4
+   ],
+   [
+    4.9,
+    3.0,
+    1.3,
+    1.2,
+    1.2
+   ],
+   [
+    5.6,
+    6.0,
+    16.7,
+    16.1,
+    4.7
+   ],
+   [
+    0.7,
+    2.7,
+    1.4,
+    1.4,
+    4.2
+   ],
+   [
+    1.9,
+    9.8,
+    14.3,
+    14.1,
+    35.7
+   ],
+   [
+    0.5,
+    14.9,
+    16.8,
+    17.0,
+    20.2
+   ],
+   [
+    0.0,
+    18.5,
+    11.5,
+    13.8,
+    2.6
+   ]
+  ]
+ }
+}

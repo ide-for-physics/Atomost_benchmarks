@@ -1,0 +1,74 @@
+{
+  "status": "resonance_structure_and_mechanism_consistency_not_amplitude_validation",
+  "calculation": {
+    "source": "<cophon>/materials/InP/reuse_20260902/results/kernel_k96_21724285/Gamma_alphabeta_s.dat",
+    "sha256": "0e1fc1257cf2711891c9a46bbdd2c3039c462d466bb4610b6844d64753f9cacf",
+    "mesh": "96x96x96 fine k, 300 K, degaussw 0.03 eV, Gamma-c only, 13 Wannier bands, scalar",
+    "quantity": "sqrt(sum over 3 degenerate TO modes and 9 channels |Gamma|^2)",
+    "pbe_direct_gap_ev": 0.446,
+    "main_peak_pbe_ev": 2.31,
+    "main_peak_A2_per_eV": 14.320150548083697,
+    "secondary_peak_pbe_ev": 4.2,
+    "secondary_peak_A2_per_eV": 12.562479305046521,
+    "optical_mode_mev": 35.3254205,
+    "optical_mode_cm-1": 284.91873124172673
+  },
+  "scissor": {
+    "rigid_shift_ev": 0.8980000000000001,
+    "definition": "experimental 300 K gap (1.344 eV, Vurgaftman 2001) minus PBE direct gap on the 703-point path (0.446 eV); applied to the photon axis only",
+    "main_peak_shifted_ev": 3.208,
+    "secondary_peak_shifted_ev": 5.098000000000001
+  },
+  "experiment_dielectric_function": {
+    "source": "Aspnes & Studna, Phys. Rev. B 27, 985 (1983), <100> undoped InP, room temperature",
+    "data_file": "InP_Aspnes1983_nk.yml",
+    "sha256": "0c74f50c223eaf8d488da74d9292667c926c7566b15cf556e8f0ae11e6505540",
+    "converted_csv": "inp_aspnes1983_eps.csv",
+    "eps2_peaks_1p5_to_6_eV": [
+      [
+        4.699931705837756,
+        22.94776
+      ],
+      [
+        3.1995922167741933,
+        17.041135999999998
+      ]
+    ],
+    "E1_ev": 3.1995922167741933,
+    "eps2_maximum_E0prime_E2_region_ev": 4.699931705837756,
+    "literature_note": "E2 of InP is usually quoted near 5.0-5.1 eV; the tabulated eps2 peaks at 4.70 eV where E0' and E2 overlap"
+  },
+  "resonance_comparison": {
+    "main_peak_shifted_minus_E1_ev": 0.00840778322580693,
+    "secondary_peak_shifted_minus_eps2_maximum_ev": 0.3980682941622451,
+    "note": "with a single rigid shift fixed by the fundamental gap, both kernel resonances are compared to independent higher critical points"
+  },
+  "phonon_frequency_comparison_cm-1": {
+    "calculated_Gamma_optical_TO_LO_degenerate": 284.91873124172673,
+    "bulk_Raman_TO": 303.7,
+    "bulk_Raman_LO": 345.0,
+    "calc_minus_bulk_TO_percent": -6.184151714940157,
+    "nanowire_TO_Mante2020": 296.872049,
+    "nanowire_LO_Mante2020": 343.57102299999997,
+    "calc_minus_nanowire_TO_percent": -4.026420742046104
+  },
+  "mechanism_check_Mante2020": {
+    "source": "P.-A. Mante et al., ACS Photonics 7, 1923 (2020), arXiv:1909.02238; InP nanowires, 550 nm/35 fs pump, 720 nm probe",
+    "finding": "coherent TO amplitude independent of doping (intrinsic to 4.6e19 cm-3) -> generated and detected by second-order processes; Reststrahlen-band modes scale with surface field (TDFS)",
+    "relation_to_kernel": "the computed kernel is exactly the bulk second-order (Raman-type) generation channel; surface-field channels are outside its scope",
+    "kernel_invariant_at_experimental_pumps": {
+      "2.254 eV (Mante, 550 nm)": 3.33516383546673,
+      "2.0 eV (Pfeifer 1992 pump)": 3.7854764219519743,
+      "3.10 eV (400 nm, near E1)": 7.390335395375942,
+      "peak": 14.320150548083697
+    },
+    "prediction": "pumping near E1 (~3.21 eV) should drive the TO mode about 4.3x more strongly than the 550 nm pump used by Mante et al."
+  },
+  "known_model_mismatches": [
+    "No measured pump-energy scan of a coherent phonon exists for bulk InP; the located experiments use one pump energy each.",
+    "The calculation is Gamma-c only, scalar-relativistic (no spin-orbit; InP Delta0 = 0.11 eV), PBE bands with a rigid scissor, and 0.03 eV smearing.",
+    "At exactly q = 0 the LO-TO splitting is not resolved; the kernel's three optical modes share the TO-like frequency.",
+    "Nanowire (Mante 2020) and bulk differ: nanowire TO is red-shifted by ~7 cm-1 and field-enhancement/depolarization in ~100 nm wires affect absolute amplitudes.",
+    "Excitonic effects are absent (weak in bulk InP, exciton binding ~5 meV)."
+  ]
+}

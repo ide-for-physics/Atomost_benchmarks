@@ -1,0 +1,92 @@
+{
+ "experiment": "Trovatello et al., ACS Nano 14, 5700 (2020), Fig. 7b, seven digitised points",
+ "kernel_sha256": "6f53827324b4bf32d272c99cba2ce44a37f1a316751d1cd16e9c4cf957fac419",
+ "mode": 8,
+ "largest_measured_point_ev": 2.94944,
+ "curves": {
+  "unbroadened": {
+   "computed_peak_ev_1p8_to_4p5": 2.825,
+   "points": [
+    {
+     "pump_ev": 2.069,
+     "measured_norm": 0.082,
+     "computed_norm": 0.043
+    },
+    {
+     "pump_ev": 2.279,
+     "measured_norm": 0.104,
+     "computed_norm": 0.033
+    },
+    {
+     "pump_ev": 2.339,
+     "measured_norm": 0.191,
+     "computed_norm": 0.055
+    },
+    {
+     "pump_ev": 2.429,
+     "measured_norm": 0.301,
+     "computed_norm": 0.098
+    },
+    {
+     "pump_ev": 2.579,
+     "measured_norm": 0.439,
+     "computed_norm": 0.854
+    },
+    {
+     "pump_ev": 2.949,
+     "measured_norm": 1.0,
+     "computed_norm": 0.533
+    },
+    {
+     "pump_ev": 4.27,
+     "measured_norm": 0.279,
+     "computed_norm": 1.0
+    }
+   ],
+   "pearson_rise_2p07_to_2p95_ev_6_points": 0.65,
+   "pearson_all_7_points": 0.428
+  },
+  "pump_fwhm_0.10_ev": {
+   "computed_peak_ev_1p8_to_4p5": 2.825,
+   "points": [
+    {
+     "pump_ev": 2.069,
+     "measured_norm": 0.082,
+     "computed_norm": 0.052
+    },
+    {
+     "pump_ev": 2.279,
+     "measured_norm": 0.104,
+     "computed_norm": 0.039
+    },
+    {
+     "pump_ev": 2.339,
+     "measured_norm": 0.191,
+     "computed_norm": 0.067
+    },
+    {
+     "pump_ev": 2.429,
+     "measured_norm": 0.301,
+     "computed_norm": 0.12
+    },
+    {
+     "pump_ev": 2.579,
+     "measured_norm": 0.439,
+     "computed_norm": 0.775
+    },
+    {
+     "pump_ev": 2.949,
+     "measured_norm": 1.0,
+     "computed_norm": 0.734
+    },
+    {
+     "pump_ev": 4.27,
+     "measured_norm": 0.279,
+     "computed_norm": 1.0
+    }
+   ],
+   "pearson_rise_2p07_to_2p95_ev_6_points": 0.822,
+   "pearson_all_7_points": 0.577
+  }
+ }
+}

@@ -2,11 +2,13 @@
 
 Benchmarks of Atomost's harness-level AI development systems for materials computation. Each benchmark is a folder with a
 human-facing report, the figures and the grading tables it is built from, the design documents and the deliverables of every arm that
-was compared. Labels and graders are frozen before any run; grades are produced by the pipeline's own code gates, never by a model judge.
+was compared. For the harness benchmarks, labels and graders are frozen before any run; grades are produced by the pipeline's own code
+gates, never by a model judge. The experiment benchmarks check the physics the pipeline computes against published measurements.
 
 | Benchmark | Date | What it measures | Report |
 |---|---|---|---|
 | [cophon-bench v0](cophon-bench-v0/) | 2026-10-15 (v0.1) | the coherent-phonon kernel pipeline as a harness: the same model inside vs on a whiteboard, and whether the harness lifts the cheapest model to the level of the strongest one working alone | [中文报告](cophon-bench-v0/report/REPORT.md) · [English summary](cophon-bench-v0/report/SUMMARY.en.md) |
+| [experiment benchmarks](experiment-benchmarks/) | 2026-08-31 to 2026-10-11 (round 1) | the theory itself: under the same material and pump conditions as published experiments on NbOI₂, monolayer MoS₂ and InP, does the computed kernel predict which mode is driven, along which axis it radiates and where the driving peaks; new predictions on record for experiments not yet done | [README](experiment-benchmarks/README.md) |
 
 ## cophon-bench v0 in one figure
 
@@ -28,10 +30,16 @@ Held privately (available for diligence on request): the harness's prompts and t
 (kernel_pipeline), raw model answers, the whiteboard sessions' full transcripts, the raw wannier90 outputs of pillar B. Cluster project
 ids, user names and local paths are scrubbed from the published text.
 
+Experiment benchmarks: published are the comparison reports, figures, scripts and metrics, and two small data tables taken from papers
+(seven points digitised from Trovatello et al. 2020; the public-domain InP optical constants of Aspnes & Studna 1983), each with its
+citation. Not published: the papers and other third-party files (cited by DOI or arXiv number instead), and the kernel files and phonon
+data the scripts read.
+
 ## 中文
 
 这是 Atomost 的 harness 级 AI 研发系统的能力基准。每个基准一个目录：人文报告、图、判分表、设计文件、每一臂的交付件。标签与判分器在任何
 运行之前冻结，判分只用流水线自己的代码门。cophon-bench v0 的报告见 `cophon-bench-v0/report/REPORT.md`，它证明了什么、没证明什么都在报告的
-附录 A。
+附录 A。experiment-benchmarks/ 是另一类：检验理论本身，在和已发表实验相同的材料与泵浦条件下，算出的结果能不能预言实验测到的东西，
+并写下了等待实验检验的新预测。
 
 © Atomost. All rights reserved; contact the maintainers for reuse.

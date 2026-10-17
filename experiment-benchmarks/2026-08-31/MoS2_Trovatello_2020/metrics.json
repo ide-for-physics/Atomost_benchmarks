@@ -1,0 +1,47 @@
+{
+  "status": "partial_match_not_validation",
+  "comparison_scope": "Normalized pump-energy shape only; no absolute displacement comparison, no pump-by-pump fluence correction, and no energy-axis shift.",
+  "calculation": {
+    "source": "<cophon>/materials/MoS2/run_qe75_k160/Gamma_alphabeta_s.dat",
+    "sha256": "6f53827324b4bf32d272c99cba2ce44a37f1a316751d1cd16e9c4cf957fac419",
+    "mode": 8,
+    "mode_energy_mev": 49.1793589,
+    "mode_frequency_cm-1": 396.65828014898,
+    "main_peak_1p8_to_4p5_ev": 2.825,
+    "kernel_part": "Gamma_c only",
+    "polarization_curve": "complex average of xx and yy"
+  },
+  "experiment": {
+    "source": "Trovatello et al., ACS Nano 14, 5700-5710 (2020), Fig. 7b",
+    "doi": "10.1021/acsnano.0c00309",
+    "digitized_csv": "<cophon>/reference/experiment_benchmarks/2026-08-31/MoS2_Trovatello_2020/fig7b_digitized.csv",
+    "sha256": "2e473fb74970c28cfa74cebc0de218e3ef0356b9306a18e7945d2e9841942bd5",
+    "number_of_points": 7,
+    "mode_frequency_cm-1": 406.0,
+    "largest_measured_point_ev": 2.94944,
+    "observable": "Fourier amplitude of optical modulation at a fixed 2.9 eV probe"
+  },
+  "direct_differences": {
+    "mode_frequency_calculation_minus_experiment_cm-1": -9.341719851020002,
+    "mode_frequency_relative_percent": -2.300916219463055,
+    "calculation_peak_minus_largest_measured_point_ev": -0.12443999999999988
+  },
+  "unbroadened_shape": {
+    "least_squares_vertical_scale": 0.04721066948926974,
+    "pearson_at_7_points": 0.427632535019067,
+    "relative_l2_after_vertical_scale": 0.6854604610014953
+  },
+  "illustrative_finite_pump_shape": {
+    "gaussian_intensity_fwhm_ev": 0.1,
+    "warning": "Illustrative only: the paper reports <20 fs pulses, not each pulse spectrum.",
+    "least_squares_vertical_scale": 0.06074090800887078,
+    "pearson_at_7_points": 0.5769971123992386,
+    "relative_l2_after_vertical_scale": 0.5913328046160041
+  },
+  "known_model_mismatches": [
+    "The experiment has strong excitons (bound electron-hole pairs); the present EPW kernel does not include them explicitly.",
+    "The experiment adjusted incident fluence with pump energy but did not publish the per-energy values.",
+    "The present calculation is no-SOC and Gamma_c only.",
+    "The experiment measures optical modulation, not an atom displacement in angstrom."
+  ]
+}
