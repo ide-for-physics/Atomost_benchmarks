@@ -1,0 +1,16 @@
+# jobs.log — one line per Slurm job (shared account <user>; only MY jobs listed)
+# jobid | purpose | partition | cores x elapsed -> node-hours (node = 128 cores)
+22864934 | SCF 8^3 (DFPT), SCF 12^3, bands path, NSCF 12^3 nbnd=40 | small | 32 cores x 0:01:24 = 0.006 nh
+22864935 | DFPT ph.x 6x6x6 q (16 irr. q), epsil | small | 64 cores x 0:27:45 = 0.231 nh
+22865421 | Wannier projection tests B/C (pw2wannier90+wannier90) + DFT bands at W90 path k | small | 32 cores x 0:25:32 = 0.106 nh
+22867643 | Wannier round 2 (failed: NSCF wfcs overwritten) + phonon post-proc (gather save/, q2r, matdyn, dynmat) | small | 32 cores x 0:01:43 = 0.007 nh
+22868808 | NSCF rerun + Wannier round 2 (D done; E timed out, F/G not run) | small | 32 cores x 1:30:22 = 0.377 nh
+22873311 | Wannier round 3 (sets E/F/G concurrently) | small | 32 cores x 0:58:33 = 0.244 nh
+22899917 | EPW coarse (Wannierise set F OK; crashed reading save/gap.dyn_q5 at irr. q #5) | small | 64 cores x 0:15:08 = 0.126 nh
+22899941 | EPW fine meshes (started after the crashed J4 because its script exited 0; died at once: no crystal.fmt) | small | 128 cores x 0:00:10 = 0.004 nh
+22900599 | EPW coarse rerun with gap.dyn0 (Wannierise set F OK, all 216 q done; OOM-killed in the Bloch->Wannier step: small gave only 56 GB for 64 cores) | small | 64 cores x 1:15:18 = 0.628 nh
+22900600 | EPW fine meshes, afterok:22900599 -> never started (DependencyNeverSatisfied), cancelled | small | 0 nh
+22918065 | EPW coarse (reads gap.ukk; e-ph on 12^3 k / 6^3 q with dyn0 ordering; Bloch->Wannier; writes gap.epmatwp 8.9 GB) OK | small | 128 cores x 0:40:42 = 0.678 nh
+22918066 | EPW fine kernel runs k=48^3 (3.3 min), 72^3 (11.5 min), 96^3 (29 min); q=Gamma; afterok:22918065 | small | 128 cores x 0:44:04 = 0.734 nh
+22919387 | EPW fine kernel runs k=120^3 (45 min) and 144^3 (77 min); q=Gamma; afterok:22918066 | small | 128 cores x 2:02:20 = 1.953 nh
+22920338 | EPW fine kernel k=192^3 on 4 nodes (512 ranks): OOM at start-up (1.85 GB/rank of full-mesh arrays; not feasible with this build) | small | 4 nodes x 0:01:17 = 0.086 nh

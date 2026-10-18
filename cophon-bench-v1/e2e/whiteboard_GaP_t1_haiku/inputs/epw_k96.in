@@ -1,0 +1,19 @@
+&inputepw
+  prefix = 'gap', outdir = '/scratch/project_<id>/<user>/theory2code/cphon/bench_whiteboard_v1/GaP_t1/haiku_run/tmp'
+  dvscf_dir = '/scratch/project_<id>/<user>/theory2code/cphon/bench_whiteboard_v1/GaP_t1/haiku_run/tmp/_ph0/'
+  amass(1) = 69.723, amass(2) = 30.974
+  elph = .true., epwwrite = .true., wannierize = .false., epwread = .true.
+  nbndsub = 8, bands_skipped = 'exclude_bands = 1-5'
+  num_iter = 2000
+  proj(1) = 'Ga:sp3', proj(2) = 'P:sp3'
+  dis_win_min = -5.5, dis_win_max = 19.0
+  dis_froz_min = -5.5, dis_froz_max = 11.0
+  nk1 = 8, nk2 = 8, nk3 = 8
+  nq1 = 4, nq2 = 4, nq3 = 4
+  nkf1 = 96, nkf2 = 96, nkf3 = 96
+  nqf1 = 1, nqf2 = 1, nqf3 = 1
+  lindabs = .true.
+  omegamin = 0.0, omegamax = 6.0, omegastep = 0.02
+  degaussw = 0.025
+  ladsmear = .false.
+/

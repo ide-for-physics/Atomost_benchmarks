@@ -1,0 +1,61 @@
+&inputepw
+  prefix = 'mos2'
+  outdir = '../../01_scf/tmp'
+  dvscf_dir = '../../01_scf/tmp/_ph0/'
+  elph = .true.
+  epwwrite = .true.
+  epwread = .false.
+  epbwrite = .false.
+  epbread = .false.
+  etf_mem = 0
+  vme = 'wannier'
+  lpolar = .false.
+  use_ws = .true.
+  lifc = .false.
+  nbndsub = 12
+  bands_skipped = 'exclude_bands = 1-6'
+  wannierize = .true.
+  num_iter = 5000
+  iprint = 2
+  dis_win_min = -6.5
+  dis_win_max = 7.5
+  dis_froz_min = -1.5
+  dis_froz_max = 1.3
+  proj(1) = 'Mo:s'
+  proj(2) = 'Mo:d'
+  proj(3) = 'S:p'
+  wdata(1) = 'bands_plot = .true.'
+  wdata(2) = 'begin kpoint_path'
+  wdata(3) = 'G 0.00 0.00 0.00 M 0.50 0.00 0.00'
+  wdata(4) = 'M 0.50 0.00 0.00 K 0.333333333333 0.333333333333 0.00'
+  wdata(5) = 'K 0.333333333333 0.333333333333 0.00 G 0.0 0.0 0.00'
+  wdata(6) = 'end kpoint_path'
+  wdata(7) = 'bands_plot_format = gnuplot'
+  wdata(8) = 'dis_num_iter = 5000'
+  wdata(9) = 'num_print_cycles = 10'
+  wdata(10) = 'dis_mix_ratio = 1.0'
+  wdata(11) = 'conv_tol = 1E-12'
+  wdata(12) = 'conv_window = 4'
+  lindabs = .true.
+  omegamin = 0.01
+  omegamax = 6.0
+  omegastep = 0.01
+  degaussw = 0.025
+  ladsmear = .false.
+  efermi_read = .true.
+  fermi_energy = 0.3675
+  nkf1 = 72
+  nkf2 = 72
+  nkf3 = 1
+  nqf1 = 1
+  nqf2 = 1
+  nqf3 = 1
+  nk1 = 12
+  nk2 = 12
+  nk3 = 1
+  nq1 = 1
+  nq2 = 1
+  nq3 = 1
+  nstemp = 1
+  temps = 300
+/

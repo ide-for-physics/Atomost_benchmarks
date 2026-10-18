@@ -1,0 +1,38 @@
+&control
+  calculation = 'scf'
+  prefix      = 'kno'
+  outdir      = './tmp'
+  pseudo_dir  = '../pseudo'
+  tprnfor     = .true.
+  tstress     = .true.
+  verbosity   = 'high'
+/
+&system
+  ibrav       = 0
+  nat         = 5
+  ntyp        = 3
+  ecutwfc     = 90.0
+  ecutrho     = 360.0
+  nbnd        = 40
+  occupations = 'fixed'
+/
+&electrons
+  conv_thr    = 1.0d-10
+  mixing_beta = 0.5
+/
+ATOMIC_SPECIES
+K   39.0983   K.upf
+Nb  92.90638  Nb.upf
+O   15.9994   O.upf
+CELL_PARAMETERS angstrom
+ -0.00000000  3.26699347  2.31667251
+  2.82929933 -1.63349673  2.31667251
+ -2.82929933 -1.63349673  2.31667251
+ATOMIC_POSITIONS crystal
+K   0.98508373  0.98508373  0.98508373
+Nb  0.49617025  0.49617025  0.49617025
+O   0.47108675  0.97007153  0.47108675
+O   0.97007153  0.47108675  0.47108675
+O   0.47108675  0.47108675  0.97007153
+K_POINTS automatic
+ 8 8 8 0 0 0

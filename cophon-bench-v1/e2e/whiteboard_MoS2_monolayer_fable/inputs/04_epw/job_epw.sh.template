@@ -1,0 +1,16 @@
+#!/bin/bash
+#SBATCH -A project_<id>
+#SBATCH -p @PART@
+#SBATCH -N 1
+#SBATCH --ntasks-per-node=@NT@
+#SBATCH --cpus-per-task=1
+#SBATCH -t @TIME@
+#SBATCH -J @NAME@
+#SBATCH -o slurm-%j.out
+module load LUMI partition/C PrgEnv-gnu cray-fftw 2>/dev/null
+export OMP_NUM_THREADS=1
+BIN=/scratch/project_<id>/<user>/theory2code/cphon/toolchain/qe-phnlo-75/bin
+cd $SLURM_SUBMIT_DIR
+echo "START $(date -Is)"
+srun -n @NT@ $BIN/epw.x -npool @NT@ -in @IN@ > @OUT@
+echo "END $(date -Is)"

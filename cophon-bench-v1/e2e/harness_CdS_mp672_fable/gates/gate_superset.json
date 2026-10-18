@@ -1,0 +1,46 @@
+{
+  "checks": [
+    {
+      "limit": "COMPLETED and PASSED",
+      "name": "superset_job_passed",
+      "pass": true,
+      "value": {
+        "state": "COMPLETED",
+        "status_file": true
+      }
+    },
+    {
+      "limit": "file",
+      "name": "projectability_present",
+      "pass": true,
+      "value": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/CdS_mp672_e2eF/results/superset_proj.json"
+    },
+    {
+      "limit": 45,
+      "name": "projectability_bands",
+      "pass": true,
+      "value": 45
+    },
+    {
+      "limit": 36,
+      "name": "projectability_columns",
+      "pass": true,
+      "value": 36
+    }
+  ],
+  "code": {
+    "manifest_sha256": "e8050e6a9f5b3a0a7adc238b2ecb933202c3c2278ca8b031e317fe7ab418b09f",
+    "package": "kernel_pipeline",
+    "rules_sha256": "1885bf0303112ce03a6fc33fe1c50b31c05c71cbd5d96199b9ce7e0e0fc77891",
+    "sealed_at": "2026-10-15T09:12:51+02:00",
+    "version": "v2.0.12"
+  },
+  "extra": [],
+  "num_wann": 36,
+  "status": "PASS",
+  "superset": [
+    "Cd:s;p;d",
+    "S:s;p;d"
+  ],
+  "time": "2026-10-15T10:32:23+02:00"
+}

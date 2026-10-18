@@ -1,0 +1,25 @@
+{
+  "checks": [],
+  "code": {
+    "manifest_sha256": "e8050e6a9f5b3a0a7adc238b2ecb933202c3c2278ca8b031e317fe7ab418b09f",
+    "package": "kernel_pipeline",
+    "rules_sha256": "1885bf0303112ce03a6fc33fe1c50b31c05c71cbd5d96199b9ce7e0e0fc77891",
+    "sealed_at": "2026-10-15T09:12:51+02:00",
+    "version": "v2.0.12"
+  },
+  "complete": true,
+  "done": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "missing": [],
+  "status": "PASS",
+  "step": "anh_forces",
+  "time": "2026-10-15T12:51:50+02:00"
+}

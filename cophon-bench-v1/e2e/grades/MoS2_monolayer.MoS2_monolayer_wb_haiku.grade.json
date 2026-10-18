@@ -1,0 +1,111 @@
+{
+ "schema": "cophon-bench.e.grade.v1",
+ "material": "MoS2_monolayer",
+ "arm": "MoS2_monolayer_wb_haiku",
+ "kernel_file": "<whiteboard>/v1/MoS2_monolayer_haiku/kernel/Gamma_alphabeta_s.dat",
+ "kernel_sha256": "3ce5305c04eb56dad0bd0505b906348efdbf2ab78ddfbc6951a3876fc442216d",
+ "arm_peaks": [
+  {
+   "photon_ev": 2.83,
+   "invariant_a2_per_ev": 65.2529,
+   "mode_group": {
+    "modes": [
+     8
+    ],
+    "phonon_mev": 49.174,
+    "thz": 11.8902,
+    "share_of_invariant": 0.9814
+   }
+  },
+  {
+   "photon_ev": 5.56,
+   "invariant_a2_per_ev": 47.4805,
+   "mode_group": {
+    "modes": [
+     8
+    ],
+    "phonon_mev": 49.174,
+    "thz": 11.8902,
+    "share_of_invariant": 0.9972
+   }
+  }
+ ],
+ "baseline_peaks": [
+  {
+   "photon_ev": 2.82,
+   "invariant_a2_per_ev": 58.7101,
+   "mode_group": {
+    "modes": [
+     8
+    ],
+    "phonon_mev": 49.1788,
+    "thz": 11.8914,
+    "share_of_invariant": 0.9817
+   }
+  },
+  {
+   "photon_ev": 5.55,
+   "invariant_a2_per_ev": 50.4269,
+   "mode_group": {
+    "modes": [
+     8
+    ],
+    "phonon_mev": 49.1788,
+    "thz": 11.8914,
+    "share_of_invariant": 0.9988
+   }
+  }
+ ],
+ "matched_baseline_peak": 0,
+ "position_ok": true,
+ "height_rel": 0.1114,
+ "height_ok": true,
+ "mode_rel": -0.0001,
+ "mode_ok": true,
+ "same_answer": true,
+ "second_peak": {
+  "arm_second_ev": 5.56,
+  "baseline_other_ev": 5.55,
+  "within_tol": true
+ },
+ "spectrum": {
+  "max_abs_dev_over_baseline_max": 0.1066,
+  "rel_l2": 0.0807
+ },
+ "self_report": {
+  "peak_ev": 2.83,
+  "peak_a2_per_ev": 64.04,
+  "mode_thz": 11.8902,
+  "dev_peak_ev": 0.0,
+  "dev_height_rel": -0.0186,
+  "dev_mode_rel": 0.0
+ },
+ "cell_check": {
+  "arm_abc": [
+   3.18558,
+   3.18558,
+   18.12833
+  ],
+  "baseline_abc": [
+   3.18558,
+   3.18558,
+   18.12833
+  ],
+  "dev_percent": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "within_1pct": true
+ },
+ "costs": {
+  "node_hours": 0.36,
+  "wall_hours": 0.95,
+  "model_usd": null,
+  "human_touches": 0,
+  "mesh": "120x120x1",
+  "wannier_rounds": null,
+  "model": null
+ },
+ "verdict": "same answer"
+}

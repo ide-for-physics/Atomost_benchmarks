@@ -1,0 +1,170 @@
+{
+  "checks": [
+    {
+      "limit": "parseable",
+      "name": "kernel_parse",
+      "pass": true,
+      "value": "ok"
+    },
+    {
+      "limit": 6,
+      "name": "kernel_n_modes",
+      "pass": true,
+      "value": 6
+    },
+    {
+      "limit": 200,
+      "name": "kernel_n_omega",
+      "pass": true,
+      "value": 200
+    },
+    {
+      "limit": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "name": "kernel_mode_labels",
+      "pass": true,
+      "value": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "limit": true,
+      "name": "kernel_finite",
+      "pass": true,
+      "value": true
+    },
+    {
+      "limit": "> 0",
+      "name": "kernel_phonon_energies_positive",
+      "pass": true,
+      "value": [
+        34.2769122,
+        34.2769122,
+        46.3052424,
+        46.3052424,
+        49.1788862,
+        56.8445631
+      ]
+    },
+    {
+      "limit": [
+        0.03,
+        6.0,
+        0.03
+      ],
+      "name": "kernel_photon_grid",
+      "pass": true,
+      "value": [
+        0.03,
+        6.0,
+        0.030000000000000027
+      ]
+    },
+    {
+      "limit": 0.1,
+      "name": "kernel_mode_energies_match_dfpt",
+      "pass": true,
+      "value": 0.0
+    },
+    {
+      "limit": 0.1,
+      "name": "kernel_silent_modes_share",
+      "pass": true,
+      "silent_modes": [],
+      "value": 0.0
+    }
+  ],
+  "code": {
+    "manifest_sha256": "38fbfe4df2f3f17ab614ee68c189c8ee7770591b33e88bc079b01c6b0daebcfc",
+    "package": "kernel_pipeline",
+    "rules_sha256": "1885bf0303112ce03a6fc33fe1c50b31c05c71cbd5d96199b9ce7e0e0fc77891",
+    "sealed_at": "2026-10-15T10:57:19+02:00",
+    "version": "v2.0.13"
+  },
+  "convergence_vs_next": null,
+  "convergence_vs_previous": {
+    "abs_floor_pass": false,
+    "amplitude_invariant": {
+      "nrmse_by_finer_peak": 0.04097576467159179,
+      "pearson": 0.985175615614704,
+      "relative_l2_vs_finer": 0.12564610159677134
+    },
+    "below_detection_floor": false,
+    "checks": [
+      {
+        "limit": 0.03,
+        "name": "envelope_rel_l2",
+        "pass": true,
+        "value": 0.006391104658385513
+      },
+      {
+        "limit": {
+          "abs_floor": 0.01,
+          "detection_floor": 0.5
+        },
+        "name": "envelope_abs_floor_reported",
+        "pass": true,
+        "value": {
+          "abs_floor_pass": false,
+          "below_detection_floor": false,
+          "envelope_peak_cur": 42.76087770579659,
+          "rms_diff_A2_per_eV": 0.08078633198239707
+        }
+      },
+      {
+        "limit": "report only",
+        "name": "envelope_rel_l2_raw_reported",
+        "pass": true,
+        "value": 0.13129697463507145
+      }
+    ],
+    "coarse_peak_eV": 5.49,
+    "compared_up_to_ev": 4.657,
+    "cur": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/MoS2_monolayer_e2eF/results/kernel_k48/Gamma_alphabeta_s.dat",
+    "cur_sha256": "55bedb829b841fc4a81cf379ea08b3769e279822348ef763d15fbbe9623a5f32",
+    "diag_over_offdiag_cur": 3.9739181922649105,
+    "diag_over_offdiag_prev": 4.079803130430471,
+    "edge_exclude_ev": 0.2,
+    "envelope_peak_cur": 42.76087770579659,
+    "envelope_peak_prev": 42.80015881666642,
+    "envelope_peak_shift_eV": 0.0,
+    "gate": "envelope_convergence",
+    "limit": 0.03,
+    "nrmse_envelope": 0.002196689988656365,
+    "nrmse_raw": 0.031380890693360246,
+    "offdiag_channels": {
+      "nrmse_by_finer_peak": 0.027671927085103906,
+      "pearson": 0.9999999999854634,
+      "relative_l2_vs_finer": 0.2613969046727839
+    },
+    "peak_eV": 5.49,
+    "pearson_envelope": 0.999972265062413,
+    "pearson_raw": 0.9864679388763191,
+    "prev": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/MoS2_monolayer_e2eF/results/kernel_k40/Gamma_alphabeta_s.dat",
+    "prev_sha256": "35f0c95782a25aa1264b3e7529d921868fa4d270f8435ca3d8159af3f3ddacc4",
+    "raw_peak_cur": 56.83797250910919,
+    "raw_peak_eV_cur": 2.82,
+    "raw_peak_eV_prev": 2.82,
+    "raw_peak_prev": 58.984619680858074,
+    "reasons": [],
+    "rel_l2_envelope": 0.006391104658385513,
+    "rel_l2_raw": 0.13129697463507145,
+    "rms_diff_envelope": 0.08078633198239707,
+    "sigma_ev": 0.1,
+    "status": "PASS"
+  },
+  "mesh": 48,
+  "status": "PASS",
+  "time": "2026-10-15T12:57:56+02:00"
+}

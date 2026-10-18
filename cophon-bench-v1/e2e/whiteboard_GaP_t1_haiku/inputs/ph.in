@@ -1,0 +1,6 @@
+phonons at all q on a 4x4x4 grid (Gamma included), dielectric and Born charges at Gamma
+&inputph
+  prefix = 'gap', outdir = './tmp', fildyn = 'dyn', fildvscf = 'dvscf', tr2_ph = 1.0d-14
+  epsil = .true., trans = .true., ldisp = .true., nq1 = 4, nq2 = 4, nq3 = 4
+  amass(1) = 69.723, amass(2) = 30.974
+/

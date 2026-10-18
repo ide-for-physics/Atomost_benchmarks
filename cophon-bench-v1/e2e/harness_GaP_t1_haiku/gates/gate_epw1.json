@@ -1,0 +1,377 @@
+{
+  "checks": [
+    {
+      "limit": "present",
+      "name": "epw1_log_present",
+      "pass": true,
+      "value": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/GaP_t1_e2eH/logs/epw1/epw1.out"
+    },
+    {
+      "limit": [],
+      "name": "epw1_no_fatal_markers",
+      "pass": true,
+      "value": []
+    },
+    {
+      "limit": true,
+      "name": "epw1_finished",
+      "pass": true,
+      "value": true
+    },
+    {
+      "limit": true,
+      "name": "epw1_restart_written",
+      "pass": true,
+      "value": true
+    },
+    {
+      "limit": [
+        1
+      ],
+      "name": "epw1_q_points",
+      "pass": true,
+      "value": [
+        1
+      ]
+    },
+    {
+      "limit": 12,
+      "name": "epw1_spread_count",
+      "pass": true,
+      "value": 12
+    },
+    {
+      "limit": 10.0,
+      "name": "epw1_spread_max",
+      "pass": true,
+      "value": 2.89884
+    },
+    {
+      "limit": "require_files=False",
+      "name": "epw1_files_not_checked",
+      "pass": true,
+      "value": "skipped"
+    },
+    {
+      "limit": "lumi-w90-band-compare-py36-stdlib-v6",
+      "name": "epw_bands_comparator_build",
+      "pass": true,
+      "value": "lumi-w90-band-compare-py36-stdlib-v6"
+    },
+    {
+      "limit": true,
+      "name": "epw_bands_dense_reference_certified",
+      "pass": true,
+      "value": true
+    },
+    {
+      "limit": 703,
+      "name": "epw_bands_grid_points",
+      "pass": true,
+      "value": [
+        703,
+        703
+      ]
+    },
+    {
+      "limit": 12,
+      "name": "epw_bands_num_wann",
+      "pass": true,
+      "value": 12
+    },
+    {
+      "limit": "finite",
+      "name": "epw_bands_rms_target_window_meV_finite",
+      "pass": true,
+      "value": 2.168918
+    },
+    {
+      "limit": "finite",
+      "name": "epw_bands_max_abs_deviation_in_window_meV_finite",
+      "pass": true,
+      "value": 19.230203
+    },
+    {
+      "limit": 50.0,
+      "name": "epw_bands_rms_meV",
+      "pass": true,
+      "value": 2.168918
+    },
+    {
+      "limit": 25.0,
+      "name": "epw_bands_worst_meV",
+      "pass": true,
+      "value": 19.230203
+    },
+    {
+      "limit": "equal",
+      "name": "spreads_count",
+      "pass": true,
+      "value": [
+        12,
+        12
+      ]
+    },
+    {
+      "limit": {
+        "abs_A2": 0.04,
+        "rel": 0.02
+      },
+      "name": "spread_0",
+      "pass": true,
+      "value": {
+        "direct": 1.74286174,
+        "epw": 1.74298
+      }
+    },
+    {
+      "limit": {
+        "abs_A2": 0.04,
+        "rel": 0.02
+      },
+      "name": "spread_1",
+      "pass": true,
+      "value": {
+        "direct": 1.74291921,
+        "epw": 1.74303
+      }
+    },
+    {
+      "limit": {
+        "abs_A2": 0.04,
+        "rel": 0.02
+      },
+      "name": "spread_2",
+      "pass": true,
+      "value": {
+        "direct": 1.74291927,
+        "epw": 1.74303
+      }
+    },
+    {
+      "limit": {
+        "abs_A2": 0.04,
+        "rel": 0.02
+      },
+      "name": "spread_3",
+      "pass": true,
+      "value": {
+        "direct": 2.34437603,
+        "epw": 2.34438
+      }
+    },
+    {
+      "limit": {
+        "abs_A2": 0.04,
+        "rel": 0.02
+      },
+      "name": "spread_4",
+      "pass": true,
+      "value": {
+        "direct": 2.67369063,
+        "epw": 2.67369
+      }
+    },
+    {
+      "limit": {
+        "abs_A2": 0.04,
+        "rel": 0.02
+      },
+      "name": "spread_5",
+      "pass": true,
+      "value": {
+        "direct": 2.6737585,
+        "epw": 2.67376
+      }
+    },
+    {
+      "limit": {
+        "abs_A2": 0.04,
+        "rel": 0.02
+      },
+      "name": "spread_6",
+      "pass": true,
+      "value": {
+        "direct": 2.89793653,
+        "epw": 2.89783
+      }
+    },
+    {
+      "limit": {
+        "abs_A2": 0.04,
+        "rel": 0.02
+      },
+      "name": "spread_7",
+      "pass": true,
+      "value": {
+        "direct": 2.89794692,
+        "epw": 2.89784
+      }
+    },
+    {
+      "limit": {
+        "abs_A2": 0.04,
+        "rel": 0.02
+      },
+      "name": "spread_8",
+      "pass": true,
+      "value": {
+        "direct": 2.89794732,
+        "epw": 2.89784
+      }
+    },
+    {
+      "limit": {
+        "abs_A2": 0.04,
+        "rel": 0.02
+      },
+      "name": "spread_9",
+      "pass": true,
+      "value": {
+        "direct": 2.89864927,
+        "epw": 2.89865
+      }
+    },
+    {
+      "limit": {
+        "abs_A2": 0.04,
+        "rel": 0.02
+      },
+      "name": "spread_10",
+      "pass": true,
+      "value": {
+        "direct": 2.89883903,
+        "epw": 2.89884
+      }
+    },
+    {
+      "limit": {
+        "abs_A2": 0.04,
+        "rel": 0.02
+      },
+      "name": "spread_11",
+      "pass": true,
+      "value": {
+        "direct": 2.8988394,
+        "epw": 2.89884
+      }
+    },
+    {
+      "limit": {
+        "rel": 0.001
+      },
+      "name": "spreads_total",
+      "pass": true,
+      "value": {
+        "direct": 30.31068385,
+        "epw": 30.31071,
+        "rel_diff": 8.627313579938599e-07
+      }
+    },
+    {
+      "limit": {
+        "rel": 0.0001
+      },
+      "name": "omega_i_match",
+      "pass": true,
+      "value": {
+        "direct": 20.087276974,
+        "epw": 20.087276974,
+        "rel_diff": 0.0
+      }
+    },
+    {
+      "limit": {
+        "br_warn": 0.5
+      },
+      "name": "fd_origin_estimate_reported",
+      "pass": true,
+      "value": {
+        "br_max": 0.471,
+        "r_max_ang": 2.36,
+        "wannier_route_error_max": 0.037,
+        "warn": false
+      }
+    },
+    {
+      "limit": 1.0,
+      "name": "epw_score",
+      "pass": true,
+      "rms_le5_meV": 1.0,
+      "start_rung": 64,
+      "value": 0.073,
+      "worst_le5_meV": 8.0
+    }
+  ],
+  "code": {
+    "manifest_sha256": "e8050e6a9f5b3a0a7adc238b2ecb933202c3c2278ca8b031e317fe7ab418b09f",
+    "package": "kernel_pipeline",
+    "rules_sha256": "1885bf0303112ce03a6fc33fe1c50b31c05c71cbd5d96199b9ce7e0e0fc77891",
+    "sealed_at": "2026-10-15T09:12:51+02:00",
+    "version": "v2.0.12"
+  },
+  "decay": {
+    "directory": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/GaP_t1_e2eH/logs/epw1",
+    "files": {
+      "H": {
+        "boundary_max": 5.1142888397455975e-05,
+        "boundary_over_peak": 3.6179583364502775e-05,
+        "max_radius_A": 27.235915,
+        "outer_20pct_max": 0.00012340356407366466,
+        "outer_20pct_max_over_peak": 8.729834535708389e-05,
+        "peak": 1.4135842273859431,
+        "peak_radius_A": 0.0,
+        "points": 1163,
+        "shells": 36
+      },
+      "dynmat": {
+        "boundary_max": 0.2094322219803543,
+        "boundary_over_peak": 1.0,
+        "max_radius_A": 0.0,
+        "outer_20pct_max": 0.2094322219803543,
+        "outer_20pct_max_over_peak": 1.0,
+        "peak": 0.2094322219803543,
+        "peak_radius_A": 0.0,
+        "points": 1,
+        "shells": 1
+      },
+      "epmate": {
+        "boundary_max": 0.000156176,
+        "boundary_over_peak": 0.0004112370989128978,
+        "max_radius_A": 27.235915,
+        "outer_20pct_max": 0.0002394047,
+        "outer_20pct_max_over_peak": 0.0006303919571132095,
+        "peak": 0.3797711841,
+        "peak_radius_A": 0.0,
+        "points": 1163,
+        "shells": 36
+      },
+      "epmatp": {
+        "boundary_max": 0.3797711841,
+        "boundary_over_peak": 1.0,
+        "max_radius_A": 0.0,
+        "outer_20pct_max": 0.3797711841,
+        "outer_20pct_max_over_peak": 1.0,
+        "peak": 0.3797711841,
+        "peak_radius_A": 0.0,
+        "points": 1,
+        "shells": 1
+      },
+      "v": {
+        "boundary_max": 0.0020014029632537188,
+        "boundary_over_peak": 0.0008135010570197651,
+        "max_radius_A": 27.235915,
+        "outer_20pct_max": 0.002331624301648042,
+        "outer_20pct_max_over_peak": 0.0009477246055836874,
+        "peak": 2.4602340045946516,
+        "peak_radius_A": 0.0,
+        "points": 1163,
+        "shells": 36
+      }
+    },
+    "missing": [],
+    "note": "report only, not a gate"
+  },
+  "status": "PASS",
+  "time": "2026-10-15T11:51:57+02:00"
+}

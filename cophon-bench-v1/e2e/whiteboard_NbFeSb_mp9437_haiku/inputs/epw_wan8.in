@@ -1,0 +1,52 @@
+--
+&inputepw
+  prefix       = 'nbfesb'
+  outdir       = './k8'
+  amass(1)     = 92.906
+  amass(2)     = 55.845
+  amass(3)     = 121.760
+  dvscf_dir    = './save/'
+  filukk       = './k8/nbfesb.ukk'
+
+  elph         = .true.
+  epbwrite     = .true.
+  epwwrite     = .true.
+  epbread      = .false.
+  epwread      = .false.
+
+  wannierize   = .true.
+  num_iter     = 500
+  iprint       = 2
+  nbndsub      = 22
+  bands_skipped = 'exclude_bands = 1:13'
+  proj(1)      = 'f=0.0,0.0,0.0:l=0'
+  proj(2)      = 'f=0.0,0.0,0.0:l=1'
+  proj(3)      = 'f=0.0,0.0,0.0:l=2'
+  proj(4)      = 'f=0.25,0.25,0.25:l=0'
+  proj(5)      = 'f=0.25,0.25,0.25:l=1'
+  proj(6)      = 'f=0.25,0.25,0.25:l=2'
+  proj(7)      = 'f=0.5,0.5,0.5:l=0'
+  proj(8)      = 'f=0.5,0.5,0.5:l=1'
+  dis_win_min  = 4.5
+  dis_win_max  = 33.0
+  dis_froz_min = 4.5
+  dis_froz_max = 17.0
+
+  efermi_read  = .true.
+  fermi_energy = 17.2377
+  temps        = 300
+  degaussw     = 0.025
+
+  nk1 = 8
+  nk2 = 8
+  nk3 = 8
+  nq1 = 1
+  nq2 = 1
+  nq3 = 1
+  nqf1 = 1
+  nqf2 = 1
+  nqf3 = 1
+  nkf1 = 8
+  nkf2 = 8
+  nkf3 = 8
+/

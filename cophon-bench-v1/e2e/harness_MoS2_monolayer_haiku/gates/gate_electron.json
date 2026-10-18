@@ -1,0 +1,110 @@
+{
+  "checks": [
+    {
+      "limit": true,
+      "name": "scf_converged",
+      "pass": true,
+      "value": true
+    },
+    {
+      "limit": true,
+      "name": "nscf_job_done",
+      "pass": true,
+      "value": true
+    },
+    {
+      "limit": [],
+      "name": "nscf_no_fatal_markers",
+      "pass": true,
+      "value": []
+    },
+    {
+      "limit": 0,
+      "name": "nscf_unconverged_eigenvalues",
+      "pass": true,
+      "value": 0
+    },
+    {
+      "limit": 144,
+      "name": "nscf_k_points",
+      "pass": true,
+      "value": 144
+    },
+    {
+      "limit": 33,
+      "name": "nscf_nbnd",
+      "pass": true,
+      "value": 33
+    },
+    {
+      "limit": true,
+      "name": "nscf_scalar",
+      "pass": true,
+      "value": true
+    },
+    {
+      "limit": true,
+      "name": "dft_band_finite",
+      "pass": true,
+      "value": true
+    },
+    {
+      "limit": 33,
+      "name": "dft_band_nbnd",
+      "pass": true,
+      "value": 33
+    },
+    {
+      "limit": 274,
+      "name": "dft_band_nks",
+      "pass": true,
+      "value": 274
+    },
+    {
+      "limit": "cbm > vbm",
+      "name": "dft_band_insulating_at_occupied_index",
+      "pass": true,
+      "value": {
+        "cbm": -4.277,
+        "occupied": 13,
+        "vbm": -5.934
+      }
+    },
+    {
+      "limit": "equal",
+      "name": "fft_grid_consistent",
+      "pass": true,
+      "value": {
+        "nscf": [
+          36,
+          36,
+          200
+        ],
+        "scf": [
+          36,
+          36,
+          200
+        ]
+      }
+    },
+    {
+      "limit": "PASSED by this stage's job",
+      "name": "electron_job_passed",
+      "pass": true,
+      "value": {
+        "job_id": "22865525",
+        "state": "PASSED",
+        "wall_stop": false
+      }
+    }
+  ],
+  "code": {
+    "manifest_sha256": "38fbfe4df2f3f17ab614ee68c189c8ee7770591b33e88bc079b01c6b0daebcfc",
+    "package": "kernel_pipeline",
+    "rules_sha256": "1885bf0303112ce03a6fc33fe1c50b31c05c71cbd5d96199b9ce7e0e0fc77891",
+    "sealed_at": "2026-10-15T10:57:19+02:00",
+    "version": "v2.0.13"
+  },
+  "status": "PASS",
+  "time": "2026-10-15T11:49:35+02:00"
+}

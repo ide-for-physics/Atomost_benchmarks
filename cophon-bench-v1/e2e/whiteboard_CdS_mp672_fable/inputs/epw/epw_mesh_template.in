@@ -1,0 +1,69 @@
+--
+&inputepw
+  prefix      = 'cds'
+  amass(1)    = 112.414
+  amass(2)    = 32.06
+  outdir      = './'
+  dvscf_dir   = '../ph/save'
+
+  elph        = .true.
+  epbwrite    = .false.
+  epbread     = .false.
+  epwwrite    = .false.
+  epwread     = .true.
+  etf_mem     = 1
+
+  nbndsub     = 26
+  bands_skipped = 'exclude_bands = 1-8'
+
+  wannierize  = .false.
+  num_iter    = 1000
+  iprint      = 2
+  dis_win_min = -6.0
+  dis_win_max = 20.0
+  dis_froz_min = -6.0
+  dis_froz_max = 13.6
+  proj(1)     = 'Cd:s;p;d'
+  proj(2)     = 'S:s;p'
+  wdata(1)    = 'dis_num_iter = 2000'
+  wdata(2)    = 'bands_plot = .true.'
+  wdata(3)    = 'begin kpoint_path'
+  wdata(4)    = 'G 0.000000 0.000000 0.000000 M 0.500000 0.000000 0.000000'
+  wdata(5)    = 'M 0.500000 0.000000 0.000000 K 0.333333 0.333333 0.000000'
+  wdata(6)    = 'K 0.333333 0.333333 0.000000 G 0.000000 0.000000 0.000000'
+  wdata(7)    = 'G 0.000000 0.000000 0.000000 A 0.000000 0.000000 0.500000'
+  wdata(8)    = 'A 0.000000 0.000000 0.500000 L 0.500000 0.000000 0.500000'
+  wdata(9)    = 'L 0.500000 0.000000 0.500000 H 0.333333 0.333333 0.500000'
+  wdata(10)    = 'H 0.333333 0.333333 0.500000 A 0.000000 0.000000 0.500000'
+  wdata(11)   = 'end kpoint_path'
+  wdata(12)   = 'bands_num_points = 30'
+  wdata(13)   = 'guiding_centres = .true.'
+  wdata(14)   = 'write_hr = .true.'
+  wdata(15)   = 'conv_tol = 1e-10'
+  wdata(16)   = 'dis_conv_tol = 1e-10'
+
+  vme         = 'wannier'
+  lpolar      = .false.
+  asr_typ     = 'crystal'
+  eps_acoustic = 5.0
+
+  elecselfen  = .false.
+  phonselfen  = .false.
+  a2f         = .false.
+
+  lindabs     = .true.
+  omegamin    = 0.01
+  omegamax    = 6.00
+  omegastep   = 0.01
+  degaussw    = 0.025
+  fsthick     = 100.0
+  efermi_read = .true.
+  fermi_energy = 7.69
+  temps       = 300
+
+  nk1 = 9, nk2 = 9, nk3 = 6
+  nq1 = 1, nq2 = 1, nq3 = 1
+  nkf1 = NK1, nkf2 = NK2, nkf3 = NK3
+  nqf1 = 1, nqf2 = 1, nqf3 = 1
+  mp_mesh_k = .false.
+ /

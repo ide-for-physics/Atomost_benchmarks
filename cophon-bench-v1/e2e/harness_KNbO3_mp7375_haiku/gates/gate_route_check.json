@@ -1,0 +1,18 @@
+{
+  "br_max": 1.2049697818502638,
+  "compared_up_to_ev": 5.8,
+  "diag_over_offdiag_other": 3.444527382928143,
+  "diag_over_offdiag_production": 3.493898261121183,
+  "envelope_rel_l2": 0.08620354250092387,
+  "invariant_peak_other": 46.74765639887901,
+  "invariant_peak_production": 50.03603333167033,
+  "limit": 0.05,
+  "mesh": 48,
+  "other_route": "wannier",
+  "production_route": "dipole",
+  "reading": "routes differ, but b.r_max = 1.20 > 0.5: the 'wannier' route carries an origin-dependent error of about 24 % for this cell; comparison uninformative",
+  "status": "NOTE",
+  "tag": "k48_eta030",
+  "tensor_rel_diff": 0.08951195620764132,
+  "time": "2026-10-15T20:28:28+02:00"
+}

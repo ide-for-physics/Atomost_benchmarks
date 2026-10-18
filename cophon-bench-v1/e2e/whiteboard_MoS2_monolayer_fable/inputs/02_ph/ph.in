@@ -1,0 +1,11 @@
+phonons of MoS2 monolayer at Gamma (1x1x1 q grid), DFPT
+&inputph
+  prefix   = 'mos2'
+  outdir   = '../01_scf/tmp'
+  fildyn   = 'mos2.dyn'
+  fildvscf = 'dvscf'
+  tr2_ph   = 1.0d-16
+  ldisp    = .true.
+  nq1 = 1, nq2 = 1, nq3 = 1
+  epsil    = .true.
+/

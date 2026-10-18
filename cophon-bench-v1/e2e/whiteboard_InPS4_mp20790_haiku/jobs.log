@@ -1,0 +1,21 @@
+# jobs.log: one line per Slurm job of this project (project_<id>, InPS4_mp20790)
+# job id | purpose | partition | nodes x hours
+22887408 | SCF attempt 1 - failed at launch (environment not set); no science | debug | 1 x 0.001
+22887423 | SCF attempt 2 - failed at launch (PATH); no science | debug | 1 x 0.001
+22887425 | SCF 6x6x6, 80 Ry, 40 bands, forces+stress: converged (12 iterations) | debug | 1 x 0.004
+22887429 | ph.x ldisp 3x3x3 (6 irreducible q), tr2_ph 1e-16: DFPT phonons | small | 1 x 2.385
+22887430 | pw.x NSCF explicit 216-point full grid (nosym): Wannier input | small | 1 x 0.005
+22887493 | pw.x bands 83-point path: DFT reference for Wannier comparison | small | 1 x 0.004
+22888980 | EPW kernel 48^3 attempt 1 - failed (dyn/dvscf names) | small | 1 x 0.033
+22889063 | EPW kernel 48^3 attempt 2 - failed (dvscf names) | small | 1 x 0.035
+22889102 | EPW kernel 48^3 attempt 3 - failed (dyn_q index / wrong q order, 3x3x3 q-grid) | small | 1 x 0.138
+22889221 | EPW kernel 48^3 Gamma-only, frozen window to 8 eV - superseded | small | 1 x 0.417
+22889700 | EPW band plot - cancelled (wrong working directory) | small | 1 x 0.001
+22889702 | EPW band plot - no band.eig (wrong working directory) | small | 1 x 0.001
+22889745 | EPW band plot relative paths - no band.eig written | small | 1 x 0.033
+22889812 | EPW wannierization with frozen window -1.0..12.9 eV (band check) | small | 1 x 0.031
+22889837 | EPW kernel 48^3 Gamma-only, frozen -1.0..12.9 eV (convergence point) | small | 1 x 0.415
+22889838 | EPW kernel 96^3 Gamma-only - out of memory (128 ranks/node) | small | 1 x 0.142
+22890852 | EPW kernel 72^3 Gamma-only, 1 node - out of memory | small | 1 x 0.060
+22890934 | EPW kernel 72^3 Gamma-only, 2 nodes, 256 pools - ADOPTED converged mesh | small | 2 x 0.854
+# total node-hours (sum nodes x hours) = 5.41

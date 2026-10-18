@@ -1,0 +1,111 @@
+{
+ "schema": "cophon-bench.e.grade.v1",
+ "material": "KNbO3_mp7375",
+ "arm": "KNbO3_mp7375_e2eH",
+ "kernel_file": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/KNbO3_mp7375_e2eH/results/kernel_k48/Gamma_alphabeta_s.dat",
+ "kernel_sha256": "dba5770633d65d5c8cb327c5e37e7897670526a53a94b2dbe60d16b867fe17e5",
+ "arm_peaks": [
+  {
+   "photon_ev": 3.69,
+   "invariant_a2_per_ev": 50.036,
+   "mode_group": {
+    "modes": [
+     9
+    ],
+    "phonon_mev": 30.1954,
+    "thz": 7.3012,
+    "share_of_invariant": 0.8915
+   }
+  },
+  {
+   "photon_ev": 3.36,
+   "invariant_a2_per_ev": 48.3004,
+   "mode_group": {
+    "modes": [
+     9
+    ],
+    "phonon_mev": 30.1954,
+    "thz": 7.3012,
+    "share_of_invariant": 0.8608
+   }
+  }
+ ],
+ "baseline_peaks": [
+  {
+   "photon_ev": 3.63,
+   "invariant_a2_per_ev": 50.7252,
+   "mode_group": {
+    "modes": [
+     9
+    ],
+    "phonon_mev": 29.428,
+    "thz": 7.1156,
+    "share_of_invariant": 0.8927
+   }
+  },
+  {
+   "photon_ev": 3.96,
+   "invariant_a2_per_ev": 45.5991,
+   "mode_group": {
+    "modes": [
+     9
+    ],
+    "phonon_mev": 29.428,
+    "thz": 7.1156,
+    "share_of_invariant": 0.8883
+   }
+  }
+ ],
+ "matched_baseline_peak": 0,
+ "position_ok": true,
+ "height_rel": -0.0136,
+ "height_ok": true,
+ "mode_rel": 0.0261,
+ "mode_ok": true,
+ "same_answer": true,
+ "second_peak": {
+  "arm_second_ev": 3.36,
+  "baseline_other_ev": 3.96,
+  "within_tol": false
+ },
+ "spectrum": {
+  "max_abs_dev_over_baseline_max": 0.2599,
+  "rel_l2": 0.0757
+ },
+ "self_report": {
+  "peak_ev": null,
+  "peak_a2_per_ev": null,
+  "mode_thz": null,
+  "dev_peak_ev": null,
+  "dev_height_rel": null,
+  "dev_mode_rel": null
+ },
+ "cell_check": {
+  "arm_abc": [
+   4.00502,
+   4.00502,
+   4.00502
+  ],
+  "baseline_abc": [
+   4.00502,
+   4.00502,
+   4.00502
+  ],
+  "dev_percent": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "within_1pct": true
+ },
+ "costs": {
+  "node_hours": null,
+  "wall_hours": null,
+  "model_usd": null,
+  "human_touches": null,
+  "mesh": null,
+  "wannier_rounds": null,
+  "model": null
+ },
+ "verdict": "same answer"
+}

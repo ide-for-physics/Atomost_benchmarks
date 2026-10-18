@@ -1,0 +1,14 @@
+# jobid | purpose | partition | nodes x hours (elapsed; shared jobs counted as cores/128) | node-hours
+22926969 | job A fallback on small (cancelled while pending, never ran) | small | 0 | 0.0000
+22927057 | job A: fixed-cell relax + SCF (12x12x1, 90 Ry) | debug | 1 x 0.0036 h (13 s) | 0.0036
+22927068 | job BC: ph.x at Gamma (DFPT, epsil) + dynmat.x + bands path + NSCF 12x12x1 (40 bands) | debug | 1 x 0.0511 h (3:04) | 0.0511
+22927108 | job D: EPW Wannierization (11 WFs Mo-d+S-p), coarse g, epwwrite, band_plot on G-M-K-G | debug | 1 x 0.0317 h (1:54, 48 ranks, counted as a full node) | 0.0317
+22927149 | job E (1st try): kernel meshes 48/96/144/192 — failed at once (wrong relative outdir path, MPI_FILE_OPEN) | debug | 1 x 0.0033 h (12 s) | 0.0033
+22927158 | job E resubmission with still-unfixed input, cancelled before it ran | debug | 0 | 0.0000
+22927159 | job E: kernel (11-WF model) on fine meshes 48, 96, 144, 192 (x1), sequential | debug | 1 x 0.0583 h (3:30) | 0.0583
+22927219 | job E: kernel (11-WF model) on fine mesh 288x288x1 | debug | 1 x 0.0656 h (3:56) | 0.0656
+22927244 | job F (1st try): stage-2 SCDM Wannierization — stopped in readin (auto_projections missing) | debug | 1 x 0.0061 h (22 s) | 0.0061
+22927253 | job E: kernel (11-WF model) on fine mesh 384x384x1 | debug | 1 x 0.1100 h (6:36) | 0.1100
+22927321 | job F: stage-2 SCDM 20-WF Wannierization + band_plot (sensitivity test; not adopted) | debug | 1 x 0.0850 h (5:06) | 0.0850
+22927417 | job G: kernel with the SCDM 20-WF model, 96x96x1 (sensitivity test only) | debug | 1 x 0.0333 h (2:00) | 0.0333
+22927444 | job H: 15-projection (Mo s,p,d + S p) Wannierization test + band_plot (not adopted) | debug | 1 x 0.0639 h (3:50) | 0.0639

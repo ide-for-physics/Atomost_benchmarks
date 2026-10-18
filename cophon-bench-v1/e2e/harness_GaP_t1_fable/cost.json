@@ -1,0 +1,305 @@
+{
+  "agent": {
+    "by_agent": {},
+    "rule": "sessions started in this repo, turns after the material entered the workflow, attributed to the material named in the tool call (sticky until another material is named); code-editing turns excluded (Machine B)",
+    "sessions": [],
+    "tokens": {},
+    "unpriced_models": [],
+    "usd": 0.0
+  },
+  "compute": {
+    "by_stage": {
+      "electron": {
+        "clean_node_seconds": 53,
+        "core_hours": 1.884,
+        "jobs": 1,
+        "node_seconds": 53
+      },
+      "epw1": {
+        "clean_node_seconds": 235,
+        "core_hours": 8.356,
+        "jobs": 1,
+        "node_seconds": 235
+      },
+      "kernel": {
+        "clean_node_seconds": 1549,
+        "core_hours": 55.076,
+        "jobs": 5,
+        "node_seconds": 1549
+      },
+      "phonon": {
+        "clean_node_seconds": 33,
+        "core_hours": 1.173,
+        "jobs": 1,
+        "node_seconds": 33
+      },
+      "relax": {
+        "clean_node_seconds": 9,
+        "core_hours": 0.32,
+        "jobs": 1,
+        "node_seconds": 9
+      },
+      "superset": {
+        "clean_node_seconds": 143,
+        "core_hours": 5.084,
+        "jobs": 1,
+        "node_seconds": 143
+      },
+      "wannier": {
+        "clean_node_seconds": 205,
+        "core_hours": 7.289,
+        "jobs": 1,
+        "node_seconds": 205
+      }
+    },
+    "core_hours_per_node_hour": 128.0,
+    "jobs": [
+      {
+        "class": "clean",
+        "core_hours": 0.32,
+        "elapsed_s": 9,
+        "energy_kwh": 0.0004,
+        "job": "22861581",
+        "name": "GaP_t1_e2eF_relax",
+        "node_seconds": 9,
+        "nodes": 1,
+        "partition": "debug",
+        "stage": "relax",
+        "state": "COMPLETED",
+        "time": "2026-10-15T10:14:58+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.0125
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 1.884,
+        "elapsed_s": 53,
+        "energy_kwh": 0.005,
+        "job": "22862264",
+        "name": "GaP_t1_e2eF_electron",
+        "node_seconds": 53,
+        "nodes": 1,
+        "partition": "debug",
+        "stage": "electron",
+        "state": "COMPLETED",
+        "time": "2026-10-15T10:26:38+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.0736
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 5.084,
+        "elapsed_s": 143,
+        "energy_kwh": 0.0209,
+        "job": "22862375",
+        "name": "GaP_t1_e2eF_superset",
+        "node_seconds": 143,
+        "nodes": 1,
+        "partition": "small",
+        "stage": "superset",
+        "state": "COMPLETED",
+        "time": "2026-10-15T10:29:54+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.1986
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 1.173,
+        "elapsed_s": 33,
+        "energy_kwh": 0.004,
+        "job": "22862521",
+        "name": "GaP_t1_e2eF_phonon",
+        "node_seconds": 33,
+        "nodes": 1,
+        "partition": "debug",
+        "stage": "phonon",
+        "state": "COMPLETED",
+        "time": "2026-10-15T10:31:37+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.0458
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 7.289,
+        "elapsed_s": 205,
+        "energy_kwh": 0.0284,
+        "job": "22862936",
+        "name": "GaP_t1_e2eF_wannier_r1",
+        "node_seconds": 205,
+        "nodes": 1,
+        "partition": "small",
+        "stage": "wannier",
+        "state": "COMPLETED",
+        "time": "2026-10-15T10:39:35+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.2847
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 8.356,
+        "elapsed_s": 235,
+        "energy_kwh": 0.0336,
+        "job": "22863372",
+        "name": "GaP_t1_e2eF_epw1",
+        "node_seconds": 235,
+        "nodes": 1,
+        "partition": "small",
+        "stage": "epw1",
+        "state": "COMPLETED",
+        "time": "2026-10-15T10:50:27+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.3264
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 3.236,
+        "elapsed_s": 91,
+        "energy_kwh": 0.015,
+        "job": "22867957",
+        "name": "GaP_t1_e2eF_kernel",
+        "node_seconds": 91,
+        "nodes": 1,
+        "partition": "debug",
+        "stage": "kernel",
+        "state": "COMPLETED",
+        "time": "2026-10-15T12:22:30+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.1264
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 6.009,
+        "elapsed_s": 169,
+        "energy_kwh": 0.0302,
+        "job": "22868062",
+        "name": "GaP_t1_e2eF_kernel",
+        "node_seconds": 169,
+        "nodes": 1,
+        "partition": "debug",
+        "stage": "kernel",
+        "state": "COMPLETED",
+        "time": "2026-10-15T12:25:44+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.2347
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 10.667,
+        "elapsed_s": 300,
+        "energy_kwh": 0.0542,
+        "job": "22868530",
+        "name": "GaP_t1_e2eF_kernel",
+        "node_seconds": 300,
+        "nodes": 1,
+        "partition": "debug",
+        "stage": "kernel",
+        "state": "COMPLETED",
+        "time": "2026-10-15T12:33:44+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.4167
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 17.529,
+        "elapsed_s": 493,
+        "energy_kwh": 0.0892,
+        "job": "22869174",
+        "name": "GaP_t1_e2eF_kernel",
+        "node_seconds": 493,
+        "nodes": 1,
+        "partition": "debug",
+        "stage": "kernel",
+        "state": "COMPLETED",
+        "time": "2026-10-15T12:41:33+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.6847
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 17.636,
+        "elapsed_s": 496,
+        "energy_kwh": 0.0916,
+        "job": "22869824",
+        "name": "GaP_t1_e2eF_kernel",
+        "node_seconds": 496,
+        "nodes": 1,
+        "partition": "debug",
+        "stage": "kernel",
+        "state": "COMPLETED",
+        "time": "2026-10-15T12:52:23+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.6889
+        }
+      }
+    ],
+    "missing_in_accounting": [],
+    "scenario": "commercial",
+    "totals": {
+      "all": {
+        "core_hours": 79.182,
+        "energy_kwh": 0.372,
+        "jobs": 11,
+        "node_seconds": 2227,
+        "usd": 3.093
+      },
+      "clean": {
+        "core_hours": 79.182,
+        "energy_kwh": 0.372,
+        "jobs": 11,
+        "node_seconds": 2227,
+        "usd": 3.093
+      }
+    },
+    "unit": "node-seconds; core_hours = node_seconds/3600 x core_hours_per_node_hour",
+    "usd_per_node_hour": 5.0
+  },
+  "currency": "USD",
+  "generated": "2026-10-15T13:07:40+02:00",
+  "human_assumed": {
+    "minutes": 20,
+    "usd": 26.67,
+    "usd_per_hour": 80.0
+  },
+  "material": "GaP_t1_e2eF",
+  "rates_version": "2026-09-19",
+  "storage": {
+    "bank_gb": 0.176,
+    "bank_path": "/projappl/project_<id>/<user>/cphon_bank/GaP_t1_e2eF/epw1_22863372",
+    "local_gb": 0.026,
+    "usd_per_gb_month": 0.02,
+    "usd_per_month": 0.004
+  },
+  "summary": {
+    "agent_usd": 0.0,
+    "compute_core_hours_all": 79.2,
+    "compute_core_hours_clean": 79.2,
+    "compute_node_hours_all": 0.619,
+    "compute_node_hours_clean": 0.619,
+    "compute_usd_all": 3.09,
+    "compute_usd_clean": 3.09,
+    "storage_usd_per_month": 0.004,
+    "unit_cost_note": "compute (all jobs) + operating-agent tokens + one month of storage; human review shown separately as assumed",
+    "unit_cost_usd": 3.1
+  }
+}

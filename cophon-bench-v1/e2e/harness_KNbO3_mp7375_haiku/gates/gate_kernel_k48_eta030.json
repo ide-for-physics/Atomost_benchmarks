@@ -1,0 +1,109 @@
+{
+  "checks": [
+    {
+      "limit": "parseable",
+      "name": "kernel_parse",
+      "pass": true,
+      "value": "ok"
+    },
+    {
+      "limit": 12,
+      "name": "kernel_n_modes",
+      "pass": true,
+      "value": 12
+    },
+    {
+      "limit": 200,
+      "name": "kernel_n_omega",
+      "pass": true,
+      "value": 200
+    },
+    {
+      "limit": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "name": "kernel_mode_labels",
+      "pass": true,
+      "value": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "limit": true,
+      "name": "kernel_finite",
+      "pass": true,
+      "value": true
+    },
+    {
+      "limit": "> 0",
+      "name": "kernel_phonon_energies_positive",
+      "pass": true,
+      "value": [
+        22.8107504,
+        22.8111058,
+        23.148692,
+        25.9539902,
+        25.970094,
+        30.1954374,
+        30.5938591,
+        34.0575438,
+        34.1048983,
+        64.7151022,
+        64.7519951,
+        71.6128586
+      ]
+    },
+    {
+      "limit": [
+        0.03,
+        6.0,
+        0.03
+      ],
+      "name": "kernel_photon_grid",
+      "pass": true,
+      "value": [
+        0.03,
+        6.0,
+        0.030000000000000027
+      ]
+    }
+  ],
+  "code": {
+    "manifest_sha256": "38fbfe4df2f3f17ab614ee68c189c8ee7770591b33e88bc079b01c6b0daebcfc",
+    "package": "kernel_pipeline",
+    "rules_sha256": "1885bf0303112ce03a6fc33fe1c50b31c05c71cbd5d96199b9ce7e0e0fc77891",
+    "sealed_at": "2026-10-15T10:57:19+02:00",
+    "version": "v2.0.13"
+  },
+  "status": "PASS",
+  "tag": "k48_eta030",
+  "time": "2026-10-15T20:28:28+02:00",
+  "variant": {
+    "degaussw": 0.03,
+    "mesh": 48,
+    "purpose": "route_check",
+    "vme": "wannier"
+  }
+}

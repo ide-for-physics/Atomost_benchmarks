@@ -1,0 +1,3 @@
+&input
+ fildyn="bi2o2se.dyn", zasr="crystal", flfrc="ifc.q2r", la2F=.false.
+/

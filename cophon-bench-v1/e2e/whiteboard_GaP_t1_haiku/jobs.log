@@ -1,0 +1,17 @@
+22864746 | SCF 8x8x8, 80 Ry (pw.x) | small | 1 node (64 of 128 cores) x 0.002 h = 0.0010 node-h
+22865010 | DFPT ph.x ldisp 4x4x4 (no dvscf) + NSCF 8x8x8 nbnd 20 (irreducible) | small | 1 node (64 of 128 cores) x 0.209 h = 0.1043 node-h
+22866574 | EPW 48^3 attempt 1 (namelist error: nbndskip) | small | 1 node (64 of 128 cores) x 0.001 h = 0.0006 node-h
+22866630 | EPW 48^3 attempt 2 (k-grid check: mp_mesh_k) | small | 1 node (64 of 128 cores) x 0.001 h = 0.0006 node-h
+22866897 | EPW 48^3 attempt 3 (nscf/elph k-grid: need full grid) | small | 1 node (64 of 128 cores) x 0.002 h = 0.0010 node-h
+22866979 | NSCF 8x8x8 full grid nosym (512 k) + EPW 48^3 (projection sp3s* error; cancelled) | small | 1 node (64 of 128 cores) x 0.509 h = 0.2543 node-h
+22869061 | EPW 48^3 (missing dvscf files) | small | 1 node (64 of 128 cores) x 0.033 h = 0.0164 node-h
+22869825 | SCF refresh + DFPT ph.x ldisp 4x4x4 with fildvscf + NSCF full grid 8x8x8 | small | 1 node (64 of 128 cores) x 0.169 h = 0.0844 node-h
+22870829 | EPW 48^3 (dyn_q reader failure) | small | 1 node (64 of 128 cores) x 0.049 h = 0.0243 node-h
+22871447 | EPW 48^3 (production, lindabs, 0-6 eV) -> kernel 48^3 | small | 1 node (64 of 128 cores) x 0.135 h = 0.0674 node-h
+22872306 | EPW 96^3 attempt 1 (ukk missing) | small | 1 node (64 of 128 cores) x 0.001 h = 0.0007 node-h
+22872321 | DFT band path attempt 1 (pseudo path) | small | 1 node (64 of 128 cores) x 0.001 h = 0.0007 node-h
+22872461 | DFT band path (SCF + bands 151 k) + pw2wannier90 attempt | small | 1 node (64 of 128 cores) x 0.003 h = 0.0015 node-h
+22872463 | EPW 96^3 (production, epwread) -> kernel 96^3 | small | 1 node (64 of 128 cores) x 0.185 h = 0.0926 node-h
+22872796 | pw2wannier90 eig + wannier90 band plot attempt (login node part also run) | small | 1 node (64 of 128 cores) x 0.001 h = 0.0006 node-h
+22873069 | EPW 128^3 attempt 1 (OOM on one node) | small | 1 node (64 of 128 cores) x 0.008 h = 0.0039 node-h
+22873912 | EPW 128^3 two-node attempt (pending on priority, cancelled before start) | small | 0 h

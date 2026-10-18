@@ -1,0 +1,13 @@
+phonons on a 3x3x3 q-grid (Gamma included), Gamma dynmat and dvscf for EPW
+&inputph
+  prefix = 'inps4'
+  outdir = '/scratch/project_<id>/<user>/theory2code/cphon/bench_whiteboard_v1/InPS4_mp20790/tmp'
+  fildyn = 'inps4.dyn'
+  fildvscf = 'dvscf'
+  tr2_ph = 1.0d-16
+  ldisp = .true.
+  nq1 = 3
+  nq2 = 3
+  nq3 = 3
+  verbosity = 'high'
+/

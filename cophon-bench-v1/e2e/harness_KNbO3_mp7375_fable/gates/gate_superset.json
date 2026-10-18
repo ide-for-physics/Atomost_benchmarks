@@ -1,0 +1,54 @@
+{
+  "checks": [
+    {
+      "limit": "COMPLETED and PASSED",
+      "name": "superset_job_passed",
+      "pass": true,
+      "value": {
+        "state": "COMPLETED",
+        "status_file": true
+      }
+    },
+    {
+      "limit": "file",
+      "name": "projectability_present",
+      "pass": true,
+      "value": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/KNbO3_mp7375_e2eF/results/superset_proj.json"
+    },
+    {
+      "limit": 39,
+      "name": "projectability_bands",
+      "pass": true,
+      "value": 39
+    },
+    {
+      "limit": 28,
+      "name": "projectability_columns",
+      "pass": true,
+      "value": 28
+    }
+  ],
+  "code": {
+    "manifest_sha256": "38fbfe4df2f3f17ab614ee68c189c8ee7770591b33e88bc079b01c6b0daebcfc",
+    "package": "kernel_pipeline",
+    "rules_sha256": "1885bf0303112ce03a6fc33fe1c50b31c05c71cbd5d96199b9ce7e0e0fc77891",
+    "sealed_at": "2026-10-15T10:57:19+02:00",
+    "version": "v2.0.13"
+  },
+  "extra": [
+    "f=0.0000,0.0000,0.5000:s",
+    "f=0.0000,0.5000,0.0000:s",
+    "f=0.5000,0.0000,0.0000:s"
+  ],
+  "num_wann": 28,
+  "status": "PASS",
+  "superset": [
+    "K:s;p",
+    "Nb:s;p;d",
+    "O:s;p",
+    "f=0.0000,0.0000,0.5000:s",
+    "f=0.0000,0.5000,0.0000:s",
+    "f=0.5000,0.0000,0.0000:s"
+  ],
+  "time": "2026-10-15T11:57:21+02:00"
+}

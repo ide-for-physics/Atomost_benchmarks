@@ -1,0 +1,263 @@
+{
+  "agent": {
+    "by_agent": {},
+    "rule": "sessions started in this repo, turns after the material entered the workflow, attributed to the material named in the tool call (sticky until another material is named); code-editing turns excluded (Machine B)",
+    "sessions": [],
+    "tokens": {},
+    "unpriced_models": [],
+    "usd": 0.0
+  },
+  "compute": {
+    "by_stage": {
+      "electron": {
+        "clean_node_seconds": 67,
+        "core_hours": 2.382,
+        "jobs": 1,
+        "node_seconds": 67
+      },
+      "epw1": {
+        "clean_node_seconds": 524,
+        "core_hours": 18.631,
+        "jobs": 1,
+        "node_seconds": 524
+      },
+      "kernel": {
+        "clean_node_seconds": 3184,
+        "core_hours": 113.209,
+        "jobs": 4,
+        "node_seconds": 3184
+      },
+      "phonon": {
+        "clean_node_seconds": 55,
+        "core_hours": 1.956,
+        "jobs": 1,
+        "node_seconds": 55
+      },
+      "superset": {
+        "clean_node_seconds": 98,
+        "core_hours": 3.484,
+        "jobs": 1,
+        "node_seconds": 98
+      },
+      "wannier": {
+        "clean_node_seconds": 482,
+        "core_hours": 17.138,
+        "jobs": 1,
+        "node_seconds": 482
+      }
+    },
+    "core_hours_per_node_hour": 128.0,
+    "jobs": [
+      {
+        "class": "clean",
+        "core_hours": 2.382,
+        "elapsed_s": 67,
+        "energy_kwh": 0.0068,
+        "job": "22865101",
+        "name": "SnS2_mp1170_e2eF_electron",
+        "node_seconds": 67,
+        "nodes": 1,
+        "partition": "small",
+        "stage": "electron",
+        "state": "COMPLETED",
+        "time": "2026-10-15T11:38:23+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.0931
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 3.484,
+        "elapsed_s": 98,
+        "energy_kwh": 0.0174,
+        "job": "22866088",
+        "name": "SnS2_mp1170_e2eF_superset",
+        "node_seconds": 98,
+        "nodes": 1,
+        "partition": "small",
+        "stage": "superset",
+        "state": "COMPLETED",
+        "time": "2026-10-15T11:53:47+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.1361
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 1.956,
+        "elapsed_s": 55,
+        "energy_kwh": 0.0079,
+        "job": "22868009",
+        "name": "SnS2_mp1170_e2eF_phonon",
+        "node_seconds": 55,
+        "nodes": 1,
+        "partition": "debug",
+        "stage": "phonon",
+        "state": "COMPLETED",
+        "time": "2026-10-15T12:24:30+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.0764
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 17.138,
+        "elapsed_s": 482,
+        "energy_kwh": 0.0948,
+        "job": "22868075",
+        "name": "SnS2_mp1170_e2eF_wannier_r1",
+        "node_seconds": 482,
+        "nodes": 1,
+        "partition": "small",
+        "stage": "wannier",
+        "state": "COMPLETED",
+        "time": "2026-10-15T12:26:13+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.6694
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 18.631,
+        "elapsed_s": 524,
+        "energy_kwh": 0.0843,
+        "job": "22869491",
+        "name": "SnS2_mp1170_e2eF_epw1",
+        "node_seconds": 524,
+        "nodes": 1,
+        "partition": "small",
+        "stage": "epw1",
+        "state": "COMPLETED",
+        "time": "2026-10-15T12:46:22+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.7278
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 11.342,
+        "elapsed_s": 319,
+        "energy_kwh": 0.0575,
+        "job": "22870998",
+        "name": "SnS2_mp1170_e2eF_kernel",
+        "node_seconds": 319,
+        "nodes": 1,
+        "partition": "debug",
+        "stage": "kernel",
+        "state": "COMPLETED",
+        "time": "2026-10-15T13:11:20+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.4431
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 17.884,
+        "elapsed_s": 503,
+        "energy_kwh": 0.0945,
+        "job": "22871394",
+        "name": "SnS2_mp1170_e2eF_kernel",
+        "node_seconds": 503,
+        "nodes": 1,
+        "partition": "debug",
+        "stage": "kernel",
+        "state": "COMPLETED",
+        "time": "2026-10-15T13:22:22+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.6986
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 41.849,
+        "elapsed_s": 1177,
+        "energy_kwh": 0.2209,
+        "job": "22871749",
+        "name": "SnS2_mp1170_e2eF_kernel",
+        "node_seconds": 1177,
+        "nodes": 1,
+        "partition": "small",
+        "stage": "kernel",
+        "state": "COMPLETED",
+        "time": "2026-10-15T13:33:12+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 1.6347
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 42.133,
+        "elapsed_s": 1185,
+        "energy_kwh": 0.2434,
+        "job": "22872838",
+        "name": "SnS2_mp1170_e2eF_kernel",
+        "node_seconds": 1185,
+        "nodes": 1,
+        "partition": "small",
+        "stage": "kernel",
+        "state": "COMPLETED",
+        "time": "2026-10-15T14:05:20+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 1.6458
+        }
+      }
+    ],
+    "missing_in_accounting": [],
+    "scenario": "commercial",
+    "totals": {
+      "all": {
+        "core_hours": 156.8,
+        "energy_kwh": 0.828,
+        "jobs": 9,
+        "node_seconds": 4410,
+        "usd": 6.125
+      },
+      "clean": {
+        "core_hours": 156.8,
+        "energy_kwh": 0.828,
+        "jobs": 9,
+        "node_seconds": 4410,
+        "usd": 6.125
+      }
+    },
+    "unit": "node-seconds; core_hours = node_seconds/3600 x core_hours_per_node_hour",
+    "usd_per_node_hour": 5.0
+  },
+  "currency": "USD",
+  "generated": "2026-10-15T16:38:32+02:00",
+  "human_assumed": {
+    "minutes": 20,
+    "usd": 26.67,
+    "usd_per_hour": 80.0
+  },
+  "material": "SnS2_mp1170_e2eF",
+  "rates_version": "2026-09-19",
+  "storage": {
+    "bank_gb": 0.316,
+    "bank_path": "/projappl/project_<id>/<user>/cphon_bank/SnS2_mp1170_e2eF/epw1_22869491",
+    "local_gb": 0.033,
+    "usd_per_gb_month": 0.02,
+    "usd_per_month": 0.007
+  },
+  "summary": {
+    "agent_usd": 0.0,
+    "compute_core_hours_all": 156.8,
+    "compute_core_hours_clean": 156.8,
+    "compute_node_hours_all": 1.225,
+    "compute_node_hours_clean": 1.225,
+    "compute_usd_all": 6.12,
+    "compute_usd_clean": 6.12,
+    "storage_usd_per_month": 0.007,
+    "unit_cost_note": "compute (all jobs) + operating-agent tokens + one month of storage; human review shown separately as assumed",
+    "unit_cost_usd": 6.13
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "checks": [
+    {
+      "limit": "parseable",
+      "name": "kernel_parse",
+      "pass": true,
+      "value": "ok"
+    },
+    {
+      "limit": 3,
+      "name": "kernel_n_modes",
+      "pass": true,
+      "value": 3
+    },
+    {
+      "limit": 200,
+      "name": "kernel_n_omega",
+      "pass": true,
+      "value": 200
+    },
+    {
+      "limit": [
+        4,
+        5,
+        6
+      ],
+      "name": "kernel_mode_labels",
+      "pass": true,
+      "value": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "limit": true,
+      "name": "kernel_finite",
+      "pass": true,
+      "value": true
+    },
+    {
+      "limit": "> 0",
+      "name": "kernel_phonon_energies_positive",
+      "pass": true,
+      "value": [
+        44.5348619,
+        44.5348619,
+        44.5348619
+      ]
+    },
+    {
+      "limit": [
+        0.03,
+        6.0,
+        0.03
+      ],
+      "name": "kernel_photon_grid",
+      "pass": true,
+      "value": [
+        0.03,
+        6.0,
+        0.030000000000000027
+      ]
+    },
+    {
+      "limit": 0.1,
+      "name": "kernel_mode_energies_match_dfpt",
+      "pass": true,
+      "value": 0.0
+    },
+    {
+      "limit": 0.1,
+      "name": "kernel_silent_modes_share",
+      "pass": true,
+      "silent_modes": [],
+      "value": 0.0
+    }
+  ],
+  "code": {
+    "manifest_sha256": "e8050e6a9f5b3a0a7adc238b2ecb933202c3c2278ca8b031e317fe7ab418b09f",
+    "package": "kernel_pipeline",
+    "rules_sha256": "1885bf0303112ce03a6fc33fe1c50b31c05c71cbd5d96199b9ce7e0e0fc77891",
+    "sealed_at": "2026-10-15T09:12:51+02:00",
+    "version": "v2.0.12"
+  },
+  "convergence_vs_next": null,
+  "convergence_vs_previous": {
+    "abs_floor_pass": false,
+    "amplitude_invariant": {
+      "nrmse_by_finer_peak": 0.06147048016718061,
+      "pearson": 0.9674094137397223,
+      "relative_l2_vs_finer": 0.20030537532494852
+    },
+    "below_detection_floor": false,
+    "checks": [
+      {
+        "limit": 0.03,
+        "name": "envelope_rel_l2",
+        "pass": false,
+        "value": 0.05118654370239866
+      },
+      {
+        "limit": {
+          "abs_floor": 0.01,
+          "detection_floor": 0.5
+        },
+        "name": "envelope_abs_floor_reported",
+        "pass": true,
+        "value": {
+          "abs_floor_pass": false,
+          "below_detection_floor": false,
+          "envelope_peak_cur": 11.97955875757094,
+          "rms_diff_A2_per_eV": 0.25476017171886656
+        }
+      },
+      {
+        "limit": "report only",
+        "name": "envelope_rel_l2_raw_reported",
+        "pass": true,
+        "value": 0.19965936740394416
+      }
+    ],
+    "coarse_peak_eV": 2.91,
+    "compared_up_to_ev": 5.8,
+    "cur": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/GaP_t1_e2eH/results/kernel_k64/Gamma_alphabeta_s.dat",
+    "cur_sha256": "91993f43943b093cae70e1574b1ccb173403475541b8602ce5d04f97a2fc9737",
+    "diag_over_offdiag_cur": 0.010133779461626847,
+    "diag_over_offdiag_prev": 0.0158769271236412,
+    "edge_exclude_ev": 0.2,
+    "envelope_peak_cur": 11.97955875757094,
+    "envelope_peak_prev": 12.14685543887277,
+    "envelope_peak_shift_eV": 0.029999999999999805,
+    "gate": "envelope_convergence",
+    "limit": 0.03,
+    "nrmse_envelope": 0.021266240007200694,
+    "nrmse_raw": 0.06234822343483078,
+    "offdiag_channels": {
+      "nrmse_by_finer_peak": 0.0614836760116527,
+      "pearson": 0.9999948148209414,
+      "relative_l2_vs_finer": 0.2003539593033073
+    },
+    "peak_eV": 2.94,
+    "pearson_envelope": 0.9981657381891124,
+    "pearson_raw": 0.9671440810689982,
+    "prev": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/GaP_t1_e2eH/results/kernel_k48/Gamma_alphabeta_s.dat",
+    "prev_sha256": "45715b707270bf7aa5cb77672b2f3c270bf81381eaf913ad41b2c97e700eec02",
+    "raw_peak_cur": 16.514589773760484,
+    "raw_peak_eV_cur": 2.82,
+    "raw_peak_eV_prev": 2.88,
+    "raw_peak_prev": 16.14247183922811,
+    "reasons": [
+      "envelope rel-L2 0.0512 exceeds 0.03 and the RMS difference 0.2548 A^2/eV is above the absolute floor 0.01"
+    ],
+    "rel_l2_envelope": 0.05118654370239866,
+    "rel_l2_raw": 0.19965936740394416,
+    "rms_diff_envelope": 0.25476017171886656,
+    "sigma_ev": 0.1,
+    "status": "FAIL"
+  },
+  "mesh": 64,
+  "status": "PASS",
+  "time": "2026-10-15T12:47:13+02:00"
+}

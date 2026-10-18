@@ -1,0 +1,38 @@
+&inputepw
+  prefix      = 'sns2'
+  outdir      = '../tmp'
+  dvscf_dir   = '../save'
+  amass(1)    = 118.710
+  amass(2)    = 32.060
+  iverbosity  = 0
+
+  elph        = .true.
+  epwwrite    = .false.
+  epwread     = .true.
+  etf_mem     = 1
+  vme         = 'wannier'
+  lpolar      = .false.
+  asr_typ     = 'crystal'
+
+  nbndsub     = 17
+  bands_skipped = 'exclude_bands = 1-5'
+
+  wannierize  = .false.
+
+  elecselfen  = .false.
+  phonselfen  = .false.
+  a2f         = .false.
+
+  nk1 = 12, nk2 = 12, nk3 = 6
+  nq1 = 1,  nq2 = 1,  nq3 = 1
+  nqf1 = 1, nqf2 = 1, nqf3 = 1
+  nkf1 = 96, nkf2 = 96, nkf3 = 96
+
+  lindabs      = .true.
+  omegamin     = 0.1
+  omegamax     = 6.02
+  omegastep    = 0.02
+  degaussw     = 0.025
+  efermi_read  = .true.
+  fermi_energy = 7.4962
+ /

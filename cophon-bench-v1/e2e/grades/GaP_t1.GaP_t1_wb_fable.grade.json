@@ -1,0 +1,119 @@
+{
+ "schema": "cophon-bench.e.grade.v1",
+ "material": "GaP_t1",
+ "arm": "GaP_t1_wb_fable",
+ "kernel_file": "<whiteboard>/v1/GaP_t1_fable/kernel/Gamma_alphabeta_s.dat",
+ "kernel_sha256": "1f7ac8a67ab75d9fcb430d3591974ff542bf9a8c81e30b3347fb4deff115ea89",
+ "arm_peaks": [
+  {
+   "photon_ev": 2.82,
+   "invariant_a2_per_ev": 17.4273,
+   "mode_group": {
+    "modes": [
+     4,
+     5,
+     6
+    ],
+    "phonon_mev": 44.5434,
+    "thz": 10.7705,
+    "share_of_invariant": 1.0
+   }
+  },
+  {
+   "photon_ev": 3.14,
+   "invariant_a2_per_ev": 10.3405,
+   "mode_group": {
+    "modes": [
+     4,
+     5,
+     6
+    ],
+    "phonon_mev": 44.5434,
+    "thz": 10.7705,
+    "share_of_invariant": 1.0
+   }
+  }
+ ],
+ "baseline_peaks": [
+  {
+   "photon_ev": 2.82,
+   "invariant_a2_per_ev": 16.0315,
+   "mode_group": {
+    "modes": [
+     4,
+     5,
+     6
+    ],
+    "phonon_mev": 44.5351,
+    "thz": 10.7685,
+    "share_of_invariant": 1.0
+   }
+  },
+  {
+   "photon_ev": 3.21,
+   "invariant_a2_per_ev": 10.1975,
+   "mode_group": {
+    "modes": [
+     4,
+     5,
+     6
+    ],
+    "phonon_mev": 44.5351,
+    "thz": 10.7685,
+    "share_of_invariant": 1.0
+   }
+  }
+ ],
+ "matched_baseline_peak": 0,
+ "position_ok": true,
+ "height_rel": 0.0871,
+ "height_ok": true,
+ "mode_rel": 0.0002,
+ "mode_ok": true,
+ "same_answer": true,
+ "second_peak": {
+  "arm_second_ev": 3.14,
+  "baseline_other_ev": 3.21,
+  "within_tol": true
+ },
+ "spectrum": {
+  "max_abs_dev_over_baseline_max": 0.1042,
+  "rel_l2": 0.0783
+ },
+ "self_report": {
+  "peak_ev": 2.82,
+  "peak_a2_per_ev": 20.96021829857034,
+  "mode_thz": 10.7705,
+  "dev_peak_ev": 0.0,
+  "dev_height_rel": 0.2027,
+  "dev_mode_rel": 0.0
+ },
+ "cell_check": {
+  "arm_abc": [
+   3.85174,
+   3.85174,
+   3.85174
+  ],
+  "baseline_abc": [
+   3.85174,
+   3.85174,
+   3.85174
+  ],
+  "dev_percent": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "within_1pct": true
+ },
+ "costs": {
+  "node_hours": 5.18,
+  "wall_hours": 35.47,
+  "model_usd": null,
+  "human_touches": 0,
+  "mesh": "144x144x144",
+  "wannier_rounds": null,
+  "model": null
+ },
+ "verdict": "same answer"
+}

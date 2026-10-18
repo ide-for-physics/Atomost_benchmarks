@@ -1,0 +1,50 @@
+{
+  "checks": [
+    {
+      "limit": "COMPLETED and PASSED",
+      "name": "superset_job_passed",
+      "pass": true,
+      "value": {
+        "state": "COMPLETED",
+        "status_file": true
+      }
+    },
+    {
+      "limit": "file",
+      "name": "projectability_present",
+      "pass": true,
+      "value": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/InPS4_mp20790_e2eF/results/superset_proj.json"
+    },
+    {
+      "limit": 43,
+      "name": "projectability_bands",
+      "pass": true,
+      "value": 43
+    },
+    {
+      "limit": 25,
+      "name": "projectability_columns",
+      "pass": true,
+      "value": 25
+    }
+  ],
+  "code": {
+    "manifest_sha256": "38fbfe4df2f3f17ab614ee68c189c8ee7770591b33e88bc079b01c6b0daebcfc",
+    "package": "kernel_pipeline",
+    "rules_sha256": "1885bf0303112ce03a6fc33fe1c50b31c05c71cbd5d96199b9ce7e0e0fc77891",
+    "sealed_at": "2026-10-15T10:57:19+02:00",
+    "version": "v2.0.13"
+  },
+  "extra": [
+    "f=0.25,0.75,0.5:s"
+  ],
+  "num_wann": 25,
+  "status": "PASS",
+  "superset": [
+    "In:s;p",
+    "P:s;p",
+    "S:s;p",
+    "f=0.25,0.75,0.5:s"
+  ],
+  "time": "2026-10-15T12:02:44+02:00"
+}

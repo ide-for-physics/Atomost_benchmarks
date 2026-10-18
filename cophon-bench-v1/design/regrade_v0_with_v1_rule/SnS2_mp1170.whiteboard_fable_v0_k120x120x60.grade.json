@@ -1,0 +1,87 @@
+{
+ "schema": "cophon-bench.e.grade.v1",
+ "material": "SnS2_mp1170",
+ "arm": "whiteboard_fable_v0_k120x120x60",
+ "kernel_file": "<cophon>/benchmarks/cophon-bench-v0/results/e/whiteboard_SnS2/Gamma_alphabeta_s_k120x120x60.dat",
+ "kernel_sha256": "bce095194f468295ab08450e8e77503834d7f52f4b973aa96eba97f8ab563c94",
+ "arm_peaks": [
+  {
+   "photon_ev": 4.08,
+   "invariant_a2_per_ev": 54.1398,
+   "mode_group": {
+    "modes": [
+     8
+    ],
+    "phonon_mev": 38.0569,
+    "thz": 9.2021,
+    "share_of_invariant": 0.9927
+   }
+  },
+  {
+   "photon_ev": 6.0,
+   "invariant_a2_per_ev": 35.9625,
+   "mode_group": {
+    "modes": [
+     8
+    ],
+    "phonon_mev": 38.0569,
+    "thz": 9.2021,
+    "share_of_invariant": 0.8836
+   }
+  }
+ ],
+ "baseline_peaks": [
+  {
+   "photon_ev": 5.46,
+   "invariant_a2_per_ev": 47.092,
+   "mode_group": {
+    "modes": [
+     8
+    ],
+    "phonon_mev": 38.6483,
+    "thz": 9.3451,
+    "share_of_invariant": 0.8975
+   }
+  },
+  {
+   "photon_ev": 3.78,
+   "invariant_a2_per_ev": 43.162,
+   "mode_group": {
+    "modes": [
+     8
+    ],
+    "phonon_mev": 38.6483,
+    "thz": 9.3451,
+    "share_of_invariant": 0.9978
+   }
+  }
+ ],
+ "matched_baseline_peak": null,
+ "position_ok": false,
+ "height_rel": 0.1497,
+ "height_ok": false,
+ "mode_rel": -0.0153,
+ "mode_ok": true,
+ "same_answer": false,
+ "second_peak": {
+  "arm_second_ev": 6.0,
+  "baseline_other_ev": 3.78,
+  "within_tol": false
+ },
+ "spectrum": {
+  "max_abs_dev_over_baseline_max": 0.6385,
+  "rel_l2": 0.3619
+ },
+ "self_report": null,
+ "cell_check": null,
+ "costs": {
+  "node_hours": null,
+  "wall_hours": null,
+  "model_usd": null,
+  "human_touches": null,
+  "mesh": null,
+  "wannier_rounds": null,
+  "model": null
+ },
+ "verdict": "differs: position, height"
+}

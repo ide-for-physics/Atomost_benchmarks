@@ -1,0 +1,29 @@
+begin projections
+ Cd:s;p;d
+ S:s;p
+end projections
+ exclude_bands = 1-8                                                                                                                                                                                                                                             
+num_wann =  26
+iprint =   2
+dis_win_min =    -6.000000000000
+dis_win_max =    20.000000000000
+dis_froz_min =    -6.000000000000
+dis_froz_max =    13.600000000000
+num_iter =    1000
+write_bvec = .true.
+ dis_num_iter = 2000
+ bands_plot = .true.
+ begin kpoint_path
+ G 0.000000 0.000000 0.000000 M 0.500000 0.000000 0.000000
+ M 0.500000 0.000000 0.000000 K 0.333333 0.333333 0.000000
+ K 0.333333 0.333333 0.000000 G 0.000000 0.000000 0.000000
+ G 0.000000 0.000000 0.000000 A 0.000000 0.000000 0.500000
+ A 0.000000 0.000000 0.500000 L 0.500000 0.000000 0.500000
+ L 0.500000 0.000000 0.500000 H 0.333333 0.333333 0.500000
+ H 0.333333 0.333333 0.500000 A 0.000000 0.000000 0.500000
+ end kpoint_path
+ bands_num_points = 30
+ guiding_centres = .true.
+ write_hr = .true.
+ conv_tol = 1e-10
+ dis_conv_tol = 1e-10

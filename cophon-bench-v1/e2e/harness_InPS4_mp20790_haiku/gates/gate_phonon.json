@@ -1,0 +1,293 @@
+{
+  "acoustic_cm1_asr": [
+    -0.0,
+    -0.0,
+    0.0
+  ],
+  "acoustic_tol_cm1": 1.0,
+  "checks": [
+    {
+      "limit": "inferred or given",
+      "name": "phonon_prefix_known",
+      "pass": true,
+      "value": "InPS4_mp20790_e2eH"
+    },
+    {
+      "limit": "present",
+      "name": "phonon_ph_output_present",
+      "pass": true,
+      "value": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/InPS4_mp20790_e2eH/results/phonon/ph.out"
+    },
+    {
+      "limit": true,
+      "name": "phonon_job_done",
+      "pass": true,
+      "value": true
+    },
+    {
+      "limit": false,
+      "name": "phonon_within_max_seconds",
+      "pass": true,
+      "value": false
+    },
+    {
+      "limit": 0,
+      "name": "phonon_scf_blocks_converged",
+      "pass": true,
+      "value": 0
+    },
+    {
+      "limit": "> 0",
+      "name": "phonon_scf_blocks_present",
+      "pass": true,
+      "value": 13
+    },
+    {
+      "limit": 18,
+      "name": "phonon_raw_mode_count",
+      "pass": true,
+      "value": 18
+    },
+    {
+      "limit": "present",
+      "name": "phonon_dynmat_output_present",
+      "pass": true,
+      "value": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/InPS4_mp20790_e2eH/results/phonon/dynmat.out"
+    },
+    {
+      "limit": 18,
+      "name": "phonon_asr_mode_count",
+      "pass": true,
+      "value": 18
+    },
+    {
+      "limit": 1.0,
+      "name": "phonon_acoustic_after_asr",
+      "pass": true,
+      "value": [
+        -0.0,
+        -0.0,
+        0.0
+      ]
+    },
+    {
+      "limit": "> 0",
+      "name": "phonon_optical_modes_present",
+      "pass": true,
+      "value": 15
+    },
+    {
+      "limit": "non-empty",
+      "name": "phonon_file_InPS4_mp20790_e2eH.dvscf_q1",
+      "pass": true,
+      "value": {
+        "present": true,
+        "size": 75497472
+      }
+    },
+    {
+      "limit": "non-empty",
+      "name": "phonon_file_InPS4_mp20790_e2eH.dyn_q1.xml",
+      "pass": true,
+      "value": {
+        "present": true,
+        "size": 45169
+      }
+    },
+    {
+      "limit": "non-empty directory",
+      "name": "phonon_dir_InPS4_mp20790_e2eH.phsave",
+      "pass": true,
+      "value": true
+    },
+    {
+      "limit": "present",
+      "name": "phonon_file_InPS4_mp20790_e2eH.dyn0",
+      "pass": true,
+      "value": "InPS4_mp20790_e2eH.dyn0.xml"
+    },
+    {
+      "limit": "parseable",
+      "name": "phonon_dyn_xml_parse",
+      "pass": true,
+      "value": "ok"
+    },
+    {
+      "limit": 6,
+      "name": "phonon_dyn_xml_nat",
+      "pass": true,
+      "value": 6
+    },
+    {
+      "limit": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "phonon_dyn_xml_q_is_gamma",
+      "pass": true,
+      "value": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "limit": "present",
+      "name": "phonon_epsilon_present",
+      "pass": true,
+      "value": [
+        [
+          5.727684499535925,
+          1.075283482035586e-07,
+          -6.220251509586719e-16
+        ],
+        [
+          -1.075283486914743e-07,
+          5.727684499535925,
+          -6.220251509586719e-16
+        ],
+        [
+          -8.101453624373035e-16,
+          -8.101453624373035e-16,
+          6.056931782486362
+        ]
+      ]
+    },
+    {
+      "limit": "present",
+      "name": "phonon_zstar_present",
+      "pass": true,
+      "value": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ]
+    }
+  ],
+  "code": {
+    "manifest_sha256": "e8050e6a9f5b3a0a7adc238b2ecb933202c3c2278ca8b031e317fe7ab418b09f",
+    "package": "kernel_pipeline",
+    "rules_sha256": "1885bf0303112ce03a6fc33fe1c50b31c05c71cbd5d96199b9ce7e0e0fc77891",
+    "sealed_at": "2026-10-15T09:12:51+02:00",
+    "version": "v2.0.12"
+  },
+  "converged": true,
+  "dynmat_out": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/InPS4_mp20790_e2eH/results/phonon/dynmat.out",
+  "epsil": true,
+  "epsilon": [
+    [
+      5.727684499535925,
+      1.075283482035586e-07,
+      -6.220251509586719e-16
+    ],
+    [
+      -1.075283486914743e-07,
+      5.727684499535925,
+      -6.220251509586719e-16
+    ],
+    [
+      -8.101453624373035e-16,
+      -8.101453624373035e-16,
+      6.056931782486362
+    ]
+  ],
+  "files": {
+    "InPS4_mp20790_e2eH.dyn0": {
+      "path": "InPS4_mp20790_e2eH.dyn0.xml",
+      "present": true
+    },
+    "save/InPS4_mp20790_e2eH.dvscf_q1": {
+      "present": true,
+      "size": 75497472
+    },
+    "save/InPS4_mp20790_e2eH.dyn_q1.xml": {
+      "present": true,
+      "size": 45169
+    },
+    "save/InPS4_mp20790_e2eH.phsave/": {
+      "present": true
+    }
+  },
+  "freqs_cm1_asr": [
+    -0.0,
+    -0.0,
+    0.0,
+    81.41,
+    81.41,
+    109.23,
+    147.46,
+    170.11,
+    170.11,
+    245.32,
+    266.13,
+    313.78,
+    323.51,
+    323.51,
+    399.89,
+    501.57,
+    537.69,
+    537.69
+  ],
+  "freqs_cm1_raw": [
+    -0.447139,
+    3.806099,
+    3.806099,
+    81.386003,
+    81.386003,
+    109.253903,
+    147.460421,
+    170.10092,
+    170.10092,
+    245.323124,
+    266.13042,
+    313.783982,
+    323.519591,
+    323.519591,
+    399.885781,
+    501.569139,
+    537.69402,
+    537.69402
+  ],
+  "gate": "phonon",
+  "job_done": true,
+  "lpolar_recommended": true,
+  "max_abs_zstar": 3.149113861145457,
+  "max_freq_cm1": 537.69,
+  "nat": 6,
+  "optical_cm1_asr": [
+    81.41,
+    81.41,
+    109.23,
+    147.46,
+    170.11,
+    170.11,
+    245.32,
+    266.13,
+    313.78,
+    323.51,
+    323.51,
+    399.89,
+    501.57,
+    537.69,
+    537.69
+  ],
+  "optical_max_cm1": 537.69,
+  "ph_out": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/InPS4_mp20790_e2eH/results/phonon/ph.out",
+  "polar": true,
+  "polar_measured": true,
+  "prefix": "InPS4_mp20790_e2eH",
+  "reasons": [],
+  "softness": "stiff",
+  "softness_detail": {
+    "imaginary_cm1": [],
+    "lowest_optical_cm1": 81.41,
+    "softness": "stiff",
+    "threshold_cm1": 60.0
+  },
+  "stage_dir": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/InPS4_mp20790_e2eH/results/phonon",
+  "status": "PASS"
+}

@@ -1,0 +1,6 @@
+&input
+  fildyn = 'kno.dyn1'
+  asr    = 'crystal'
+  filout = 'dynmat.modes'
+  fileig = 'dynmat.eig'
+/

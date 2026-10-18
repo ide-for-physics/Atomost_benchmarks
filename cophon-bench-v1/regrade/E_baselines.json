@@ -1,0 +1,381 @@
+{
+ "schema": "cophon-bench.e.baselines.v1",
+ "rule": {
+  "tol_pos_ev": 0.15,
+  "tol_height": 0.25,
+  "tol_mode": 0.05,
+  "peak_floor": 0.5,
+  "peak_min_sep_ev": 0.3
+ },
+ "note": "Peaks of the sealed production kernels, recomputed by the frozen grader (pillar_e.py baselines) on 2026-10-15.",
+ "materials": {
+  "GaP_t1": {
+   "material": "GaP_t1",
+   "formula": "GaP",
+   "dimensionality": "3D",
+   "peaks": [
+    {
+     "photon_ev": 2.82,
+     "invariant_a2_per_ev": 16.0315,
+     "mode_group": {
+      "modes": [
+       4,
+       5,
+       6
+      ],
+      "phonon_mev": 44.5351,
+      "thz": 10.7685,
+      "share_of_invariant": 1.0
+     }
+    },
+    {
+     "photon_ev": 3.21,
+     "invariant_a2_per_ev": 10.1975,
+     "mode_group": {
+      "modes": [
+       4,
+       5,
+       6
+      ],
+      "phonon_mev": 44.5351,
+      "thz": 10.7685,
+      "share_of_invariant": 1.0
+     }
+    }
+   ],
+   "phonon_mev": [
+    44.5350519,
+    44.5350519,
+    44.5350519
+   ],
+   "kernel": {
+    "tag": "k96",
+    "mesh": "96×96×96",
+    "sha256": "72bd90077cb7bbde921c9b094c499b35925adf5b75036ead2761bcf065885150"
+   }
+  },
+  "SnS2_mp1170": {
+   "material": "SnS2_mp1170",
+   "formula": "SnS2",
+   "dimensionality": "3D",
+   "peaks": [
+    {
+     "photon_ev": 5.46,
+     "invariant_a2_per_ev": 47.092,
+     "mode_group": {
+      "modes": [
+       8
+      ],
+      "phonon_mev": 38.6483,
+      "thz": 9.3451,
+      "share_of_invariant": 0.8975
+     }
+    },
+    {
+     "photon_ev": 3.78,
+     "invariant_a2_per_ev": 43.162,
+     "mode_group": {
+      "modes": [
+       8
+      ],
+      "phonon_mev": 38.6483,
+      "thz": 9.3451,
+      "share_of_invariant": 0.9978
+     }
+    }
+   ],
+   "phonon_mev": [
+    25.4660141,
+    25.4660141,
+    25.5873922,
+    25.5873922,
+    38.6483437,
+    42.213072
+   ],
+   "kernel": {
+    "tag": "k64",
+    "mesh": "64×64×64",
+    "sha256": "5b72aa7e709b81422495ba03f619dbc02e01dddc57cf3d5444697b82bfde984e"
+   }
+  },
+  "NbFeSb_mp9437": {
+   "material": "NbFeSb_mp9437",
+   "formula": "NbFeSb",
+   "dimensionality": "3D",
+   "peaks": [
+    {
+     "photon_ev": 3.36,
+     "invariant_a2_per_ev": 21.3139,
+     "mode_group": {
+      "modes": [
+       7,
+       8,
+       9
+      ],
+      "phonon_mev": 34.1378,
+      "thz": 8.2545,
+      "share_of_invariant": 0.8483
+     }
+    }
+   ],
+   "phonon_mev": [
+    26.6190438,
+    26.6190438,
+    26.6190438,
+    34.1377692,
+    34.1377692,
+    34.1377692
+   ],
+   "kernel": {
+    "tag": "k64",
+    "mesh": "64×64×64",
+    "sha256": "576741b67ac370eb1c077f3660a5da95eae04a4660c60906343e82adaf3dce17"
+   }
+  },
+  "CdS_mp672": {
+   "material": "CdS_mp672",
+   "formula": "CdS",
+   "dimensionality": "3D",
+   "peaks": [
+    {
+     "photon_ev": 5.79,
+     "invariant_a2_per_ev": 8.3287,
+     "mode_group": {
+      "modes": [
+       4,
+       5
+      ],
+      "phonon_mev": 4.7447,
+      "thz": 1.1473,
+      "share_of_invariant": 0.9138
+     }
+    },
+    {
+     "photon_ev": 4.35,
+     "invariant_a2_per_ev": 5.7034,
+     "mode_group": {
+      "modes": [
+       7
+      ],
+      "phonon_mev": 29.059,
+      "thz": 7.0264,
+      "share_of_invariant": 0.8669
+     }
+    }
+   ],
+   "phonon_mev": [
+    4.7447329,
+    4.7447329,
+    16.7077908,
+    29.0589969,
+    29.9750035,
+    29.9750035,
+    31.6778214,
+    31.6778214,
+    37.4818387
+   ],
+   "kernel": {
+    "tag": "k64",
+    "mesh": "64×64×64",
+    "sha256": "aef86c8634902ab0dd67f9be52589e9013bfae59fdb72784273a950c21fb7001"
+   }
+  },
+  "KNbO3_mp7375": {
+   "material": "KNbO3_mp7375",
+   "formula": "KNbO3",
+   "dimensionality": "3D",
+   "peaks": [
+    {
+     "photon_ev": 3.63,
+     "invariant_a2_per_ev": 50.7252,
+     "mode_group": {
+      "modes": [
+       9
+      ],
+      "phonon_mev": 29.428,
+      "thz": 7.1156,
+      "share_of_invariant": 0.8927
+     }
+    },
+    {
+     "photon_ev": 3.96,
+     "invariant_a2_per_ev": 45.5991,
+     "mode_group": {
+      "modes": [
+       9
+      ],
+      "phonon_mev": 29.428,
+      "thz": 7.1156,
+      "share_of_invariant": 0.8883
+     }
+    }
+   ],
+   "phonon_mev": [
+    22.7101252,
+    22.7101371,
+    23.0908145,
+    25.0515273,
+    25.0525099,
+    29.4279596,
+    30.6499381,
+    34.0298652,
+    34.0690446,
+    64.29337,
+    64.3166963,
+    70.8466341
+   ],
+   "kernel": {
+    "tag": "k48",
+    "mesh": "48×48×48",
+    "sha256": "519fa8fae02ced0222b6997f36c678f313c41e4fe88e92192db7246b300db782"
+   }
+  },
+  "MoS2_monolayer": {
+   "material": "MoS2_monolayer",
+   "formula": "MoS2",
+   "dimensionality": "2D",
+   "peaks": [
+    {
+     "photon_ev": 2.82,
+     "invariant_a2_per_ev": 58.7101,
+     "mode_group": {
+      "modes": [
+       8
+      ],
+      "phonon_mev": 49.1788,
+      "thz": 11.8914,
+      "share_of_invariant": 0.9817
+     }
+    },
+    {
+     "photon_ev": 5.55,
+     "invariant_a2_per_ev": 50.4269,
+     "mode_group": {
+      "modes": [
+       8
+      ],
+      "phonon_mev": 49.1788,
+      "thz": 11.8914,
+      "share_of_invariant": 0.9988
+     }
+    }
+   ],
+   "phonon_mev": [
+    34.2704953,
+    34.2704953,
+    46.3035545,
+    46.3035545,
+    49.1787848,
+    56.8445479
+   ],
+   "kernel": {
+    "tag": "k64",
+    "mesh": "64×64×1",
+    "sha256": "5a3335d1ca233b381d2d8abb44aa90602f774cef823d49f865518776a1e764a8"
+   }
+  },
+  "InPS4_mp20790": {
+   "material": "InPS4_mp20790",
+   "formula": "InPS4",
+   "dimensionality": "3D",
+   "peaks": [
+    {
+     "photon_ev": 3.06,
+     "invariant_a2_per_ev": 67.6735,
+     "mode_group": {
+      "modes": [
+       11
+      ],
+      "phonon_mev": 32.5587,
+      "thz": 7.8727,
+      "share_of_invariant": 0.799
+     }
+    },
+    {
+     "photon_ev": 4.92,
+     "invariant_a2_per_ev": 54.0532,
+     "mode_group": {
+      "modes": [
+       11
+      ],
+      "phonon_mev": 32.5587,
+      "thz": 7.8727,
+      "share_of_invariant": 0.8187
+     }
+    }
+   ],
+   "phonon_mev": [
+    10.3589738,
+    10.3599348,
+    13.6128059,
+    18.2761628,
+    20.984195,
+    20.9850286,
+    30.3639248,
+    32.5587279,
+    38.5088428,
+    39.5648956,
+    39.5653076,
+    49.4400709,
+    62.0350756,
+    66.6541668,
+    66.6544253
+   ],
+   "kernel": {
+    "tag": "k32",
+    "mesh": "32×32×32",
+    "sha256": "133f45943c011ab7c7109cff2c9f4014725d438c8ded223ddf3e36e24e90993c"
+   }
+  },
+  "Bi2O2Se": {
+   "material": "Bi2O2Se",
+   "formula": "Bi2SeO2",
+   "dimensionality": "3D",
+   "peaks": [
+    {
+     "photon_ev": 3.81,
+     "invariant_a2_per_ev": 28.5362,
+     "mode_group": {
+      "modes": [
+       9
+      ],
+      "phonon_mev": 19.2899,
+      "thz": 4.6643,
+      "share_of_invariant": 0.7756
+     }
+    },
+    {
+     "photon_ev": 2.37,
+     "invariant_a2_per_ev": 23.1577,
+     "mode_group": {
+      "modes": [
+       12
+      ],
+      "phonon_mev": 42.1185,
+      "thz": 10.1842,
+      "share_of_invariant": 0.9772
+     }
+    }
+   ],
+   "phonon_mev": [
+    1.689677,
+    1.689677,
+    5.356939,
+    7.6510093,
+    7.6510093,
+    19.2899008,
+    31.1688476,
+    31.1688476,
+    42.1184702,
+    45.1679927,
+    51.4532226,
+    51.4532226
+   ],
+   "kernel": {
+    "tag": "k64",
+    "mesh": "64×64×64",
+    "sha256": "34e51629095e6cb6ea5a65620fce13b47497b3545c1cb589905703704d0189fc"
+   }
+  }
+ }
+}

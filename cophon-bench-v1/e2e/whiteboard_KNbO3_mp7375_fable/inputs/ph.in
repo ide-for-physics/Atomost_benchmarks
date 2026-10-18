@@ -1,0 +1,11 @@
+Gamma phonons of KNbO3 (R3m), DFPT, q = Gamma only (1x1x1 grid for EPW)
+&inputph
+  prefix   = 'kno'
+  outdir   = './tmp'
+  fildyn   = 'kno.dyn'
+  fildvscf = 'dvscf'
+  ldisp    = .true.
+  nq1 = 1, nq2 = 1, nq3 = 1
+  tr2_ph   = 1.0d-16
+  verbosity = 'high'
+/

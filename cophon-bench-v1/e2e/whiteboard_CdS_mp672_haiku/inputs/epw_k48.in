@@ -1,0 +1,54 @@
+&inputepw
+  prefix        = 'cds'
+  outdir        = '/scratch/project_<id>/<user>/theory2code/cphon/bench_whiteboard_v1/CdS_mp672/tmp_nscf'
+  dvscf_dir     = '/scratch/project_<id>/<user>/theory2code/cphon/bench_whiteboard_v1/CdS_mp672/dvscf'
+  amass(1)      = 112.411
+  amass(2)      = 32.065
+  iverbosity    = 0
+
+  elph          = .true.
+  epbwrite      = .true.
+  epbread       = .false.
+  epwwrite      = .true.
+  epwread       = .false.
+  lpolar        = .false.
+
+  wannierize    = .true.
+  num_iter      = 2000
+  iprint        = 2
+  nbndsub       = 16
+  bands_skipped = 'exclude_bands = 1-20'
+  dis_win_max   = 22.0
+  dis_froz_max  = 10.0
+  proj(1)       = 'f=0.666667,0.333333,0.500223:l=0'
+  proj(2)       = 'f=0.666667,0.333333,0.500223:l=1'
+  proj(3)       = 'f=0.333333,0.666667,0.000223:l=0'
+  proj(4)       = 'f=0.333333,0.666667,0.000223:l=1'
+  proj(5)       = 'f=0.666667,0.333333,0.876777:l=0'
+  proj(6)       = 'f=0.666667,0.333333,0.876777:l=1'
+  proj(7)       = 'f=0.333333,0.666667,0.376777:l=0'
+  proj(8)       = 'f=0.333333,0.666667,0.376777:l=1'
+
+  efermi_read   = .true.
+  fermi_energy  = 7.69
+
+  nk1           = 6
+  nk2           = 6
+  nk3           = 4
+  nq1           = 1
+  nq2           = 1
+  nq3           = 1
+  nkf1          = 48
+  nkf2          = 48
+  nkf3          = 32
+  nqf1          = 1
+  nqf2          = 1
+  nqf3          = 1
+
+  lindabs       = .true.
+  omegamin      = 0.01
+  omegamax      = 6.0
+  omegastep     = 0.01
+  degaussw      = 0.025
+  ladsmear      = .false.
+/

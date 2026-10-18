@@ -1,0 +1,87 @@
+{
+ "schema": "cophon-bench.e.grade.v1",
+ "material": "NbFeSb_mp9437",
+ "arm": "NbFeSb_mp9437_e2eF",
+ "kernel_file": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/NbFeSb_mp9437_e2eF/results/kernel_k64/Gamma_alphabeta_s.dat",
+ "kernel_sha256": "1666483c8fc5c78af0a08fafa81db94ab3caf764935cd5da124d0bfc6e20270a",
+ "arm_peaks": [
+  {
+   "photon_ev": 3.36,
+   "invariant_a2_per_ev": 21.4953,
+   "mode_group": {
+    "modes": [
+     7,
+     8,
+     9
+    ],
+    "phonon_mev": 34.1381,
+    "thz": 8.2545,
+    "share_of_invariant": 0.8478
+   }
+  }
+ ],
+ "baseline_peaks": [
+  {
+   "photon_ev": 3.36,
+   "invariant_a2_per_ev": 21.3139,
+   "mode_group": {
+    "modes": [
+     7,
+     8,
+     9
+    ],
+    "phonon_mev": 34.1378,
+    "thz": 8.2545,
+    "share_of_invariant": 0.8483
+   }
+  }
+ ],
+ "matched_baseline_peak": 0,
+ "position_ok": true,
+ "height_rel": 0.0085,
+ "height_ok": true,
+ "mode_rel": 0.0,
+ "mode_ok": true,
+ "same_answer": true,
+ "second_peak": null,
+ "spectrum": {
+  "max_abs_dev_over_baseline_max": 0.0109,
+  "rel_l2": 0.0078
+ },
+ "self_report": {
+  "peak_ev": null,
+  "peak_a2_per_ev": null,
+  "mode_thz": null,
+  "dev_peak_ev": null,
+  "dev_height_rel": null,
+  "dev_mode_rel": null
+ },
+ "cell_check": {
+  "arm_abc": [
+   4.16753,
+   4.16753,
+   4.16753
+  ],
+  "baseline_abc": [
+   4.16753,
+   4.16753,
+   4.16753
+  ],
+  "dev_percent": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "within_1pct": true
+ },
+ "costs": {
+  "node_hours": null,
+  "wall_hours": null,
+  "model_usd": null,
+  "human_touches": null,
+  "mesh": null,
+  "wannier_rounds": null,
+  "model": null
+ },
+ "verdict": "same answer"
+}

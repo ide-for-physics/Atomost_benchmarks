@@ -1,0 +1,295 @@
+{
+  "agent": {
+    "by_agent": {},
+    "rule": "sessions started in this repo, turns after the material entered the workflow, attributed to the material named in the tool call (sticky until another material is named); code-editing turns excluded (Machine B)",
+    "sessions": [],
+    "tokens": {},
+    "unpriced_models": [],
+    "usd": 0.0
+  },
+  "compute": {
+    "by_stage": {
+      "electron": {
+        "clean_node_seconds": 100,
+        "core_hours": 3.556,
+        "jobs": 1,
+        "node_seconds": 100
+      },
+      "epw1": {
+        "clean_node_seconds": 6531,
+        "core_hours": 232.213,
+        "jobs": 1,
+        "node_seconds": 6531
+      },
+      "kernel": {
+        "clean_node_seconds": 4996,
+        "core_hours": 177.636,
+        "jobs": 3,
+        "node_seconds": 4996
+      },
+      "phonon": {
+        "clean_node_seconds": 88,
+        "core_hours": 3.129,
+        "jobs": 1,
+        "node_seconds": 88
+      },
+      "relax": {
+        "clean_node_seconds": 14,
+        "core_hours": 0.498,
+        "jobs": 1,
+        "node_seconds": 14
+      },
+      "superset": {
+        "clean_node_seconds": 247,
+        "core_hours": 8.782,
+        "jobs": 1,
+        "node_seconds": 247
+      },
+      "wannier": {
+        "clean_node_seconds": 6368,
+        "core_hours": 316.124,
+        "exploration_node_seconds": 2523,
+        "jobs": 2,
+        "node_seconds": 8891
+      }
+    },
+    "core_hours_per_node_hour": 128.0,
+    "jobs": [
+      {
+        "class": "clean",
+        "core_hours": 0.498,
+        "elapsed_s": 14,
+        "energy_kwh": 0.0015,
+        "job": "22861475",
+        "name": "NbFeSb_mp9437_e2eH_relax",
+        "node_seconds": 14,
+        "nodes": 1,
+        "partition": "debug",
+        "stage": "relax",
+        "state": "COMPLETED",
+        "time": "2026-10-15T10:13:57+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.0194
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 3.556,
+        "elapsed_s": 100,
+        "energy_kwh": 0.0125,
+        "job": "22862049",
+        "name": "NbFeSb_mp9437_e2eH_electron",
+        "node_seconds": 100,
+        "nodes": 1,
+        "partition": "debug",
+        "stage": "electron",
+        "state": "COMPLETED",
+        "time": "2026-10-15T10:22:14+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.1389
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 8.782,
+        "elapsed_s": 247,
+        "energy_kwh": 0.0425,
+        "job": "22862280",
+        "name": "NbFeSb_mp9437_e2eH_superset",
+        "node_seconds": 247,
+        "nodes": 1,
+        "partition": "small",
+        "stage": "superset",
+        "state": "COMPLETED",
+        "time": "2026-10-15T10:27:00+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.3431
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 3.129,
+        "elapsed_s": 88,
+        "energy_kwh": 0.0141,
+        "job": "22862948",
+        "name": "NbFeSb_mp9437_e2eH_phonon",
+        "node_seconds": 88,
+        "nodes": 1,
+        "partition": "debug",
+        "stage": "phonon",
+        "state": "COMPLETED",
+        "time": "2026-10-15T10:40:02+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.1222
+        }
+      },
+      {
+        "class": "exploration",
+        "core_hours": 89.707,
+        "elapsed_s": 2523,
+        "energy_kwh": 0.3211,
+        "job": "22863013",
+        "name": "NbFeSb_mp9437_e2eH_wannier_r1",
+        "node_seconds": 2523,
+        "nodes": 1,
+        "partition": "small",
+        "stage": "wannier",
+        "state": "COMPLETED",
+        "time": "2026-10-15T10:41:47+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 3.5042
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 226.418,
+        "elapsed_s": 6368,
+        "energy_kwh": 1.1533,
+        "job": "22864724",
+        "name": "NbFeSb_mp9437_e2eH_wannier_r2",
+        "node_seconds": 6368,
+        "nodes": 1,
+        "partition": "small",
+        "stage": "wannier",
+        "state": "COMPLETED",
+        "time": "2026-10-15T11:29:17+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 8.8444
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 232.213,
+        "elapsed_s": 6531,
+        "energy_kwh": 1.1291,
+        "job": "22871383",
+        "name": "NbFeSb_mp9437_e2eH_epw1",
+        "node_seconds": 6531,
+        "nodes": 1,
+        "partition": "small",
+        "stage": "epw1",
+        "state": "COMPLETED",
+        "time": "2026-10-15T13:21:59+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 9.0708
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 31.644,
+        "elapsed_s": 890,
+        "energy_kwh": 0.1688,
+        "job": "22875165",
+        "name": "NbFeSb_mp9437_e2eH_kernel",
+        "node_seconds": 890,
+        "nodes": 1,
+        "partition": "small",
+        "stage": "kernel",
+        "state": "COMPLETED",
+        "time": "2026-10-15T15:31:48+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 1.2361
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 71.716,
+        "elapsed_s": 2017,
+        "energy_kwh": 0.3775,
+        "job": "22876436",
+        "name": "NbFeSb_mp9437_e2eH_kernel",
+        "node_seconds": 2017,
+        "nodes": 1,
+        "partition": "small",
+        "stage": "kernel",
+        "state": "COMPLETED",
+        "time": "2026-10-15T16:34:17+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 2.8014
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 74.276,
+        "elapsed_s": 2089,
+        "energy_kwh": 0.4105,
+        "job": "22877279",
+        "name": "NbFeSb_mp9437_e2eH_kernel",
+        "node_seconds": 2089,
+        "nodes": 1,
+        "partition": "small",
+        "stage": "kernel",
+        "state": "COMPLETED",
+        "time": "2026-10-15T17:12:29+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 2.9014
+        }
+      }
+    ],
+    "missing_in_accounting": [],
+    "scenario": "commercial",
+    "totals": {
+      "all": {
+        "core_hours": 741.938,
+        "energy_kwh": 3.631,
+        "jobs": 10,
+        "node_seconds": 20867,
+        "usd": 28.982
+      },
+      "clean": {
+        "core_hours": 652.231,
+        "energy_kwh": 3.31,
+        "jobs": 9,
+        "node_seconds": 18344,
+        "usd": 25.478
+      },
+      "exploration": {
+        "core_hours": 89.707,
+        "energy_kwh": 0.321,
+        "jobs": 1,
+        "node_seconds": 2523,
+        "usd": 3.504
+      }
+    },
+    "unit": "node-seconds; core_hours = node_seconds/3600 x core_hours_per_node_hour",
+    "usd_per_node_hour": 5.0
+  },
+  "currency": "USD",
+  "generated": "2026-10-15T17:55:33+02:00",
+  "human_assumed": {
+    "minutes": 20,
+    "usd": 26.67,
+    "usd_per_hour": 80.0
+  },
+  "material": "NbFeSb_mp9437_e2eH",
+  "rates_version": "2026-09-19",
+  "storage": {
+    "bank_gb": 0.712,
+    "bank_path": "/projappl/project_<id>/<user>/cphon_bank/NbFeSb_mp9437_e2eH/epw1_22871383",
+    "local_gb": 0.067,
+    "usd_per_gb_month": 0.02,
+    "usd_per_month": 0.0156
+  },
+  "summary": {
+    "agent_usd": 0.0,
+    "compute_core_hours_all": 741.9,
+    "compute_core_hours_clean": 652.2,
+    "compute_node_hours_all": 5.796,
+    "compute_node_hours_clean": 5.096,
+    "compute_usd_all": 28.98,
+    "compute_usd_clean": 25.48,
+    "storage_usd_per_month": 0.0156,
+    "unit_cost_note": "compute (all jobs) + operating-agent tokens + one month of storage; human review shown separately as assumed",
+    "unit_cost_usd": 29.0
+  }
+}

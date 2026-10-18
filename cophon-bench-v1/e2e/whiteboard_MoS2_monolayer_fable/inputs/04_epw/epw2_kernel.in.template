@@ -1,0 +1,57 @@
+--
+&inputepw
+  prefix      = 'mos2'
+  outdir      = '../03_nscf/tmp'
+  dvscf_dir   = '../02_ph/save'
+
+  elph        = .true.
+  epbwrite    = .false.
+  epbread     = .false.
+  epwwrite    = .false.
+  epwread     = .true.
+
+  etf_mem     = 1
+  lpolar      = .false.
+  vme         = 'wannier'
+  use_ws      = .false.
+  lifc        = .false.
+  asr_typ     = 'simple'
+
+  nbndsub     = @NW@
+  bands_skipped = 'exclude_bands = @EXCL@'
+
+  wannierize  = .false.
+  num_iter    = 3000
+  iprint      = 2
+  dis_win_min = @WMIN@
+  dis_win_max = @WMAX@
+  dis_froz_min = @FMIN@
+  dis_froz_max = @FMAX@
+@PROJ@
+
+  elecselfen  = .false.
+  phonselfen  = .false.
+  a2f         = .false.
+
+  fsthick     = 20.0
+  nstemp      = 1
+  temps       = 300
+  degaussw    = 0.025
+  eps_acoustic = 5.0
+
+  efermi_read = .true.
+  fermi_energy = @EF@
+
+  ! coherent-phonon generation kernel (kernel variant: computed inside indabs_main)
+  lindabs     = .true.
+  ladsmear    = .false.
+  omegamin    = 0.01
+  omegamax    = 6.00
+  omegastep   = 0.01
+
+  nkf1 = @NKF@, nkf2 = @NKF@, nkf3 = 1
+  nqf1 = 1, nqf2 = 1, nqf3 = 1
+
+  nk1 = 12, nk2 = 12, nk3 = 1
+  nq1 = 1,  nq2 = 1,  nq3 = 1
+/

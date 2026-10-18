@@ -1,0 +1,10 @@
+phonons at Gamma, KNbO3_mp7375 (sealed cell); DFPT + dielectric/Born (epsil) for LO/TO and EPW dvscf
+&inputph
+  prefix   = 'knbo3'
+  outdir   = './tmp'
+  fildyn   = 'knbo3.dynG'
+  fildvscf = 'dvscf'
+  tr2_ph   = 1.0d-14
+  epsil    = .true.
+/
+0.0 0.0 0.0

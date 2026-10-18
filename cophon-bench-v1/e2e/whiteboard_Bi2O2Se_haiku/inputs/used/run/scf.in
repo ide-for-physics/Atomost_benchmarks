@@ -1,0 +1,36 @@
+ &control
+    calculation = 'scf'
+    prefix      = 'bi2o2se'
+    outdir      = './tmp'
+    pseudo_dir  = '../pseudos'
+    wf_collect  = .true.
+ /
+ &system
+     ibrav       = 0
+    nat         = 5
+    ntyp        = 3
+    ecutwfc     = 90
+    ecutrho     = 360
+    occupations = 'fixed'
+    nbnd        = 44
+ /
+ &electrons
+    conv_thr    = 1.0d-11
+    mixing_beta = 0.5
+ /
+ATOMIC_SPECIES
+Bi 208.98040 Bi.upf
+Se 78.971    Se.upf
+O  15.9994   O.upf
+CELL_PARAMETERS angstrom
+  -1.96469684   1.96469684   6.20630152
+   1.96469684  -1.96469684   6.20630152
+   1.96469684   1.96469684  -6.20630152
+ATOMIC_POSITIONS crystal
+Bi 0.3531302438 0.3531302438 -0.0000000000
+Bi 0.6468697562 0.6468697562 -0.0000000000
+Se 0.0000000000 0.0000000000 0.0000000000
+O  0.2500000000 0.7500000000 0.5000000000
+O  0.7500000000 0.2500000000 0.5000000000
+K_POINTS automatic
+8 8 8 0 0 0

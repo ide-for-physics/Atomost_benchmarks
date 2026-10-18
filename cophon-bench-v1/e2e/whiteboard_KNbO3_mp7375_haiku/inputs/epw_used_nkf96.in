@@ -1,0 +1,48 @@
+&inputepw
+  prefix       = 'knbo3'
+  outdir       = './tmp'
+  dvscf_dir    = '../../ph/tmp/_ph0/'
+  amass(1)     = 39.0983
+  amass(2)     = 92.90638
+  amass(3)     = 15.9994
+
+  elph         = .true.
+  epwwrite     = .true.
+  epbwrite     = .true.
+  epwread      = .false.
+  epbread      = .false.
+
+  wannierize   = .true.
+  num_iter     = 500
+  dis_win_min  = 2.0
+  dis_win_max  = 20.0
+  dis_froz_min = 3.0
+  dis_froz_max = 11.0
+  proj(1)      = 'Nb:d'
+  proj(2)      = 'O:p'
+  nbndsub      = 14
+
+  nk1          = 6
+  nk2          = 6
+  nk3          = 6
+  nq1          = 1
+  nq2          = 1
+  nq3          = 1
+  nkf1         = 96
+  nkf2         = 96
+  nkf3         = 96
+  nqf1         = 1
+  nqf2         = 1
+  nqf3         = 1
+
+  lindabs      = .true.
+  omegamin     = 0.05
+  omegamax     = 6.00
+  omegastep    = 0.05
+  degaussw     = 0.025
+  ladsmear     = .false.
+  lgammae      = .false.
+  eps_acoustic = 0.1
+
+  iverbosity   = 1
+/

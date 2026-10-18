@@ -1,0 +1,111 @@
+{
+ "schema": "cophon-bench.e.grade.v1",
+ "material": "Bi2O2Se",
+ "arm": "Bi2O2Se_wb_haiku",
+ "kernel_file": "<whiteboard>/v1/Bi2O2Se_haiku/kernel/Gamma_alphabeta_s.dat",
+ "kernel_sha256": "08dec3e2c59fc8bf65177ab1ba6046821e43320947e916cee026b486760eccb2",
+ "arm_peaks": [
+  {
+   "photon_ev": 3.81,
+   "invariant_a2_per_ev": 31.7337,
+   "mode_group": {
+    "modes": [
+     9
+    ],
+    "phonon_mev": 19.3637,
+    "thz": 4.6821,
+    "share_of_invariant": 0.7904
+   }
+  },
+  {
+   "photon_ev": 2.37,
+   "invariant_a2_per_ev": 25.3173,
+   "mode_group": {
+    "modes": [
+     12
+    ],
+    "phonon_mev": 42.2566,
+    "thz": 10.2176,
+    "share_of_invariant": 0.9741
+   }
+  }
+ ],
+ "baseline_peaks": [
+  {
+   "photon_ev": 3.81,
+   "invariant_a2_per_ev": 28.5362,
+   "mode_group": {
+    "modes": [
+     9
+    ],
+    "phonon_mev": 19.2899,
+    "thz": 4.6643,
+    "share_of_invariant": 0.7756
+   }
+  },
+  {
+   "photon_ev": 2.37,
+   "invariant_a2_per_ev": 23.1577,
+   "mode_group": {
+    "modes": [
+     12
+    ],
+    "phonon_mev": 42.1185,
+    "thz": 10.1842,
+    "share_of_invariant": 0.9772
+   }
+  }
+ ],
+ "matched_baseline_peak": 0,
+ "position_ok": true,
+ "height_rel": 0.1121,
+ "height_ok": true,
+ "mode_rel": 0.0038,
+ "mode_ok": true,
+ "same_answer": true,
+ "second_peak": {
+  "arm_second_ev": 2.37,
+  "baseline_other_ev": 2.37,
+  "within_tol": true
+ },
+ "spectrum": {
+  "max_abs_dev_over_baseline_max": 0.1176,
+  "rel_l2": 0.1177
+ },
+ "self_report": {
+  "peak_ev": 3.8,
+  "peak_a2_per_ev": 40.11,
+  "mode_thz": 4.68,
+  "dev_peak_ev": -0.01,
+  "dev_height_rel": 0.264,
+  "dev_mode_rel": -0.0004
+ },
+ "cell_check": {
+  "arm_abc": [
+   6.79987,
+   6.79987,
+   6.79987
+  ],
+  "baseline_abc": [
+   6.79987,
+   6.79987,
+   6.79987
+  ],
+  "dev_percent": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "within_1pct": true
+ },
+ "costs": {
+  "node_hours": 8.83,
+  "wall_hours": 12.3,
+  "model_usd": null,
+  "human_touches": 0,
+  "mesh": "64x64x64",
+  "wannier_rounds": null,
+  "model": null
+ },
+ "verdict": "same answer"
+}

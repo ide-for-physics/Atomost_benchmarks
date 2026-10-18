@@ -1,0 +1,10 @@
+ &inputph
+  prefix   = 'bi2o2se',
+  epsil    = .false.,
+  outdir   = './tmp'
+  fildyn   = 'bi2o2se.dyn'
+  ldisp    = .true.
+  fildvscf = 'dvscf'
+  nq1=1, nq2=1, nq3=1,
+  tr2_ph   = 1.0d-13,
+ /

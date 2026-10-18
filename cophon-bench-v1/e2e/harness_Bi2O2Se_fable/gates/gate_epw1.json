@@ -1,0 +1,533 @@
+{
+  "checks": [
+    {
+      "limit": "present",
+      "name": "epw1_log_present",
+      "pass": true,
+      "value": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/Bi2O2Se_e2eF/logs/epw1/epw1.out"
+    },
+    {
+      "limit": [],
+      "name": "epw1_no_fatal_markers",
+      "pass": true,
+      "value": []
+    },
+    {
+      "limit": true,
+      "name": "epw1_finished",
+      "pass": true,
+      "value": true
+    },
+    {
+      "limit": true,
+      "name": "epw1_restart_written",
+      "pass": true,
+      "value": true
+    },
+    {
+      "limit": [
+        1
+      ],
+      "name": "epw1_q_points",
+      "pass": true,
+      "value": [
+        1
+      ]
+    },
+    {
+      "limit": 25,
+      "name": "epw1_spread_count",
+      "pass": true,
+      "value": 25
+    },
+    {
+      "limit": 10.0,
+      "name": "epw1_spread_max",
+      "pass": true,
+      "value": 5.16617
+    },
+    {
+      "limit": "require_files=False",
+      "name": "epw1_files_not_checked",
+      "pass": true,
+      "value": "skipped"
+    },
+    {
+      "limit": "lumi-w90-band-compare-py36-stdlib-v6",
+      "name": "epw_bands_comparator_build",
+      "pass": true,
+      "value": "lumi-w90-band-compare-py36-stdlib-v6"
+    },
+    {
+      "limit": true,
+      "name": "epw_bands_dense_reference_certified",
+      "pass": true,
+      "value": true
+    },
+    {
+      "limit": 703,
+      "name": "epw_bands_grid_points",
+      "pass": true,
+      "value": [
+        703,
+        703
+      ]
+    },
+    {
+      "limit": 25,
+      "name": "epw_bands_num_wann",
+      "pass": true,
+      "value": 25
+    },
+    {
+      "limit": "finite",
+      "name": "epw_bands_rms_target_window_meV_finite",
+      "pass": true,
+      "value": 0.587323
+    },
+    {
+      "limit": "finite",
+      "name": "epw_bands_max_abs_deviation_in_window_meV_finite",
+      "pass": true,
+      "value": 4.36138
+    },
+    {
+      "limit": 50.0,
+      "name": "epw_bands_rms_meV",
+      "pass": true,
+      "value": 0.587323
+    },
+    {
+      "limit": 25.0,
+      "name": "epw_bands_worst_meV",
+      "pass": true,
+      "value": 4.36138
+    },
+    {
+      "limit": "equal",
+      "name": "spreads_count",
+      "pass": true,
+      "value": [
+        25,
+        25
+      ]
+    },
+    {
+      "limit": {
+        "abs_A2": 0.04,
+        "rel": 0.02
+      },
+      "name": "spread_0",
+      "pass": true,
+      "value": {
+        "direct": 0.90524849,
+        "epw": 0.90467
+      }
+    },
+    {
+      "limit": {
+        "abs_A2": 0.04,
+        "rel": 0.02
+      },
+      "name": "spread_1",
+      "pass": true,
+      "value": {
+        "direct": 0.91278037,
+        "epw": 0.90468
+      }
+    },
+    {
+      "limit": {
+        "abs_A2": 0.04,
+        "rel": 0.02
+      },
+      "name": "spread_2",
+      "pass": true,
+      "value": {
+        "direct": 0.95967173,
+        "epw": 0.96102
+      }
+    },
+    {
+      "limit": {
+        "abs_A2": 0.04,
+        "rel": 0.02
+      },
+      "name": "spread_3",
+      "pass": true,
+      "value": {
+        "direct": 0.95967759,
+        "epw": 0.96117
+      }
+    },
+    {
+      "limit": {
+        "abs_A2": 0.04,
+        "rel": 0.02
+      },
+      "name": "spread_4",
+      "pass": true,
+      "value": {
+        "direct": 0.98169171,
+        "epw": 0.97061
+      }
+    },
+    {
+      "limit": {
+        "abs_A2": 0.04,
+        "rel": 0.02
+      },
+      "name": "spread_5",
+      "pass": true,
+      "value": {
+        "direct": 0.98583873,
+        "epw": 0.9708
+      }
+    },
+    {
+      "limit": {
+        "abs_A2": 0.04,
+        "rel": 0.02
+      },
+      "name": "spread_6",
+      "pass": false,
+      "value": {
+        "direct": 2.16734887,
+        "epw": 2.08981
+      }
+    },
+    {
+      "limit": {
+        "abs_A2": 0.04,
+        "rel": 0.02
+      },
+      "name": "spread_7",
+      "pass": false,
+      "value": {
+        "direct": 2.38749355,
+        "epw": 2.70412
+      }
+    },
+    {
+      "limit": {
+        "abs_A2": 0.04,
+        "rel": 0.02
+      },
+      "name": "spread_8",
+      "pass": false,
+      "value": {
+        "direct": 2.3885426,
+        "epw": 2.74032
+      }
+    },
+    {
+      "limit": {
+        "abs_A2": 0.04,
+        "rel": 0.02
+      },
+      "name": "spread_9",
+      "pass": false,
+      "value": {
+        "direct": 2.63976488,
+        "epw": 2.77511
+      }
+    },
+    {
+      "limit": {
+        "abs_A2": 0.04,
+        "rel": 0.02
+      },
+      "name": "spread_10",
+      "pass": false,
+      "value": {
+        "direct": 2.63992958,
+        "epw": 2.80594
+      }
+    },
+    {
+      "limit": {
+        "abs_A2": 0.04,
+        "rel": 0.02
+      },
+      "name": "spread_11",
+      "pass": false,
+      "value": {
+        "direct": 2.79905052,
+        "epw": 2.86908
+      }
+    },
+    {
+      "limit": {
+        "abs_A2": 0.04,
+        "rel": 0.02
+      },
+      "name": "spread_12",
+      "pass": false,
+      "value": {
+        "direct": 2.80196401,
+        "epw": 2.95003
+      }
+    },
+    {
+      "limit": {
+        "abs_A2": 0.04,
+        "rel": 0.02
+      },
+      "name": "spread_13",
+      "pass": false,
+      "value": {
+        "direct": 3.3678704,
+        "epw": 3.13352
+      }
+    },
+    {
+      "limit": {
+        "abs_A2": 0.04,
+        "rel": 0.02
+      },
+      "name": "spread_14",
+      "pass": true,
+      "value": {
+        "direct": 3.37101525,
+        "epw": 3.34544
+      }
+    },
+    {
+      "limit": {
+        "abs_A2": 0.04,
+        "rel": 0.02
+      },
+      "name": "spread_15",
+      "pass": true,
+      "value": {
+        "direct": 3.72938288,
+        "epw": 3.69463
+      }
+    },
+    {
+      "limit": {
+        "abs_A2": 0.04,
+        "rel": 0.02
+      },
+      "name": "spread_16",
+      "pass": false,
+      "value": {
+        "direct": 3.73236491,
+        "epw": 4.12095
+      }
+    },
+    {
+      "limit": {
+        "abs_A2": 0.04,
+        "rel": 0.02
+      },
+      "name": "spread_17",
+      "pass": false,
+      "value": {
+        "direct": 3.78126854,
+        "epw": 4.17366
+      }
+    },
+    {
+      "limit": {
+        "abs_A2": 0.04,
+        "rel": 0.02
+      },
+      "name": "spread_18",
+      "pass": false,
+      "value": {
+        "direct": 3.78246809,
+        "epw": 4.19859
+      }
+    },
+    {
+      "limit": {
+        "abs_A2": 0.04,
+        "rel": 0.02
+      },
+      "name": "spread_19",
+      "pass": true,
+      "value": {
+        "direct": 4.29174289,
+        "epw": 4.27352
+      }
+    },
+    {
+      "limit": {
+        "abs_A2": 0.04,
+        "rel": 0.02
+      },
+      "name": "spread_20",
+      "pass": true,
+      "value": {
+        "direct": 4.29212952,
+        "epw": 4.27568
+      }
+    },
+    {
+      "limit": {
+        "abs_A2": 0.04,
+        "rel": 0.02
+      },
+      "name": "spread_21",
+      "pass": false,
+      "value": {
+        "direct": 4.52737596,
+        "epw": 4.3658
+      }
+    },
+    {
+      "limit": {
+        "abs_A2": 0.04,
+        "rel": 0.02
+      },
+      "name": "spread_22",
+      "pass": false,
+      "value": {
+        "direct": 4.53491253,
+        "epw": 4.39988
+      }
+    },
+    {
+      "limit": {
+        "abs_A2": 0.04,
+        "rel": 0.02
+      },
+      "name": "spread_23",
+      "pass": false,
+      "value": {
+        "direct": 4.66986392,
+        "epw": 5.04589
+      }
+    },
+    {
+      "limit": {
+        "abs_A2": 0.04,
+        "rel": 0.02
+      },
+      "name": "spread_24",
+      "pass": false,
+      "value": {
+        "direct": 7.79283307,
+        "epw": 5.16617
+      }
+    },
+    {
+      "limit": {
+        "rel": 0.001
+      },
+      "name": "spreads_total",
+      "pass": false,
+      "value": {
+        "direct": 75.40223059,
+        "epw": 74.80109,
+        "rel_diff": 0.007972451017645684
+      }
+    },
+    {
+      "limit": {
+        "rel": 0.0001
+      },
+      "name": "omega_i_match",
+      "pass": false,
+      "value": {
+        "direct": 61.983954975,
+        "epw": 62.212893381,
+        "rel_diff": 0.0036799189614594575
+      }
+    },
+    {
+      "limit": {
+        "br_warn": 0.5
+      },
+      "name": "fd_origin_estimate_reported",
+      "pass": true,
+      "value": {
+        "br_max": 1.042,
+        "r_max_ang": 8.09,
+        "wannier_route_error_max": 0.1809,
+        "warn": true
+      }
+    },
+    {
+      "limit": 1.0,
+      "name": "epw_score",
+      "pass": true,
+      "rms_le5_meV": 0.59,
+      "start_rung": 48,
+      "value": 0.124,
+      "worst_le5_meV": 4.4
+    }
+  ],
+  "code": {
+    "manifest_sha256": "38fbfe4df2f3f17ab614ee68c189c8ee7770591b33e88bc079b01c6b0daebcfc",
+    "package": "kernel_pipeline",
+    "rules_sha256": "1885bf0303112ce03a6fc33fe1c50b31c05c71cbd5d96199b9ce7e0e0fc77891",
+    "sealed_at": "2026-10-15T10:57:19+02:00",
+    "version": "v2.0.13"
+  },
+  "decay": {
+    "directory": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/Bi2O2Se_e2eF/logs/epw1",
+    "files": {
+      "H": {
+        "boundary_max": 1.3966410212933674e-05,
+        "boundary_over_peak": 9.252278951454636e-06,
+        "max_radius_A": 35.354087,
+        "outer_20pct_max": 4.0237014920374894e-05,
+        "outer_20pct_max_over_peak": 2.665567461797699e-05,
+        "peak": 1.509510282408626,
+        "peak_radius_A": 0.0,
+        "points": 1009,
+        "shells": 109
+      },
+      "dynmat": {
+        "boundary_max": 0.2209487728421254,
+        "boundary_over_peak": 1.0,
+        "max_radius_A": 0.0,
+        "outer_20pct_max": 0.2209487728421254,
+        "outer_20pct_max_over_peak": 1.0,
+        "peak": 0.2209487728421254,
+        "peak_radius_A": 0.0,
+        "points": 1,
+        "shells": 1
+      },
+      "epmate": {
+        "boundary_max": 0.0001513433,
+        "boundary_over_peak": 0.0005293768760947098,
+        "max_radius_A": 35.354087,
+        "outer_20pct_max": 0.0003105273,
+        "outer_20pct_max_over_peak": 0.001086179381684718,
+        "peak": 0.2858895181,
+        "peak_radius_A": 0.0,
+        "points": 1009,
+        "shells": 109
+      },
+      "epmatp": {
+        "boundary_max": 0.2858895181,
+        "boundary_over_peak": 1.0,
+        "max_radius_A": 0.0,
+        "outer_20pct_max": 0.2858895181,
+        "outer_20pct_max_over_peak": 1.0,
+        "peak": 0.2858895181,
+        "peak_radius_A": 0.0,
+        "points": 1,
+        "shells": 1
+      },
+      "v": {
+        "boundary_max": 0.001498100516551932,
+        "boundary_over_peak": 0.00011158539881929636,
+        "max_radius_A": 35.354087,
+        "outer_20pct_max": 0.004620113290844166,
+        "outer_20pct_max_over_peak": 0.0003441272320870379,
+        "peak": 13.425596291303183,
+        "peak_radius_A": 0.0,
+        "points": 1009,
+        "shells": 109
+      }
+    },
+    "missing": [],
+    "note": "report only, not a gate"
+  },
+  "status": "FAIL",
+  "time": "2026-10-15T20:54:29+02:00"
+}

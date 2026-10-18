@@ -1,0 +1,53 @@
+{
+ "schema": "cophon-bench.e.result.v1",
+ "material": "SnS2_mp1170",
+ "kernel_file": "kernel/Gamma_alphabeta_s.dat",
+ "peak_ev": 5.46,
+ "peak_a2_per_ev": 77.1898,
+ "mode_thz": 9.3452,
+ "mode_irrep": "A1g",
+ "mesh": "192x192x96",
+ "cell_angstrom": [
+  [
+   1.8195,
+   -3.15146644,
+   0.0
+  ],
+  [
+   1.8195,
+   3.15146644,
+   0.0
+  ],
+  [
+   0.0,
+   0.0,
+   5.868
+  ]
+ ],
+ "species": [
+  "Sn",
+  "S",
+  "S"
+ ],
+ "positions_crystal": [
+  [
+   0.0,
+   0.0,
+   0.0
+  ],
+  [
+   0.33333333,
+   0.66666667,
+   0.25418572
+  ],
+  [
+   0.66666667,
+   0.33333333,
+   0.74581428
+  ]
+ ],
+ "node_hours": 4.841,
+ "wall_hours": 29.92,
+ "model_usd": null,
+ "human_touches": 0
+}

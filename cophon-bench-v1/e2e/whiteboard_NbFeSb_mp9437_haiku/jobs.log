@@ -1,0 +1,31 @@
+# jobid  purpose  partition  state  nodes x hours  node_hours   (nodes = Slurm AllocCPUS/256; hours = Elapsed; source: sacct)
+22877737  SCF 8x8x8 (failed: pseudo_dir path)  debug  FAILED  0.25 x 0.001  0.000
+22877758  SCF 8x8x8 90 Ry, fixed occ., forces/stress  debug  COMPLETED  0.25 x 0.002  0.001
+22877770  DFPT ph.x Gamma, epsil=.true., tr2_ph=1e-14  debug  COMPLETED  0.25 x 0.028  0.007
+22877808  NSCF 6x6x6 full grid (216 k) + 131-pt band path  debug  COMPLETED  0.25 x 0.004  0.001
+22877885  EPW wannierize (failed: namelist nbndskip)  debug  FAILED  0.25 x 0.001  0.000
+22877893  EPW wannierize (cancelled: window error)  debug  CANCELLED by 327005976  0.25 x 0.015  0.004
+22877907  EPW wannierize (failed: window / dyn file names)  debug  FAILED  0.25 x 0.016  0.004
+22877929  EPW wannierize (failed: dvscf_q1 name)  debug  FAILED  0.25 x 0.016  0.004
+22878014  EPW wannierize (failed: fine q grid)  debug  FAILED  0.25 x 0.019  0.005
+22878046  EPW wannierize 6x6x6, 16 WF (kept for window study)  debug  COMPLETED  0.25 x 0.019  0.005
+22878119  EPW band plot (failed: input keyword)  debug  FAILED  0.25 x 0.001  0.000
+22878141  EPW band plot (failed: input keyword)  debug  FAILED  0.25 x 0.001  0.000
+22878147  EPW band plot (restart mode, no output)  debug  COMPLETED  0.25 x 0.001  0.000
+22878213  EPW wannierize 6x6x6, 16 WF, frozen 4.5-17 eV  debug  COMPLETED  0.25 x 0.018  0.005
+22878245  EPW wannierize 6x6x6, 22 WF  debug  COMPLETED  0.25 x 0.030  0.007
+22878427  NSCF 8x8x8 full grid (512 k)  debug  COMPLETED  0.25 x 0.004  0.001
+22878442  EPW wannierize 8x8x8, 22 WF (final Wannier model)  debug  COMPLETED  0.25 x 0.068  0.017
+22878522  EPW kernel nkf=24 test (timed out)  debug  TIMEOUT  0.25 x 0.173  0.043
+22878863  EPW kernel nkf=12 (coarse mesh)  debug  COMPLETED  0.25 x 0.042  0.010
+22878910  EPW kernel nkf=48  small  COMPLETED  1.00 x 0.499  0.499
+22878911  cancelled (duplicate kernel job)  small  CANCELLED by 327005976  0.00 x 0.000  0.000
+22878924  cancelled (72 mesh, replaced by chain)  small  CANCELLED by 327005976  1.00 x 0.015  0.015
+22878926  EPW kernel nkf=96 (OOM, 1 node 128 ranks)  small  FAILED  1.00 x 0.019  0.019
+22879684  EPW kernel nkf=96 (OOM, 2 nodes, default mem)  small  FAILED  1.00 x 0.014  0.014
+22879771  EPW kernel nkf=96 (launch failure, 2 nodes 240G)  small  FAILED  1.00 x 0.168  0.168
+22879947  EPW kernel nkf=96 (launch failure, 2 nodes 240G)  small  FAILED  1.00 x 0.168  0.168
+22880506  cancelled (2-node queue wait)  small  CANCELLED by 327005976  0.00 x 0.000  0.000
+22881801  EPW kernel nkf=96 (final, 1 node 96 ranks, exclusive)  small  COMPLETED  1.00 x 6.424  6.424
+22881821  EPW kernel nkf=72 (1 node 128 ranks)  small  COMPLETED  1.00 x 1.996  1.996
+# TOTAL node-hours = 9.42 (budget 20)

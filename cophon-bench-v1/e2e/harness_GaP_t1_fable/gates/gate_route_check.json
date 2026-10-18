@@ -1,0 +1,18 @@
+{
+  "br_max": 0.4712394505471834,
+  "compared_up_to_ev": 5.8,
+  "diag_over_offdiag_other": 0.02422161530174568,
+  "diag_over_offdiag_production": 0.008377474228361836,
+  "envelope_rel_l2": 0.004174133545343731,
+  "invariant_peak_other": 16.103978261902675,
+  "invariant_peak_production": 16.054479575949916,
+  "limit": 0.05,
+  "mesh": 96,
+  "other_route": "wannier",
+  "production_route": "dipole",
+  "reading": "the two velocity routes agree",
+  "status": "PASS",
+  "tag": "k96_eta030",
+  "tensor_rel_diff": 0.022401201634258048,
+  "time": "2026-10-15T13:03:07+02:00"
+}

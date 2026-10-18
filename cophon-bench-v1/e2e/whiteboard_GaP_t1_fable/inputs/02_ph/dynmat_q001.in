@@ -1,0 +1,3 @@
+&input
+  fildyn = 'gap.dyn1', asr = 'crystal', amass(1) = 69.723, amass(2) = 30.973762, q(1) = 0.0, q(2) = 0.0, q(3) = 1.0, filout = 'dynmat_gamma_q001.out'
+/

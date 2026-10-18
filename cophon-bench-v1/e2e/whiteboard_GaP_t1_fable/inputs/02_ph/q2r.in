@@ -1,0 +1,3 @@
+&input
+  fildyn = 'gap.dyn', zasr = 'crystal', flfrc = 'gap.fc'
+/

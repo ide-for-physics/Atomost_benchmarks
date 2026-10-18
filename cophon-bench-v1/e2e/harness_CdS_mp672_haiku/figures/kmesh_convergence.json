@@ -1,0 +1,192 @@
+{
+  "consecutive_pairs": [
+    {
+      "abs_floor_pass": false,
+      "amplitude_invariant": {
+        "nrmse_by_finer_peak": 0.03197555324632092,
+        "pearson": 0.9852966783120087,
+        "relative_l2_vs_finer": 0.1353184360189374
+      },
+      "below_detection_floor": false,
+      "checks": [
+        {
+          "limit": 0.03,
+          "name": "envelope_rel_l2",
+          "pass": true,
+          "value": 0.022029688041223256
+        },
+        {
+          "limit": {
+            "abs_floor": 0.01,
+            "detection_floor": 0.5
+          },
+          "name": "envelope_abs_floor_reported",
+          "pass": true,
+          "value": {
+            "abs_floor_pass": false,
+            "below_detection_floor": false,
+            "envelope_peak_cur": 5.94710422742442,
+            "rms_diff_A2_per_eV": 0.05179356112681764
+          }
+        },
+        {
+          "limit": "report only",
+          "name": "envelope_rel_l2_raw_reported",
+          "pass": true,
+          "value": 0.16074164968403928
+        }
+      ],
+      "coarse": "k40",
+      "coarse_peak_eV": 5.76,
+      "compared_up_to_ev": 5.8,
+      "cur": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/CdS_mp672_e2eH/results/kernel_k48/Gamma_alphabeta_s.dat",
+      "cur_sha256": "510a2f823d90311056a8482fcd4ed6b4f061a72a80ad54942e6fd3d2a0b16a4d",
+      "diag_over_offdiag_cur": 1.1309879332769683,
+      "diag_over_offdiag_prev": 1.0982413762984584,
+      "edge_exclude_ev": 0.2,
+      "envelope_peak_cur": 5.94710422742442,
+      "envelope_peak_prev": 5.960273242576721,
+      "envelope_peak_shift_eV": 0.0,
+      "fine": "k48",
+      "gate": "envelope_convergence",
+      "limit": 0.03,
+      "nrmse_envelope": 0.008709038743255466,
+      "nrmse_raw": 0.04836040456075703,
+      "offdiag_channels": {
+        "nrmse_by_finer_peak": 0.022331704042984308,
+        "pearson": 0.9999983410060767,
+        "relative_l2_vs_finer": 0.14350094671694164
+      },
+      "peak_eV": 5.76,
+      "pearson_envelope": 0.999637367112844,
+      "pearson_raw": 0.9743111707302826,
+      "prev": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/CdS_mp672_e2eH/results/kernel_k40/Gamma_alphabeta_s.dat",
+      "prev_sha256": "d6b80baf295a859f46140607f0b092efd0ee4287c52c5ffdfe2fe2422d73f01b",
+      "raw_peak_cur": 8.192468329083237,
+      "raw_peak_eV_cur": 5.79,
+      "raw_peak_eV_prev": 5.79,
+      "raw_peak_prev": 8.184058390343795,
+      "reasons": [],
+      "rel_l2_envelope": 0.022029688041223256,
+      "rel_l2_raw": 0.16074164968403928,
+      "rms_diff_envelope": 0.05179356112681764,
+      "sigma_ev": 0.1,
+      "status": "PASS"
+    },
+    {
+      "abs_floor_pass": false,
+      "amplitude_invariant": {
+        "nrmse_by_finer_peak": 0.021099397637754785,
+        "pearson": 0.9930113431182735,
+        "relative_l2_vs_finer": 0.09278300764181747
+      },
+      "below_detection_floor": false,
+      "checks": [
+        {
+          "limit": 0.03,
+          "name": "envelope_rel_l2",
+          "pass": true,
+          "value": 0.014647879315292928
+        },
+        {
+          "limit": {
+            "abs_floor": 0.01,
+            "detection_floor": 0.5
+          },
+          "name": "envelope_abs_floor_reported",
+          "pass": true,
+          "value": {
+            "abs_floor_pass": false,
+            "below_detection_floor": false,
+            "envelope_peak_cur": 5.940061811993739,
+            "rms_diff_A2_per_eV": 0.034137432081180676
+          }
+        },
+        {
+          "limit": "report only",
+          "name": "envelope_rel_l2_raw_reported",
+          "pass": true,
+          "value": 0.11219989607210071
+        }
+      ],
+      "coarse": "k48",
+      "coarse_peak_eV": 5.76,
+      "compared_up_to_ev": 5.8,
+      "cur": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/CdS_mp672_e2eH/results/kernel_k64/Gamma_alphabeta_s.dat",
+      "cur_sha256": "58bc417a17ed94c0cb4942c05d0ec8fa59a53d3dda676b20b85887779d2475bc",
+      "diag_over_offdiag_cur": 1.1177034940421269,
+      "diag_over_offdiag_prev": 1.1309879332769683,
+      "edge_exclude_ev": 0.2,
+      "envelope_peak_cur": 5.940061811993739,
+      "envelope_peak_prev": 5.94710422742442,
+      "envelope_peak_shift_eV": 0.0,
+      "fine": "k64",
+      "gate": "envelope_convergence",
+      "limit": 0.03,
+      "nrmse_envelope": 0.005746982634465666,
+      "nrmse_raw": 0.032521032919558594,
+      "offdiag_channels": {
+        "nrmse_by_finer_peak": 0.014249434844963308,
+        "pearson": 0.9999965258952539,
+        "relative_l2_vs_finer": 0.09522717707806592
+      },
+      "peak_eV": 5.76,
+      "pearson_envelope": 0.9998484324532176,
+      "pearson_raw": 0.9872731364393921,
+      "prev": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/CdS_mp672_e2eH/results/kernel_k48/Gamma_alphabeta_s.dat",
+      "prev_sha256": "510a2f823d90311056a8482fcd4ed6b4f061a72a80ad54942e6fd3d2a0b16a4d",
+      "raw_peak_cur": 8.426577561890996,
+      "raw_peak_eV_cur": 5.79,
+      "raw_peak_eV_prev": 5.79,
+      "raw_peak_prev": 8.192468329083237,
+      "reasons": [],
+      "rel_l2_envelope": 0.014647879315292928,
+      "rel_l2_raw": 0.11219989607210071,
+      "rms_diff_envelope": 0.034137432081180676,
+      "sigma_ev": 0.1,
+      "status": "PASS"
+    }
+  ],
+  "definitions": {
+    "diag_over_offdiag": "max over photon energies of the mode-summed diagonal-channel invariant divided by the off-diagonal one",
+    "invariant": "sqrt(sum over the optical modes and all nine ordered tensor channels of |Gamma|^2); basis-independent within a degenerate subspace"
+  },
+  "runs": [
+    {
+      "amp_peak_A": 2.3793364669337334,
+      "amp_peak_eV": 5.79,
+      "diag_over_offdiag": 1.0982413762984584,
+      "mean_invariant": 1.8560415796960479,
+      "nk": 64000,
+      "path": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/CdS_mp672_e2eH/results/kernel_k40/Gamma_alphabeta_s.dat",
+      "peak_A2_per_eV": 8.184058390343795,
+      "peak_eV": 5.79,
+      "sha256": "d6b80baf295a859f46140607f0b092efd0ee4287c52c5ffdfe2fe2422d73f01b",
+      "tag": "k40"
+    },
+    {
+      "amp_peak_A": 2.3429960205183495,
+      "amp_peak_eV": 5.79,
+      "diag_over_offdiag": 1.1309879332769683,
+      "mean_invariant": 1.83546222425576,
+      "nk": 110592,
+      "path": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/CdS_mp672_e2eH/results/kernel_k48/Gamma_alphabeta_s.dat",
+      "peak_A2_per_eV": 8.192468329083237,
+      "peak_eV": 5.79,
+      "sha256": "510a2f823d90311056a8482fcd4ed6b4f061a72a80ad54942e6fd3d2a0b16a4d",
+      "tag": "k48"
+    },
+    {
+      "amp_peak_A": 2.4268325469797176,
+      "amp_peak_eV": 5.79,
+      "diag_over_offdiag": 1.1177034940421269,
+      "mean_invariant": 1.8186669693613096,
+      "nk": 262144,
+      "path": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/CdS_mp672_e2eH/results/kernel_k64/Gamma_alphabeta_s.dat",
+      "peak_A2_per_eV": 8.426577561890996,
+      "peak_eV": 5.79,
+      "sha256": "58bc417a17ed94c0cb4942c05d0ec8fa59a53d3dda676b20b85887779d2475bc",
+      "tag": "k64"
+    }
+  ]
+}

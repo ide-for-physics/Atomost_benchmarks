@@ -1,0 +1,10 @@
+# job_id | purpose | partition | nodes x hours (small: 64 CPUs = 0.5 node; hours = Elapsed)
+22892885 | SCF 12x12x1 (ok, 13 s); ph.x and NSCF crashed on outdir path (no physics) | small | 0.5 node x 0.0036 h = 0.0018 node-h
+22892897 | ph.x Gamma (tr2_ph=1e-14, dyn) + NSCF 12x12x1 list nbnd=30 (completed) | small | 0.5 node x 0.0264 h = 0.0132 node-h
+22893160 | DFT bands G-M-K-G (scf+bands, completed); EPW runs failed at readin (epwwrite flag) | small | 0.5 node x 0.0108 h = 0.0054 node-h
+22893253 | EPW attempt: cancelled by me (dvscf_dir path truncated, CHARACTER(100)) | small | 0.5 node x 0.0750 h = 0.0375 node-h
+22893343 | EPW attempt: cancelled by me (missing mos2.dyn_q1 / dvscf_q1; file-name fixes) | small | 0.5 node x 0.1103 h = 0.0551 node-h
+22893532 | SCF+ph.x(electron_phonon=epw)+NSCF+EPW set A (A48 done; cancelled after A48 to tune window) | small | 0.5 node x 0.1236 h = 0.0618 node-h
+22893688 | Wannier frozen-window tuning (A2 at 48 passed; B2 cancelled as not needed) | small | 0.5 node x 0.1128 h = 0.0564 node-h
+22893790 | EPW set A2 meshes 72, 96, 120 (completed; 48 from 22893532/22893688) | small | 0.5 node x 0.2603 h = 0.1301 node-h
+# TOTAL elapsed 0.7228 h -> node-hours 0.3614 (budget 20)

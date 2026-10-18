@@ -1,0 +1,7 @@
+GaP DFPT: 6x6x6 q-grid, eps_inf and Z* at Gamma
+&inputph
+  prefix = 'gap', outdir = '../01_scf/tmp_ph', fildyn = 'gap.dyn', fildvscf = 'dvscf'
+  tr2_ph = 1.0d-16, epsil = .true., trans = .true., ldisp = .true.
+  nq1 = 6, nq2 = 6, nq3 = 6
+  amass(1) = 69.723, amass(2) = 30.973762
+/

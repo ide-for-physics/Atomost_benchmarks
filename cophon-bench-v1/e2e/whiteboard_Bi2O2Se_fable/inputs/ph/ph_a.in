@@ -1,0 +1,13 @@
+Gamma phonons of Bi2O2Se (DFPT, with dielectric tensor and Born charges) - chunk A
+&inputph
+  prefix = 'bos'
+  outdir = './tmp'
+  fildyn = 'bos.dyn'
+  fildvscf = 'dvscf'
+  tr2_ph = 1.0d-16
+  ldisp = .true.
+  nq1 = 1, nq2 = 1, nq3 = 1
+  epsil = .true.
+  verbosity = 'high'
+  max_seconds = 540
+/

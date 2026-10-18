@@ -1,0 +1,236 @@
+{
+  "checks": [
+    {
+      "limit": "file",
+      "name": "wout_present",
+      "pass": true,
+      "value": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/Bi2O2Se_e2eF/logs/wannier_round2.wout"
+    },
+    {
+      "limit": true,
+      "name": "final_state",
+      "pass": true,
+      "value": true
+    },
+    {
+      "limit": 25,
+      "name": "num_wann_in_wout",
+      "pass": true,
+      "value": 25
+    },
+    {
+      "limit": 10.0,
+      "name": "spread_max",
+      "pass": true,
+      "value": 7.79283307
+    },
+    {
+      "limit": 0.001,
+      "name": "plateau_drift",
+      "pass": true,
+      "value": 5.631397903543407e-08
+    },
+    {
+      "limit": 0.0001,
+      "name": "localisation_converged",
+      "pass": true,
+      "value": 5.631397903543407e-08
+    },
+    {
+      "limit": "last_iteration < num_iter=4000 or plateau flat",
+      "name": "ran_out_of_steps",
+      "pass": true,
+      "value": {
+        "hit_num_iter_cap": false,
+        "last_iteration": 1846,
+        "plateau_flat": true
+      }
+    },
+    {
+      "limit": true,
+      "name": "all_done",
+      "pass": true,
+      "value": true
+    },
+    {
+      "limit": 0.0001,
+      "name": "disentanglement_settled",
+      "pass": true,
+      "value": {
+        "dis_converged": true,
+        "dis_drift": 6.453283487472636e-10,
+        "dis_last_iteration": 7154,
+        "omega_i": 61.983954975
+      }
+    },
+    {
+      "limit": "file",
+      "name": "comparison_present",
+      "pass": true,
+      "value": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/Bi2O2Se_e2eF/results/band_comparison_round2.json"
+    },
+    {
+      "limit": "lumi-w90-band-compare-py36-stdlib-v6",
+      "name": "comparator_build",
+      "pass": true,
+      "value": "lumi-w90-band-compare-py36-stdlib-v6"
+    },
+    {
+      "limit": true,
+      "name": "dense_reference_certified",
+      "pass": true,
+      "value": true
+    },
+    {
+      "limit": 50.0,
+      "name": "band_rms_meV",
+      "note": "reported only: the score gates (W7)",
+      "pass": true,
+      "value": 0.505471
+    },
+    {
+      "limit": 25.0,
+      "name": "band_worst_meV",
+      "note": "reported only: the score gates (W7)",
+      "pass": true,
+      "value": 2.864493
+    },
+    {
+      "limit": 703,
+      "name": "grids_equal",
+      "pass": true,
+      "value": {
+        "qe": 703,
+        "wannier": 703
+      }
+    },
+    {
+      "limit": 25,
+      "name": "num_wann_compared",
+      "pass": true,
+      "value": 25
+    },
+    {
+      "limit": 0.9,
+      "name": "score",
+      "pass": true,
+      "start_rung": 48,
+      "value": 0.068
+    },
+    {
+      "limit": 50.0,
+      "name": "rms_le5_meV",
+      "pass": true,
+      "value": 0.51
+    },
+    {
+      "limit": 10.0,
+      "name": "outlier_ratio",
+      "note": "noted on the card, not gated (A5 default)",
+      "pass": true,
+      "value": 9.1
+    }
+  ],
+  "code": {
+    "manifest_sha256": "38fbfe4df2f3f17ab614ee68c189c8ee7770591b33e88bc079b01c6b0daebcfc",
+    "package": "kernel_pipeline",
+    "rules_sha256": "1885bf0303112ce03a6fc33fe1c50b31c05c71cbd5d96199b9ce7e0e0fc77891",
+    "sealed_at": "2026-10-15T10:57:19+02:00",
+    "version": "v2.0.13"
+  },
+  "comparison": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/Bi2O2Se_e2eF/results/band_comparison_round2.json",
+  "comparison_summary": {
+    "build_id": "lumi-w90-band-compare-py36-stdlib-v6",
+    "dense_reference_certified": true,
+    "max_abs_deviation_in_window_meV": 2.864493,
+    "nk_compared": 703,
+    "num_wann_compared": 25,
+    "qe_grid_points": 703,
+    "rms_target_window_meV": 0.505471,
+    "status": "ANALYSIS",
+    "wannier_grid_points": 703
+  },
+  "limits": {
+    "band_rms_meV": 50.0,
+    "band_worst_meV": 25.0,
+    "comparator_build": "lumi-w90-band-compare-py36-stdlib-v6",
+    "dis_drift": 0.0001,
+    "num_iter": 4000,
+    "plateau_drift": 0.001,
+    "rms_le5_meV": 50.0,
+    "score": 0.9,
+    "spread_A2": 10.0
+  },
+  "reasons": [],
+  "schema": "cophon-gate-wannier-v1",
+  "scheme": "score-v1",
+  "score": {
+    "bz_length": 1.373,
+    "eta_eV": 0.03,
+    "median_le5_meV": 0.31,
+    "n_points": 12763,
+    "outlier_ratio": 9.1,
+    "range_eV": 5.0,
+    "rms_le5_meV": 0.51,
+    "score_128": 0.082,
+    "score_no_mesh": 0.095,
+    "score_start": 0.068,
+    "shift_eV": 1e-05,
+    "start_rung": 48,
+    "worst_le5_meV": 2.9,
+    "worst_point": {
+      "band": -12,
+      "energy_eV": 13.973,
+      "err_meV": 2.1,
+      "k_index": 519,
+      "reach_eV": 3.84,
+      "slope_eV_A": 0.29
+    }
+  },
+  "status": "PASS",
+  "wout": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/Bi2O2Se_e2eF/logs/wannier_round2.wout",
+  "wout_summary": {
+    "all_done": true,
+    "converged_banner": "Disentanglement convergence criteria satisfied",
+    "dis_converged": true,
+    "dis_delta_last": 9.726e-12,
+    "dis_drift": 6.453283487472636e-10,
+    "dis_last_iteration": 7154,
+    "final_state_found": true,
+    "last_iteration": 1846,
+    "num_wann": 25,
+    "omega_i": 61.983954975,
+    "omega_od": 12.875514534,
+    "omega_total": 75.402237232,
+    "plateau_drift": 5.631397903543407e-08,
+    "spread_max": 7.79283307,
+    "spread_sum": 75.40223059,
+    "spreads": [
+      2.80196401,
+      3.3678704,
+      2.63992958,
+      2.79905052,
+      4.52737596,
+      3.37101525,
+      2.16734887,
+      2.38749355,
+      2.3885426,
+      0.90524849,
+      0.95967173,
+      0.95967759,
+      4.29212952,
+      2.63976488,
+      4.66986392,
+      4.29174289,
+      4.53491253,
+      0.91278037,
+      0.98169171,
+      0.98583873,
+      3.78126854,
+      3.72938288,
+      3.73236491,
+      3.78246809,
+      7.79283307
+    ]
+  }
+}

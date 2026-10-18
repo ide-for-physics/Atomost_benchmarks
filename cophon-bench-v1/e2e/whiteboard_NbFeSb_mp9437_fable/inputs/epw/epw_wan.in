@@ -1,0 +1,55 @@
+&inputepw
+  prefix      = 'nfs'
+  amass(1)    = 92.90637
+  amass(2)    = 55.845
+  amass(3)    = 121.760
+  outdir      = './tmp_nscf'
+  dvscf_dir   = './save'
+  iverbosity  = 0
+
+  elph        = .true.
+  epbwrite    = .false.
+  epbread     = .false.
+  epwwrite    = .true.
+  epwread     = .false.
+  etf_mem     = 1
+  vme         = 'wannier'
+  lpolar      = .true.
+
+  wannierize  = .false.
+  nbndsub     = 19
+  bands_skipped = 'exclude_bands = 1:13'
+  num_iter    = 1000
+  iprint      = 2
+  dis_win_min = 0.0
+  dis_win_max = 38.0
+  dis_froz_min= 2.0
+  dis_froz_max= 24.0
+  proj(1)     = 'Nb:s;p;d'
+  proj(2)     = 'Fe:s;d'
+  proj(3)     = 'Sb:s;p'
+  wdata(1)    = 'dis_num_iter = 5000'
+  wdata(2)    = 'num_print_cycles = 50'
+  wdata(3)    = 'dis_mix_ratio = 0.8'
+  wdata(4)    = 'guiding_centres = .true.'
+  wdata(5)    = 'conv_tol = 1E-7'
+  wdata(6)    = 'conv_window = 3'
+  wdata(7)    = 'dis_conv_tol = 1E-9'
+  wdata(8)    = 'dis_conv_window = 3'
+  wdata(9)    = 'precond = .true.'
+
+  elecselfen  = .false.
+  phonselfen  = .false.
+  a2f         = .false.
+
+  efermi_read = .true.
+  fermi_energy= 17.24
+  temps       = 300
+  degaussw    = 0.025
+  fsthick     = 100.0
+
+  nkf1 = 2, nkf2 = 2, nkf3 = 2
+  nqf1 = 1, nqf2 = 1, nqf3 = 1
+  nk1  = 8, nk2  = 8, nk3  = 8
+  nq1  = 1, nq2  = 1, nq3  = 1
+/

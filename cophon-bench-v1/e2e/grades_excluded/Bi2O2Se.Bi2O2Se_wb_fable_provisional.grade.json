@@ -1,0 +1,111 @@
+{
+ "schema": "cophon-bench.e.grade.v1",
+ "material": "Bi2O2Se",
+ "arm": "Bi2O2Se_wb_fable_provisional",
+ "kernel_file": "<whiteboard>/v1/Bi2O2Se_fable/kernel/Gamma_alphabeta_s.dat",
+ "kernel_sha256": "99976943268180d6fd6caf1a4d85db66329468774b2846a8704c48b1c45d9b72",
+ "arm_peaks": [
+  {
+   "photon_ev": 3.81,
+   "invariant_a2_per_ev": 32.1407,
+   "mode_group": {
+    "modes": [
+     9
+    ],
+    "phonon_mev": 19.2907,
+    "thz": 4.6645,
+    "share_of_invariant": 0.788
+   }
+  },
+  {
+   "photon_ev": 2.37,
+   "invariant_a2_per_ev": 25.2843,
+   "mode_group": {
+    "modes": [
+     12
+    ],
+    "phonon_mev": 42.0939,
+    "thz": 10.1783,
+    "share_of_invariant": 0.9762
+   }
+  }
+ ],
+ "baseline_peaks": [
+  {
+   "photon_ev": 3.81,
+   "invariant_a2_per_ev": 28.5362,
+   "mode_group": {
+    "modes": [
+     9
+    ],
+    "phonon_mev": 19.2899,
+    "thz": 4.6643,
+    "share_of_invariant": 0.7756
+   }
+  },
+  {
+   "photon_ev": 2.37,
+   "invariant_a2_per_ev": 23.1577,
+   "mode_group": {
+    "modes": [
+     12
+    ],
+    "phonon_mev": 42.1185,
+    "thz": 10.1842,
+    "share_of_invariant": 0.9772
+   }
+  }
+ ],
+ "matched_baseline_peak": 0,
+ "position_ok": true,
+ "height_rel": 0.1263,
+ "height_ok": true,
+ "mode_rel": 0.0,
+ "mode_ok": true,
+ "same_answer": true,
+ "second_peak": {
+  "arm_second_ev": 2.37,
+  "baseline_other_ev": 2.37,
+  "within_tol": true
+ },
+ "spectrum": {
+  "max_abs_dev_over_baseline_max": 0.1263,
+  "rel_l2": 0.1231
+ },
+ "self_report": {
+  "peak_ev": 3.8,
+  "peak_a2_per_ev": 40.372,
+  "mode_thz": 4.6645,
+  "dev_peak_ev": -0.01,
+  "dev_height_rel": 0.2561,
+  "dev_mode_rel": 0.0
+ },
+ "cell_check": {
+  "arm_abc": [
+   6.79987,
+   6.79987,
+   6.79987
+  ],
+  "baseline_abc": [
+   6.79987,
+   6.79987,
+   6.79987
+  ],
+  "dev_percent": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "within_1pct": true
+ },
+ "costs": {
+  "node_hours": 4.3,
+  "wall_hours": 7.5,
+  "model_usd": null,
+  "human_touches": 0,
+  "mesh": "64x64x64",
+  "wannier_rounds": null,
+  "model": null
+ },
+ "verdict": "same answer"
+}

@@ -1,0 +1,11 @@
+phonons of MoS2 monolayer at Gamma
+&inputph
+  tr2_ph = 1.0d-14
+  prefix = 'mos2'
+  outdir = '../01_scf/tmp'
+  fildyn = 'mos2.dynG'
+  fildvscf = 'dvscf'
+  trans = .true.
+  electron_phonon = 'epw'
+/
+0.0 0.0 0.0

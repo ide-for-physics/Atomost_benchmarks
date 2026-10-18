@@ -1,0 +1,33 @@
+&CONTROL
+  calculation = 'scf'
+  prefix      = 'sns2'
+  outdir      = './tmp'
+  pseudo_dir  = '../pseudo'
+  tprnfor     = .true.
+/
+&SYSTEM
+  ibrav       = 0
+  nat         = 3
+  ntyp        = 2
+  ecutwfc     = 80.0
+  ecutrho     = 320.0
+  occupations = 'fixed'
+/
+&ELECTRONS
+  conv_thr        = 1.0d-12
+  diago_thr_init  = 5.0d-6
+  mixing_beta     = 0.5
+/
+ATOMIC_SPECIES
+Sn 118.710 Sn.upf
+S   32.060 S.upf
+CELL_PARAMETERS angstrom
+1.81950000 -3.15146644  0.00000000
+1.81950000  3.15146644  0.00000000
+0.00000000  0.00000000  5.86800000
+ATOMIC_POSITIONS crystal
+Sn 0.00000000 0.00000000 0.00000000
+S  0.33333300 0.66666700 0.25418572
+S  0.66666700 0.33333300 0.74581428
+K_POINTS automatic
+12 12 6 0 0 0

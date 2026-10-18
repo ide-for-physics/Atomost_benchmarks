@@ -1,0 +1,14 @@
+# jobid | purpose | partition | nodes x hours (shared jobs: cores/128 x hours) | node-hours
+22919868 | pw.x scf 12x12x12 (duplicate submission, small started first; 13 s) | small | 32 cores x 0.0036 h | 0.0009
+22919896 | pw.x scf 12x12x12 (debug duplicate, final tmp/ comes from this run; 13 s) | debug | 1 node x 0.0036 h | 0.0036
+22919966 | pw.x nscf 8x8x8 uniform (512 k, 44 bands, nosym) for Wannier/EPW; 21 s | small | 64 cores x 0.0058 h | 0.0029
+22919967 | pw.x bands along G-X-W-K-G-L-U-W-L-K (242 k, 44 bands); 15 s | small | 32 cores x 0.0042 h | 0.0010
+22919964 | ph.x DFPT at Gamma (1x1x1 q, epsil, Z*), 3m04s | small | 64 cores x 0.0511 h | 0.0256
+22920019 | epw.x wannierize attempt 1 (cancelled at 13 min: 5000-iteration cap too slow at 2.9 s/iter) | small | 64 cores x 0.22 h | 0.11
+22920185 | epw.x wannierize attempt 2: Wannier functions converged (spread 28.3 A^2) then EPW aborted (patterns file expected in save/nfs.phsave/); nfs.ukk kept and reused | small | 64 cores x 0.28 h | 0.14
+22920374 | epw.x coarse-grid g + Wannier transform, epwwrite (wannierize=.false., reused nfs.ukk); 29 s | small | 64 cores x 0.008 h | 0.004
+22920468 | epw.x band_plot (Wannier bands on the 242-point DFT path); 13 s | small | 2 cores x 0.0036 h | 0.0001
+22920469 | epw.x kernel, fine k 24x24x24 (timing + first mesh); 5m19s | small | 64 cores x 0.089 h | 0.044
+22920568 | epw.x kernel, fine k 48x48x48; 20m16s | small | 1 node x 0.338 h | 0.338
+22920569 | epw.x kernel, fine k 72x72x72; 1h10m45s | small | 1 node x 1.179 h | 1.179
+22920570 | epw.x kernel, fine k 96x96x96 (final, delivered kernel); 2h37m10s | small | 1 node x 2.619 h | 2.619

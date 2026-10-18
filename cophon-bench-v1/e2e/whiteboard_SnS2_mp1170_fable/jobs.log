@@ -1,0 +1,18 @@
+# job_id | purpose | partition | nodes x hours (node-hours; small jobs counted as cores/128 x hours)
+22874330 | relax (internal coords, fixed cell) — cancelled while pending, never ran | small | 0
+22874406 | relax (internal coords, fixed cell), pw.x: 9 s, node exclusive on debug | debug | 1 x 0.0025 = 0.003
+22874459 | scf + ph.x at Gamma (epsil, 9 modes) + dynmat.x asr=crystal: 97 s | debug | 1 x 0.027 = 0.027
+22874511 | scf + bands (281 k path, 40 bands) + bands.x + nscf 12x12x6 full grid (864 k, 40 bands): 137 s | debug | 1 x 0.038 = 0.038
+22874562 | EPW step 1 (Wannierize + coarse e-ph at Gamma), FAILED: Wannier90 frozen-window error (band 18 at 13.37 eV < dis_froz_max 13.4) then EPW hung until the 30 min limit | debug | 1 x 0.5 = 0.5
+22899940 | EPW step 1, coarse 12x12x6: Wannierize (10 WFs) + e-ph at Gamma + band plot; 6 min 21 s, 64 ranks (sacct NCPUS=128, counted as a full node) | small | 1 x 0.106 = 0.106
+22900216 | kernel 48x48x24 (12x12x6 model), FAILED at start: sns2.ukk not linked | small | 1 x 0.002 = 0.002
+22900219 | scf + nscf 18x18x9, FAILED at start: wrong pseudo_dir | small | 1 x 0.002 = 0.002
+22900231 | scf + nscf 18x18x9 full grid (2916 k, 32 bands): 62 s | small | 1 x 0.017 = 0.017
+22900228 | kernel 48x48x24 with the 12x12x6 model (timing + first look): 2 min 10 s, 128 ranks | small | 1 x 0.036 = 0.036
+22900512 | EPW step 1, coarse 18x18x9: Wannierize (10 WFs) + e-ph at Gamma + band plot; 16 min 22 s, 108 ranks (counted as a full node) | small | 1 x 0.273 = 0.273
+22901079 | kernel 48x48x24 fine k, q=Gamma, 18x18x9 model (lindabs, 0.01-6 eV): 2 min 22 s, 128 ranks | small | 1 x 0.039 = 0.039
+22901080 | kernel 72x72x36 fine k, 18x18x9 model: 7 min 39 s, 128 ranks | small | 1 x 0.128 = 0.128
+22901081 | kernel 96x96x48 fine k, 18x18x9 model: 16 min 06 s, 128 ranks | small | 1 x 0.268 = 0.268
+22901082 | kernel 144x144x72 fine k, 18x18x9 model: 53 min 15 s, 128 ranks | small | 1 x 0.888 = 0.888
+22918082 | kernel 192x192x96, 1 node x 128 ranks, FAILED: out of memory (27648 k per pool, 112 GB default allocation), 1 min 30 s | small | 1 x 0.025 = 0.025
+22918331 | kernel 192x192x96 fine k, 18x18x9 model: 1 h 14 min 40 s, 2 nodes x 128 ranks (--mem=200G) | small | 2 x 1.244 = 2.489

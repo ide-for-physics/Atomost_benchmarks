@@ -1,0 +1,22 @@
+# jobs.log: one line per Slurm job charged to this run (job id | purpose | partition | nodes x hours)
+# node-hours = nodes x elapsed; a debug/small job with 64 or 128 tasks occupies one 128-core node (SMT 256 logical CPUs
+# are reported by sacct as 256 processors, counted here as 1 node). The jobs below are all jobs of this root; none unattributed.
+#
+# inherited (earlier attempt found in the root before this session; archived in prior_attempt_archive/):
+22874406 | relax (archive; 0 BFGS steps) | debug | 1 x 0.0025 h
+22874459 | ph Gamma (archive) | debug | 1 x 0.0269 h
+22874511 | scf + nscf (archive) | debug | 1 x 0.0381 h
+22874562 | epw Wannierization attempt, TIMEOUT (archive) | debug | 1 x 0.5025 h
+#
+# this run:
+22877787 | DFT chain attempt 1 (failed at start: cd to Slurm spool dir) | debug | 1 x 0.0003 h
+22877895 | DFT chain: scf 12^3 (80 Ry) -> ph Gamma -> dynmat asr=crystal -> nscf 864 pts nbnd30 -> bands path | debug | 1 x 0.0436 h
+22877962 | EPW attempt 1: failed at readin (filqf + nqf conflict) | debug | 1 x 0.0014 h
+22878044 | EPW attempt 2: wannier90 "fewer states than WFs" (outer window), cancelled | debug | 1 x 0.1108 h
+22878229 | EPW attempt 3: Wannier num_iter 2000 too slow, cancelled | debug | 1 x 0.1453 h
+22878502 | EPW attempt 4: Wannier 17 WFs ok; band-plot crash (qgamma header) | debug | 1 x 0.0606 h
+22878603 | EPW band plot attempt, broken input, cancelled at once | debug | 1 x 0.0006 h
+22878608 | EPW band plot (epwread, attempt-4 Wannier data) | debug | 1 x 0.0069 h
+22878723 | EPW attempt 5 (final Wannier 17 WFs, frozen -8..14.6 eV, + band plot) | debug | 1 x 0.0746 h
+22878881 | kernel 48^3, 64 tasks, 297 photon points | debug | 1 x 0.2250 h
+22879158 | kernel 72^3 then 96^3, 128 tasks each (one allocation) | small | 1 x 1.2142 h

@@ -1,0 +1,111 @@
+{
+ "schema": "cophon-bench.e.grade.v1",
+ "material": "SnS2_mp1170",
+ "arm": "SnS2_mp1170_wb_haiku",
+ "kernel_file": "<whiteboard>/v1/SnS2_mp1170_haiku/kernel/Gamma_alphabeta_s.dat",
+ "kernel_sha256": "3ce3d3148e64e7b6145d71485b087059853c650665a2a198b5f529ef378d02b6",
+ "arm_peaks": [
+  {
+   "photon_ev": 5.46,
+   "invariant_a2_per_ev": 54.4336,
+   "mode_group": {
+    "modes": [
+     8
+    ],
+    "phonon_mev": 38.6486,
+    "thz": 9.3452,
+    "share_of_invariant": 0.8971
+   }
+  },
+  {
+   "photon_ev": 5.78,
+   "invariant_a2_per_ev": 46.5908,
+   "mode_group": {
+    "modes": [
+     8
+    ],
+    "phonon_mev": 38.6486,
+    "thz": 9.3452,
+    "share_of_invariant": 0.8596
+   }
+  }
+ ],
+ "baseline_peaks": [
+  {
+   "photon_ev": 5.46,
+   "invariant_a2_per_ev": 47.092,
+   "mode_group": {
+    "modes": [
+     8
+    ],
+    "phonon_mev": 38.6483,
+    "thz": 9.3451,
+    "share_of_invariant": 0.8975
+   }
+  },
+  {
+   "photon_ev": 3.78,
+   "invariant_a2_per_ev": 43.162,
+   "mode_group": {
+    "modes": [
+     8
+    ],
+    "phonon_mev": 38.6483,
+    "thz": 9.3451,
+    "share_of_invariant": 0.9978
+   }
+  }
+ ],
+ "matched_baseline_peak": 0,
+ "position_ok": true,
+ "height_rel": 0.1559,
+ "height_ok": true,
+ "mode_rel": 0.0,
+ "mode_ok": true,
+ "same_answer": true,
+ "second_peak": {
+  "arm_second_ev": 5.78,
+  "baseline_other_ev": 3.78,
+  "within_tol": false
+ },
+ "spectrum": {
+  "max_abs_dev_over_baseline_max": 0.1559,
+  "rel_l2": 0.127
+ },
+ "self_report": {
+  "peak_ev": 5.44,
+  "peak_a2_per_ev": 141.2929,
+  "mode_thz": 9.3452,
+  "dev_peak_ev": -0.02,
+  "dev_height_rel": 1.5957,
+  "dev_mode_rel": 0.0
+ },
+ "cell_check": {
+  "arm_abc": [
+   3.639,
+   3.639,
+   5.868
+  ],
+  "baseline_abc": [
+   3.639,
+   3.639,
+   5.868
+  ],
+  "dev_percent": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "within_1pct": true
+ },
+ "costs": {
+  "node_hours": 2.453,
+  "wall_hours": 2.4,
+  "model_usd": null,
+  "human_touches": 0,
+  "mesh": "96x96x96",
+  "wannier_rounds": null,
+  "model": null
+ },
+ "verdict": "same answer"
+}

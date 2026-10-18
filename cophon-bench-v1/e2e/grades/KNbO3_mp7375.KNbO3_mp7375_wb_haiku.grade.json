@@ -1,0 +1,111 @@
+{
+ "schema": "cophon-bench.e.grade.v1",
+ "material": "KNbO3_mp7375",
+ "arm": "KNbO3_mp7375_wb_haiku",
+ "kernel_file": "<whiteboard>/v1/KNbO3_mp7375_haiku/kernel/Gamma_alphabeta_s.dat",
+ "kernel_sha256": "04c92c0fbfe4d691549f28839f34d8af85c6b3aa03360c296df1b0f30acb003c",
+ "arm_peaks": [
+  {
+   "photon_ev": 3.3,
+   "invariant_a2_per_ev": 46.9103,
+   "mode_group": {
+    "modes": [
+     9
+    ],
+    "phonon_mev": 29.6949,
+    "thz": 7.1802,
+    "share_of_invariant": 0.8568
+   }
+  },
+  {
+   "photon_ev": 3.6,
+   "invariant_a2_per_ev": 46.6912,
+   "mode_group": {
+    "modes": [
+     9
+    ],
+    "phonon_mev": 29.6949,
+    "thz": 7.1802,
+    "share_of_invariant": 0.8927
+   }
+  }
+ ],
+ "baseline_peaks": [
+  {
+   "photon_ev": 3.63,
+   "invariant_a2_per_ev": 50.7252,
+   "mode_group": {
+    "modes": [
+     9
+    ],
+    "phonon_mev": 29.428,
+    "thz": 7.1156,
+    "share_of_invariant": 0.8927
+   }
+  },
+  {
+   "photon_ev": 3.96,
+   "invariant_a2_per_ev": 45.5991,
+   "mode_group": {
+    "modes": [
+     9
+    ],
+    "phonon_mev": 29.428,
+    "thz": 7.1156,
+    "share_of_invariant": 0.8883
+   }
+  }
+ ],
+ "matched_baseline_peak": null,
+ "position_ok": false,
+ "height_rel": -0.0752,
+ "height_ok": false,
+ "mode_rel": 0.0091,
+ "mode_ok": true,
+ "same_answer": false,
+ "second_peak": {
+  "arm_second_ev": 3.6,
+  "baseline_other_ev": 3.96,
+  "within_tol": false
+ },
+ "spectrum": {
+  "max_abs_dev_over_baseline_max": 0.1953,
+  "rel_l2": 0.1196
+ },
+ "self_report": {
+  "peak_ev": 3.3,
+  "peak_a2_per_ev": 179.49,
+  "mode_thz": 7.18,
+  "dev_peak_ev": 0.0,
+  "dev_height_rel": 2.8262,
+  "dev_mode_rel": -0.0
+ },
+ "cell_check": {
+  "arm_abc": [
+   4.00502,
+   4.00502,
+   4.00502
+  ],
+  "baseline_abc": [
+   4.00502,
+   4.00502,
+   4.00502
+  ],
+  "dev_percent": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "within_1pct": true
+ },
+ "costs": {
+  "node_hours": 1.94,
+  "wall_hours": 2.1,
+  "model_usd": null,
+  "human_touches": 0,
+  "mesh": "96x96x96",
+  "wannier_rounds": null,
+  "model": null
+ },
+ "verdict": "differs: position, height"
+}

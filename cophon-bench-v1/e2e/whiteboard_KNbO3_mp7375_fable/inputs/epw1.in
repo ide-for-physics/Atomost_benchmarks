@@ -1,0 +1,71 @@
+--
+&inputepw
+  prefix      = 'kno'
+  amass(1)    = 39.0983
+  amass(2)    = 92.90638
+  amass(3)    = 15.9994
+  outdir      = './tmp'
+  dvscf_dir   = './save'
+
+  elph        = .true.
+  epbwrite    = .false.
+  epbread     = .false.
+  epwwrite    = .true.
+  epwread     = .false.
+  etf_mem     = 1
+  lpolar      = .false.
+  asr_typ     = 'crystal'
+  use_ws      = .true.
+  vme         = 'wannier'
+
+  ! ---- Wannierisation: O 2p + Nb 4d + Nb 5s + K 4s + K 3d = 21 WFs, bands 1-11 (semicore) excluded
+  wannierize  = .true.
+  nbndsub     = 21
+  bands_skipped = 'exclude_bands = 1-11'
+  num_iter    = 1000
+  iprint      = 2
+  dis_win_min = 2.0
+  dis_win_max = 30.0
+  dis_froz_min = 2.0
+  dis_froz_max = 17.5
+  proj(1)     = 'O:p'
+  proj(2)     = 'Nb:d'
+  proj(3)     = 'Nb:s'
+  proj(4)     = 'K:s'
+  proj(5)     = 'K:d'
+  wdata(1)    = 'dis_num_iter = 2000'
+  wdata(2)    = 'dis_mix_ratio = 0.5'
+  wdata(3)    = 'guiding_centres = .true.'
+  wdata(4)    = 'bands_plot = .true.'
+  wdata(5)    = 'begin kpoint_path'
+  wdata(6)    = 'G 0.0 0.0 0.0  X 0.5 0.0 0.0'
+  wdata(7)    = 'X 0.5 0.0 0.0  M 0.5 0.5 0.0'
+  wdata(8)    = 'M 0.5 0.5 0.0  G 0.0 0.0 0.0'
+  wdata(9)    = 'G 0.0 0.0 0.0  R 0.5 0.5 0.5'
+  wdata(10)   = 'R 0.5 0.5 0.5  X 0.5 0.0 0.0'
+  wdata(11)   = 'end kpoint_path'
+  wdata(12)   = 'bands_num_points = 40'
+  wdata(13)   = 'bands_plot_format = gnuplot'
+
+  ! ---- coherent-phonon generation kernel (kernel variant of EPW, lindabs driver)
+  lindabs     = .true.
+  ladsmear    = .false.
+  omegamin    = 0.02
+  omegamax    = 6.0
+  omegastep   = 0.02
+  degaussw    = 0.025
+  temps       = 300
+  efermi_read = .true.
+  fermi_energy = 9.51
+  fsthick     = 1.0d10
+  eps_acoustic = 5.0
+
+  elecselfen  = .false.
+  phonselfen  = .false.
+  a2f         = .false.
+
+  nk1 = 8, nk2 = 8, nk3 = 8
+  nq1 = 1, nq2 = 1, nq3 = 1
+  nkf1 = 12, nkf2 = 12, nkf3 = 12
+  nqf1 = 1, nqf2 = 1, nqf3 = 1
+/

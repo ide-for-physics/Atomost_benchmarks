@@ -1,0 +1,9 @@
+&inputpp
+  outdir    = './tmp'
+  prefix    = 'knbo3'
+  seedname  = 'knbo3'
+  write_mmn = .true.
+  write_amn = .true.
+  write_unk = .false.
+  write_eig = .true.
+/

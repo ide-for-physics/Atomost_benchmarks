@@ -1,0 +1,38 @@
+{
+  "checks": [
+    {
+      "limit": 2.0,
+      "name": "harmonic_gate_vs_dfpt",
+      "pass": true,
+      "value": 1.8926884076842754
+    },
+    {
+      "limit": 0.03,
+      "name": "fit_residual",
+      "pass": true,
+      "value": 0.005954928714203068
+    },
+    {
+      "limit": 10.0,
+      "name": "scp_gate",
+      "pass": true,
+      "value": 1.0527654911340534
+    },
+    {
+      "limit": "present",
+      "name": "renormalised_dyn_written",
+      "pass": true,
+      "value": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/CdS_mp672_e2eH/results/anharmonic/CdS_mp672_e2eH.dyn_q1_T300.xml"
+    }
+  ],
+  "code": {
+    "manifest_sha256": "e8050e6a9f5b3a0a7adc238b2ecb933202c3c2278ca8b031e317fe7ab418b09f",
+    "package": "kernel_pipeline",
+    "rules_sha256": "1885bf0303112ce03a6fc33fe1c50b31c05c71cbd5d96199b9ce7e0e0fc77891",
+    "sealed_at": "2026-10-15T09:12:51+02:00",
+    "version": "v2.0.12"
+  },
+  "status": "PASS",
+  "step": "analysis",
+  "time": "2026-10-15T12:47:53+02:00"
+}

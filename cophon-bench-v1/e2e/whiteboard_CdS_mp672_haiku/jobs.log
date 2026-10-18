@@ -1,0 +1,36 @@
+# job_id  purpose  partition  allocated  elapsed  node-hours  state
+# node-hours = allocated cores / 128 x elapsed (small and debug are charged by allocated cores; jobs use whole 128-core nodes)
+22880692  SCF 6x6x4 k, ecut 100/400 Ry, nbnd 40 (scf.in)  debug  64 cores  00:00:13  0.0018  COMPLETED
+22880700  DFPT Gamma (ph.x epsil+trans), 1st attempt  small  128 cores  00:18:21  0.3058  CANCELLED: srun interconnect launch failure on 4 nodes
+22880868  NSCF coarse 6x6x4 full list, 144 k (nscf_coarse.in)  debug  64 cores  00:00:18  0.0025  COMPLETED
+22880964  DFT bands, path G-M-K-G-A-L-H-A, 8 seg x 12 (bands_path_remote.in)  debug  64 cores  00:00:15  0.0021  COMPLETED
+22881430  DFPT Gamma, resubmit on 2 nodes  small  128 cores  00:00:29  0.0081  CANCELLED: same srun interconnect failure
+22881635  DFPT Gamma, 1 node x 64 tasks (ph.in) -- used  small  128 cores  00:02:33  0.0425  COMPLETED
+22881840  EPW test 12x12x8, W90 window 15.5 eV  small  128 cores  00:07:12  0.1200  FAILED: W90 window (14 states < 16 WF)
+22882125  EPW test, W90 window 18 eV  small  128 cores  00:05:40  0.0944  FAILED: window (14 states at k3)
+22882280  EPW test, W90 window 22 eV  small  128 cores  00:02:10  0.0361  FAILED: missing dvscf patterns (EPW)
+22882407  EPW test, +patterns  small  128 cores  00:02:06  0.0350  FAILED: missing cds.dyn_q1
+22882518  EPW test, +dyn_q1  small  128 cores  00:02:08  0.0356  FAILED: missing dvscf_q1
+22882603  ph2 first submit (bad cd path)  small  128 cores  00:00:06  0.0017  CANCELLED
+22882604  ph2 rerun with dvscf_star (writes dvscf_q1)  small  128 cores  00:02:38  0.0439  COMPLETED
+22882647  EPW test 12x12x8, dvscf_q1 present  small  128 cores  00:02:50  0.0472  COMPLETED (test kernel, 12x12x8)
+22882696  EPW kernel 24x24x16  small  128 cores  00:05:22  0.0894  COMPLETED
+22882782  EPW kernel 36x36x24  small  128 cores  00:11:56  0.1989  COMPLETED
+22883072  EPW kernel 48x48x32  small  128 cores  00:25:15  0.4208  COMPLETED
+22883673  EPW kernel 60x60x40  small  128 cores  00:46:13  0.7703  COMPLETED
+22884450  EPW kernel 72x72x48 (ADOPTED converged mesh)  small  128 cores  01:28:37  1.4769  COMPLETED
+22885546  W90 band plot attempt 1 (no eig)  debug  2 cores  00:00:04  0.0000  FAILED
+22885555  W90 band plot attempt 2 (eig k-major)  debug  2 cores  00:00:04  0.0000  FAILED
+22885561  W90 band plot attempt 3 (eig band-major)  debug  2 cores  00:00:06  0.0000  FAILED
+22885570  DFT bands on 85-point shared path (attempt 1, pw.x)  debug  128 cores  00:00:12  0.0033  COMPLETED
+22885571  EPW band plot attempt 1 (abs filkf)  small  128 cores  00:00:04  0.0011  FAILED
+22885574  EPW band plot attempt 2 (no nqf)  small  128 cores  00:02:29  0.0414  FAILED
+22885603  EPW band plot attempt 3 (no crystal header)  small  128 cores  00:02:30  0.0417  FAILED
+22885643  EPW band plot attempt 4 (bad k format)  small  128 cores  00:02:31  0.0419  FAILED
+22885693  EPW band plot, 16 WF -- used for band comparison  small  128 cores  00:02:28  0.0411  COMPLETED
+22885717  EPW 20 WF attempt (abs filkf)  small  128 cores  00:00:04  0.0011  CANCELLED
+22885718  EPW 20 WF attempt (random projections)  small  128 cores  00:20:35  0.3431  CANCELLED: W90 rejected 'random'
+22885944  EPW 18 WF attempt (dropped proj(1))  small  128 cores  00:00:05  0.0014  CANCELLED
+22885948  EPW 18 WF attempt (Cd d)  small  128 cores  00:00:26  0.0072  FAILED: munmap_chunk crash in W90 interface
+# total node-hours (this project's jobs under my name, excluding other jobs on the account): 4.256
+# excluded: 22872846 and 22876187 (CdS_mp672_e2eH_rekernel_*), not submitted by this run

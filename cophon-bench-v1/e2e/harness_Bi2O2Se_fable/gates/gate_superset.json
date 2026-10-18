@@ -1,0 +1,47 @@
+{
+  "checks": [
+    {
+      "limit": "COMPLETED and PASSED",
+      "name": "superset_job_passed",
+      "pass": true,
+      "value": {
+        "state": "COMPLETED",
+        "status_file": true
+      }
+    },
+    {
+      "limit": "file",
+      "name": "projectability_present",
+      "pass": true,
+      "value": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/Bi2O2Se_e2eF/results/superset_proj.json"
+    },
+    {
+      "limit": 53,
+      "name": "projectability_bands",
+      "pass": true,
+      "value": 53
+    },
+    {
+      "limit": 45,
+      "name": "projectability_columns",
+      "pass": true,
+      "value": 45
+    }
+  ],
+  "code": {
+    "manifest_sha256": "38fbfe4df2f3f17ab614ee68c189c8ee7770591b33e88bc079b01c6b0daebcfc",
+    "package": "kernel_pipeline",
+    "rules_sha256": "1885bf0303112ce03a6fc33fe1c50b31c05c71cbd5d96199b9ce7e0e0fc77891",
+    "sealed_at": "2026-10-15T10:57:19+02:00",
+    "version": "v2.0.13"
+  },
+  "extra": [],
+  "num_wann": 45,
+  "status": "PASS",
+  "superset": [
+    "Bi:s;p;d",
+    "Se:s;p;d",
+    "O:s;p;d"
+  ],
+  "time": "2026-10-15T12:12:28+02:00"
+}

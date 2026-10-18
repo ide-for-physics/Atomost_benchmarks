@@ -1,0 +1,14 @@
+# jobs.log — one line per Slurm job: job id | purpose | partition | nodes x hours = node-hours | elapsed (Slurm)
+# Convention: LUMI-C nodes have 128 cores = 256 hyperthreads; Slurm's AllocCPUS counts hyperthreads, so
+# node fraction = AllocCPUS/256 (a shared 32-task job = 64 AllocCPUS = 0.25 node; a full 128-task node = 256 = 1 node).
+# node-hours = node fraction x elapsed hours. Running total at the bottom.
+22922824 | pw.x SCF test at given positions (8x8x8 k, 90 Ry; forces, gap, symmetry) | debug | 0.25 node x 0.0044 h = 0.001 nh | 00:00:16
+22922838 | pw.x SCF + ph.x Gamma (DFPT, 1x1x1) + dynmat.x (ASR) | debug | 0.5 node x 0.066 h = 0.033 nh | 00:03:59
+22922889 | pw.x SCF + NSCF full 8x8x8 grid (50 bands) + bands path + projwfc.x | debug | 0.5 node x 0.018 h = 0.009 nh | 00:01:04
+22922922 | epw.x: Wannierisation (21 WFs) + epwwrite + kernel smoke test, fine mesh 12x12x12 | debug | 0.5 node x 0.307 h = 0.153 nh | 00:18:25
+22923073 | epw.x kernel, fine mesh 24x24x24 (epwread) | debug | 1 node x 0.064 h = 0.064 nh | 00:03:52
+22923107 | epw.x kernel, fine mesh 32x32x32 (epwread) | debug | 1 node x 0.133 h = 0.133 nh | 00:07:58
+22923078 | epw.x kernel, fine mesh 48x48x48 (epwread) | small | 1 node x 0.446 h = 0.446 nh | 00:26:45
+22923079 | epw.x kernel, fine mesh 64x64x64 (epwread) | small | 1 node x 1.003 h = 1.003 nh | 01:00:09
+22924174 | epw.x kernel, fine mesh 96x96x96 (epwread, final/converged) | small | 2 nodes x 2.130 h = 4.260 nh | 02:07:47
+# TOTAL: 0.001 + 0.033 + 0.009 + 0.153 + 0.064 + 0.133 + 0.446 + 1.003 + 4.260 = 6.102 node-hours (of 20 allowed)

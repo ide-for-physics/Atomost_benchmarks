@@ -1,0 +1,20 @@
+data_KNbO3_mp7375
+_symmetry_space_group_name_H-M   'P 1'
+_symmetry_Int_Tables_number   1
+_cell_length_a   4.005020
+_cell_length_b   4.005020
+_cell_length_c   4.005020
+_cell_angle_alpha   89.8916
+_cell_angle_beta   89.8916
+_cell_angle_gamma   89.8916
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+K1  K  0.985084 0.985084 0.985084
+Nb2  Nb  0.496170 0.496170 0.496170
+O3  O  0.471087 0.970072 0.471087
+O4  O  0.970072 0.471087 0.471087
+O5  O  0.471087 0.471087 0.970072

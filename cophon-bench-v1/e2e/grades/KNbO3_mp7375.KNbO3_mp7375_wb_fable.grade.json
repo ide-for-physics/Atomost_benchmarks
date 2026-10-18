@@ -1,0 +1,111 @@
+{
+ "schema": "cophon-bench.e.grade.v1",
+ "material": "KNbO3_mp7375",
+ "arm": "KNbO3_mp7375_wb_fable",
+ "kernel_file": "<whiteboard>/v1/KNbO3_mp7375_fable/kernel/Gamma_alphabeta_s.dat",
+ "kernel_sha256": "eea1899911810dcc851843bbf00910e698e47861f7b2fb23dc769be4668555a5",
+ "arm_peaks": [
+  {
+   "photon_ev": 3.32,
+   "invariant_a2_per_ev": 52.7969,
+   "mode_group": {
+    "modes": [
+     9
+    ],
+    "phonon_mev": 29.4226,
+    "thz": 7.1144,
+    "share_of_invariant": 0.8614
+   }
+  },
+  {
+   "photon_ev": 3.62,
+   "invariant_a2_per_ev": 51.6475,
+   "mode_group": {
+    "modes": [
+     9
+    ],
+    "phonon_mev": 29.4226,
+    "thz": 7.1144,
+    "share_of_invariant": 0.8954
+   }
+  }
+ ],
+ "baseline_peaks": [
+  {
+   "photon_ev": 3.63,
+   "invariant_a2_per_ev": 50.7252,
+   "mode_group": {
+    "modes": [
+     9
+    ],
+    "phonon_mev": 29.428,
+    "thz": 7.1156,
+    "share_of_invariant": 0.8927
+   }
+  },
+  {
+   "photon_ev": 3.96,
+   "invariant_a2_per_ev": 45.5991,
+   "mode_group": {
+    "modes": [
+     9
+    ],
+    "phonon_mev": 29.428,
+    "thz": 7.1156,
+    "share_of_invariant": 0.8883
+   }
+  }
+ ],
+ "matched_baseline_peak": null,
+ "position_ok": false,
+ "height_rel": 0.0408,
+ "height_ok": false,
+ "mode_rel": -0.0002,
+ "mode_ok": true,
+ "same_answer": false,
+ "second_peak": {
+  "arm_second_ev": 3.62,
+  "baseline_other_ev": 3.96,
+  "within_tol": false
+ },
+ "spectrum": {
+  "max_abs_dev_over_baseline_max": 0.0689,
+  "rel_l2": 0.0383
+ },
+ "self_report": {
+  "peak_ev": 3.64,
+  "peak_a2_per_ev": 79.9651,
+  "mode_thz": 7.1144,
+  "dev_peak_ev": 0.32,
+  "dev_height_rel": 0.5146,
+  "dev_mode_rel": 0.0
+ },
+ "cell_check": {
+  "arm_abc": [
+   4.00502,
+   4.00502,
+   4.00502
+  ],
+  "baseline_abc": [
+   4.00502,
+   4.00502,
+   4.00502
+  ],
+  "dev_percent": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "within_1pct": true
+ },
+ "costs": {
+  "node_hours": 6.102,
+  "wall_hours": 5.8,
+  "model_usd": null,
+  "human_touches": 0,
+  "mesh": "96x96x96",
+  "wannier_rounds": null,
+  "model": null
+ },
+ "verdict": "differs: position, height"
+}

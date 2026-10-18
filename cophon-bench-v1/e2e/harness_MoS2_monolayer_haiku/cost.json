@@ -1,0 +1,287 @@
+{
+  "agent": {
+    "by_agent": {},
+    "rule": "sessions started in this repo, turns after the material entered the workflow, attributed to the material named in the tool call (sticky until another material is named); code-editing turns excluded (Machine B)",
+    "sessions": [],
+    "tokens": {},
+    "unpriced_models": [],
+    "usd": 0.0
+  },
+  "compute": {
+    "by_stage": {
+      "electron": {
+        "clean_node_seconds": 51,
+        "core_hours": 1.813,
+        "jobs": 1,
+        "node_seconds": 51
+      },
+      "epw1": {
+        "clean_node_seconds": 365,
+        "core_hours": 12.978,
+        "jobs": 1,
+        "node_seconds": 365
+      },
+      "kernel": {
+        "clean_node_seconds": 128,
+        "core_hours": 4.551,
+        "jobs": 4,
+        "node_seconds": 128
+      },
+      "phonon": {
+        "clean_node_seconds": 75,
+        "core_hours": 2.667,
+        "jobs": 1,
+        "node_seconds": 75
+      },
+      "relax": {
+        "clean_node_seconds": 11,
+        "core_hours": 0.391,
+        "jobs": 1,
+        "node_seconds": 11
+      },
+      "superset": {
+        "clean_node_seconds": 46,
+        "core_hours": 1.636,
+        "jobs": 1,
+        "node_seconds": 46
+      },
+      "wannier": {
+        "clean_node_seconds": 287,
+        "core_hours": 10.204,
+        "jobs": 1,
+        "node_seconds": 287
+      }
+    },
+    "core_hours_per_node_hour": 128.0,
+    "jobs": [
+      {
+        "class": "clean",
+        "core_hours": 0.391,
+        "elapsed_s": 11,
+        "energy_kwh": 0.001,
+        "job": "22865095",
+        "name": "MoS2_monolayer_e2eH_relax",
+        "node_seconds": 11,
+        "nodes": 1,
+        "partition": "debug",
+        "stage": "relax",
+        "state": "COMPLETED",
+        "time": "2026-10-15T11:38:12+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.0153
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 1.813,
+        "elapsed_s": 51,
+        "energy_kwh": 0.0058,
+        "job": "22865525",
+        "name": "MoS2_monolayer_e2eH_electron",
+        "node_seconds": 51,
+        "nodes": 1,
+        "partition": "debug",
+        "stage": "electron",
+        "state": "COMPLETED",
+        "time": "2026-10-15T11:46:29+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.0708
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 1.636,
+        "elapsed_s": 46,
+        "energy_kwh": 0.0048,
+        "job": "22865788",
+        "name": "MoS2_monolayer_e2eH_superset",
+        "node_seconds": 46,
+        "nodes": 1,
+        "partition": "small",
+        "stage": "superset",
+        "state": "COMPLETED",
+        "time": "2026-10-15T11:49:44+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.0639
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 2.667,
+        "elapsed_s": 75,
+        "energy_kwh": 0.0111,
+        "job": "22867297",
+        "name": "MoS2_monolayer_e2eH_phonon",
+        "node_seconds": 75,
+        "nodes": 1,
+        "partition": "debug",
+        "stage": "phonon",
+        "state": "COMPLETED",
+        "time": "2026-10-15T12:13:59+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.1042
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 10.204,
+        "elapsed_s": 287,
+        "energy_kwh": 0.0475,
+        "job": "22867338",
+        "name": "MoS2_monolayer_e2eH_wannier_r1",
+        "node_seconds": 287,
+        "nodes": 1,
+        "partition": "small",
+        "stage": "wannier",
+        "state": "COMPLETED",
+        "time": "2026-10-15T12:15:42+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.3986
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 12.978,
+        "elapsed_s": 365,
+        "energy_kwh": 0.063,
+        "job": "22867956",
+        "name": "MoS2_monolayer_e2eH_epw1",
+        "node_seconds": 365,
+        "nodes": 1,
+        "partition": "small",
+        "stage": "epw1",
+        "state": "COMPLETED",
+        "time": "2026-10-15T12:22:25+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.5069
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 0.818,
+        "elapsed_s": 23,
+        "energy_kwh": 0.0031,
+        "job": "22869579",
+        "name": "MoS2_monolayer_e2eH_kernel",
+        "node_seconds": 23,
+        "nodes": 1,
+        "partition": "debug",
+        "stage": "kernel",
+        "state": "COMPLETED",
+        "time": "2026-10-15T12:50:04+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.0319
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 0.996,
+        "elapsed_s": 28,
+        "energy_kwh": 0.0037,
+        "job": "22869843",
+        "name": "MoS2_monolayer_e2eH_kernel",
+        "node_seconds": 28,
+        "nodes": 1,
+        "partition": "debug",
+        "stage": "kernel",
+        "state": "COMPLETED",
+        "time": "2026-10-15T12:53:19+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.0389
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 1.387,
+        "elapsed_s": 39,
+        "energy_kwh": 0.0058,
+        "job": "22869896",
+        "name": "MoS2_monolayer_e2eH_kernel",
+        "node_seconds": 39,
+        "nodes": 1,
+        "partition": "debug",
+        "stage": "kernel",
+        "state": "COMPLETED",
+        "time": "2026-10-15T12:56:31+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.0542
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 1.351,
+        "elapsed_s": 38,
+        "energy_kwh": 0.0056,
+        "job": "22870180",
+        "name": "MoS2_monolayer_e2eH_kernel",
+        "node_seconds": 38,
+        "nodes": 1,
+        "partition": "debug",
+        "stage": "kernel",
+        "state": "COMPLETED",
+        "time": "2026-10-15T12:59:46+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.0528
+        }
+      }
+    ],
+    "missing_in_accounting": [],
+    "scenario": "commercial",
+    "totals": {
+      "all": {
+        "core_hours": 34.24,
+        "energy_kwh": 0.151,
+        "jobs": 10,
+        "node_seconds": 963,
+        "usd": 1.338
+      },
+      "clean": {
+        "core_hours": 34.24,
+        "energy_kwh": 0.151,
+        "jobs": 10,
+        "node_seconds": 963,
+        "usd": 1.338
+      }
+    },
+    "unit": "node-seconds; core_hours = node_seconds/3600 x core_hours_per_node_hour",
+    "usd_per_node_hour": 5.0
+  },
+  "currency": "USD",
+  "generated": "2026-10-15T13:07:44+02:00",
+  "human_assumed": {
+    "minutes": 20,
+    "usd": 26.67,
+    "usd_per_hour": 80.0
+  },
+  "material": "MoS2_monolayer_e2eH",
+  "rates_version": "2026-09-19",
+  "storage": {
+    "bank_gb": 0.117,
+    "bank_path": "/projappl/project_<id>/<user>/cphon_bank/MoS2_monolayer_e2eH/epw1_22867956",
+    "local_gb": 0.052,
+    "usd_per_gb_month": 0.02,
+    "usd_per_month": 0.0034
+  },
+  "summary": {
+    "agent_usd": 0.0,
+    "compute_core_hours_all": 34.2,
+    "compute_core_hours_clean": 34.2,
+    "compute_node_hours_all": 0.268,
+    "compute_node_hours_clean": 0.268,
+    "compute_usd_all": 1.34,
+    "compute_usd_clean": 1.34,
+    "storage_usd_per_month": 0.0034,
+    "unit_cost_note": "compute (all jobs) + operating-agent tokens + one month of storage; human review shown separately as assumed",
+    "unit_cost_usd": 1.34
+  }
+}

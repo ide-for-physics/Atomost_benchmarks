@@ -1,0 +1,6 @@
+&bands
+  prefix = 'bos'
+  outdir = './tmp_bands'
+  filband = 'bos.bands.dat'
+  lsym = .false.
+/

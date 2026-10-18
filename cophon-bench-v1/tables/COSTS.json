@@ -1,0 +1,87 @@
+{
+ "model_usd": {
+  "A (main reps 4-5, hold-out reps 1-5)": {
+   "usd": {
+    "opus": 63.77763820000004,
+    "deepseek-v4-flash": 0.523934892,
+    "haiku": 1.4354379399999997,
+    "fable": 206.14100725000003,
+    "sonnet": 26.4122513
+   },
+   "calls": {
+    "opus": 246,
+    "deepseek-v4-flash": 246,
+    "haiku": 246,
+    "fable": 246,
+    "sonnet": 246
+   }
+  },
+  "B round 3 answers": {
+   "usd": {
+    "opus": 10.311669800000002,
+    "deepseek-v4-flash": 0.267059856,
+    "haiku": 0.25370376,
+    "fable": 39.002289499999996,
+    "sonnet": 2.9561004
+   },
+   "calls": {
+    "opus": 22,
+    "deepseek-v4-flash": 29,
+    "haiku": 38,
+    "fable": 21,
+    "sonnet": 27
+   }
+  },
+  "C stage 2 answers": {
+   "usd": {
+    "opus": 5.913258,
+    "deepseek-v4-flash": 0.08188844399999999,
+    "haiku": 0.6114114,
+    "fable": 20.4209,
+    "sonnet": 2.822546
+   },
+   "calls": {
+    "opus": 10,
+    "deepseek-v4-flash": 10,
+    "haiku": 10,
+    "fable": 10,
+    "sonnet": 10
+   }
+  },
+  "E ticket relay (harness arms)": {
+   "usd": {
+    "haiku": 0.18000000000000002,
+    "fable": 36.800000000000004
+   },
+   "calls": {}
+  },
+  "C expansion ticket relay": {
+   "usd": {
+    "haiku": 0.25
+   },
+   "calls": {
+    "haiku": 28
+   }
+  },
+  "E whiteboard arms": {
+   "usd": {
+    "haiku": 34.35,
+    "fable": 241.87
+   },
+   "calls": {}
+  },
+  "E whiteboard attempts cut by a limit before working": {
+   "usd": {
+    "fable/haiku": 0.0
+   },
+   "calls": {}
+  }
+ },
+ "node_hours": {
+  "E harness arms (16)": 81.37,
+  "E harness first attempts (_attempt1, 6)": 0.12944444444444445,
+  "E whiteboard arms (16, self-reported)": 76.4159,
+  "C expansion (10 materials)": 46.8975,
+  "A, B round 3, C answers": 0.0
+ }
+}

@@ -1,0 +1,43 @@
+&inputepw
+  prefix      = 'bi2o2se'
+  amass(1)    = 208.98040
+  amass(2)    = 78.971
+  amass(3)    = 15.9994
+  outdir      = './tmp'
+  dvscf_dir   = './save/'
+
+  elph        = .true.
+  epbwrite    = .false.
+  epbread     = .false.
+  epwwrite    = .false.
+  epwread     = .true.
+  etf_mem     = 0
+  wannierize  = .false.
+  nbndsub     = 18
+
+  lifc        = .true.
+  asr_typ     = 'crystal'
+
+  efermi_read = .true.
+  fermi_energy = 10.8335
+  fsthick     = 9.0
+  temps       = 300
+  degaussw    = 0.025
+  lindabs     = .true.
+  omegamin    = 0.01
+  omegamax    = 6.0
+  omegastep   = 0.01
+
+  nk1         = 8
+  nk2         = 8
+  nk3         = 8
+  nq1         = 1
+  nq2         = 1
+  nq3         = 1
+  nkf1        = 64
+  nkf2        = 64
+  nkf3        = 64
+  nqf1        = 1
+  nqf2        = 1
+  nqf3        = 1
+/

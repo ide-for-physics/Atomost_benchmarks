@@ -1,0 +1,13 @@
+phonons of NbFeSb at Gamma, with dielectric tensor and Born charges
+&inputph
+  prefix = 'nfs'
+  outdir = './tmp'
+  fildyn = 'nfs.dyn'
+  tr2_ph = 1.0d-16
+  ldisp = .true.
+  nq1 = 1, nq2 = 1, nq3 = 1
+  epsil = .true.
+  trans = .true.
+  fildvscf = 'dvscf'
+  verbosity = 'high'
+/

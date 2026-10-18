@@ -1,0 +1,22 @@
+# jobs.log — one line per Slurm job: jobid | purpose | partition | nodes x hours (node-hours charged = nodes*elapsed; shared jobs by cores/128)
+22926410 | pw.x relax (internal coords; converged at the sealed positions, 0 bfgs steps) | debug | 1 x 0.016 (58 s, 128 cores) = 0.016 nh
+22926459 | pw.x scf (12x12x12, 90 Ry) + bands on BCT2 path (201 k, nbnd 80) + bands.x | debug | 1 x 0.065 (3 min 53 s) = 0.065 nh
+22926460 | pw.x nscf 8x8x8 explicit grid, nbnd 80 | debug | 1 x 0.015 (54 s) = 0.015 nh
+22926510 | ph.x Gamma DFPT chunk A (epsil + irreps 1-3, max_seconds 540) | debug | 1 x 0.152 (9 min 08 s) = 0.152 nh
+22926511 | epw.x wannierize test (failed at input check, 9 s) | debug | 1 x 0.003 = 0.003 nh
+22926655 | epw.x wannierize tests V1 (ok, 2 min) + V2 (killed at time limit) | debug | 1 x 0.284 (17 min 02 s, hit 15-min+grace limit) = 0.284 nh
+22926656 | ph.x Gamma DFPT chunk B (irreps 4-8, recover) | debug | 1 x 0.156 (9 min 23 s) = 0.156 nh
+22926960 | ph.x Gamma DFPT chunk C (irreps 9-10, recover) + dynmat.x | debug | 1 x 0.124 (7 min 28 s) = 0.124 nh
+22926961 | epw.x wannierize tests V2b + V6 (SCDM), both timed out at 9 min | debug | 1 x 0.301 (18 min 04 s) = 0.301 nh
+22927182 | epw.x wannierize test V1b (adopted windows) | debug | 1 x 0.067 (4 min) = 0.067 nh
+22927235 | epw.x production: wannierize (2000 it) ok, e-ph step aborted on patterns path | debug | 1 x 0.25 (15 min) = 0.25 nh
+22927337 | epw.x production: coarse e-ph (q=G, 8^3 k), epmatwp + fmt files, band_plot | debug | 1 x 0.092 (5 min 30 s) = 0.092 nh
+22927419 | epw.x kernel 12^3 timing (failed: ukk not linked, 10 s) | debug | 1 x 0.003 = 0.003 nh
+22927517 | epw.x kernel nkf 12^3 (timing + sanity) | debug | 1 x 0.016 (57 s) = 0.016 nh
+22927524 | epw.x kernel nkf 24^3 | debug | 1 x 0.066 (3 min 57 s) = 0.066 nh
+22929355 | epw.x kernel nkf 32^3 | debug | 1 x 0.143 (8 min 35 s) = 0.143 nh
+22927568 | epw.x kernel nkf 96^3, OOM at start (small default mem 112G) | small | 1 x 0.014 (51 s, 128 cores) = 0.014 nh
+22929517 | epw.x kernel nkf 128^3, OOM at start (same cause) | small | 2 x 0.021 (74 s, 256 cores) = 0.041 nh
+22927535 | epw.x kernel nkf 36^3 | small | 1 x 0.195 (11 min 42 s, 128 cores) = 0.195 nh
+22927536 | epw.x kernel nkf 48^3 | small | 1 x 0.459 (27 min 33 s, 128 cores) = 0.459 nh
+22927537 | epw.x kernel nkf 64^3 | small | 1 x 1.061 (1 h 03 min 40 s, 128 cores) = 1.061 nh

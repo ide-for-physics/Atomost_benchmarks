@@ -1,0 +1,42 @@
+&control
+    calculation  = 'bands'
+    prefix       = 'cds'
+    pseudo_dir   = '/scratch/project_<id>/<user>/theory2code/cphon/bench_whiteboard_v1/CdS_mp672/pseudo'
+    outdir       = '/scratch/project_<id>/<user>/theory2code/cphon/bench_whiteboard_v1/CdS_mp672/tmp'
+/
+&system
+    ibrav        = 0
+    nat          = 4
+    ntyp         = 2
+    ecutwfc      = 100
+    ecutrho      = 400
+    occupations  = 'fixed'
+    nbnd         = 40
+/
+&electrons
+    conv_thr     = 1.0d-9
+    mixing_beta  = 0.5
+    diago_thr_init = 5.0d-6
+/
+ATOMIC_SPECIES
+  Cd  112.411  Cd.upf
+  S    32.065  S.upf
+CELL_PARAMETERS angstrom
+  2.06064203  -3.56913669   0.00000000
+  2.06064203   3.56913669   0.00000000
+  0.00000000   0.00000000   6.70487960
+ATOMIC_POSITIONS crystal
+  Cd  0.66666700  0.33333300  0.50022255
+  Cd  0.33333300  0.66666700  0.00022255
+  S   0.66666700  0.33333300  0.87677745
+  S   0.33333300  0.66666700  0.37677745
+K_POINTS crystal_b
+8
+0.00000000 0.00000000 0.00000000 12
+0.50000000 0.00000000 0.00000000 12
+0.33333333 0.33333333 0.00000000 12
+0.00000000 0.00000000 0.00000000 12
+0.00000000 0.00000000 0.50000000 12
+0.50000000 0.00000000 0.50000000 12
+0.33333333 0.33333333 0.50000000 12
+0.00000000 0.00000000 0.50000000 1

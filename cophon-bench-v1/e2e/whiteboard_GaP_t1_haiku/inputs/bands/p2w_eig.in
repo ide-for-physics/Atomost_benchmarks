@@ -1,0 +1,4 @@
+&inputpp
+  prefix = 'gap', outdir = '/scratch/project_<id>/<user>/theory2code/cphon/bench_whiteboard_v1/GaP_t1/haiku_run/tmp'
+  seedname = 'gap', write_mmn = .false., write_amn = .false., write_eig = .true.
+/

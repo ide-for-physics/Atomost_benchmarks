@@ -1,0 +1,253 @@
+{
+  "acoustic_cm1_asr": [
+    -0.0,
+    -0.0,
+    0.0
+  ],
+  "acoustic_tol_cm1": 1.0,
+  "checks": [
+    {
+      "limit": "inferred or given",
+      "name": "phonon_prefix_known",
+      "pass": true,
+      "value": "GaP_t1_e2eH"
+    },
+    {
+      "limit": "present",
+      "name": "phonon_ph_output_present",
+      "pass": true,
+      "value": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/GaP_t1_e2eH/results/phonon/ph.out"
+    },
+    {
+      "limit": true,
+      "name": "phonon_job_done",
+      "pass": true,
+      "value": true
+    },
+    {
+      "limit": false,
+      "name": "phonon_within_max_seconds",
+      "pass": true,
+      "value": false
+    },
+    {
+      "limit": 0,
+      "name": "phonon_scf_blocks_converged",
+      "pass": true,
+      "value": 0
+    },
+    {
+      "limit": "> 0",
+      "name": "phonon_scf_blocks_present",
+      "pass": true,
+      "value": 2
+    },
+    {
+      "limit": 6,
+      "name": "phonon_raw_mode_count",
+      "pass": true,
+      "value": 6
+    },
+    {
+      "limit": "present",
+      "name": "phonon_dynmat_output_present",
+      "pass": true,
+      "value": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/GaP_t1_e2eH/results/phonon/dynmat.out"
+    },
+    {
+      "limit": 6,
+      "name": "phonon_asr_mode_count",
+      "pass": true,
+      "value": 6
+    },
+    {
+      "limit": 1.0,
+      "name": "phonon_acoustic_after_asr",
+      "pass": true,
+      "value": [
+        -0.0,
+        -0.0,
+        0.0
+      ]
+    },
+    {
+      "limit": "> 0",
+      "name": "phonon_optical_modes_present",
+      "pass": true,
+      "value": 3
+    },
+    {
+      "limit": "non-empty",
+      "name": "phonon_file_GaP_t1_e2eH.dvscf_q1",
+      "pass": true,
+      "value": {
+        "present": true,
+        "size": 8748000
+      }
+    },
+    {
+      "limit": "non-empty",
+      "name": "phonon_file_GaP_t1_e2eH.dyn_q1.xml",
+      "pass": true,
+      "value": {
+        "present": true,
+        "size": 8623
+      }
+    },
+    {
+      "limit": "non-empty directory",
+      "name": "phonon_dir_GaP_t1_e2eH.phsave",
+      "pass": true,
+      "value": true
+    },
+    {
+      "limit": "present",
+      "name": "phonon_file_GaP_t1_e2eH.dyn0",
+      "pass": true,
+      "value": "GaP_t1_e2eH.dyn0.xml"
+    },
+    {
+      "limit": "parseable",
+      "name": "phonon_dyn_xml_parse",
+      "pass": true,
+      "value": "ok"
+    },
+    {
+      "limit": 2,
+      "name": "phonon_dyn_xml_nat",
+      "pass": true,
+      "value": 2
+    },
+    {
+      "limit": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "phonon_dyn_xml_q_is_gamma",
+      "pass": true,
+      "value": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "limit": "present",
+      "name": "phonon_epsilon_present",
+      "pass": true,
+      "value": [
+        [
+          10.69917180651329,
+          2.428599605261244e-15,
+          4.676827752339758e-15
+        ],
+        [
+          4.204956444661495e-15,
+          10.6991718065133,
+          2.012292493239382e-15
+        ],
+        [
+          3.788649332639633e-15,
+          2.900470912939507e-15,
+          10.6991718065133
+        ]
+      ]
+    },
+    {
+      "limit": "present",
+      "name": "phonon_zstar_present",
+      "pass": true,
+      "value": [
+        "1",
+        "2"
+      ]
+    }
+  ],
+  "code": {
+    "manifest_sha256": "e8050e6a9f5b3a0a7adc238b2ecb933202c3c2278ca8b031e317fe7ab418b09f",
+    "package": "kernel_pipeline",
+    "rules_sha256": "1885bf0303112ce03a6fc33fe1c50b31c05c71cbd5d96199b9ce7e0e0fc77891",
+    "sealed_at": "2026-10-15T09:12:51+02:00",
+    "version": "v2.0.12"
+  },
+  "converged": true,
+  "dynmat_out": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/GaP_t1_e2eH/results/phonon/dynmat.out",
+  "epsil": true,
+  "epsilon": [
+    [
+      10.69917180651329,
+      2.428599605261244e-15,
+      4.676827752339758e-15
+    ],
+    [
+      4.204956444661495e-15,
+      10.6991718065133,
+      2.012292493239382e-15
+    ],
+    [
+      3.788649332639633e-15,
+      2.900470912939507e-15,
+      10.6991718065133
+    ]
+  ],
+  "files": {
+    "GaP_t1_e2eH.dyn0": {
+      "path": "GaP_t1_e2eH.dyn0.xml",
+      "present": true
+    },
+    "save/GaP_t1_e2eH.dvscf_q1": {
+      "present": true,
+      "size": 8748000
+    },
+    "save/GaP_t1_e2eH.dyn_q1.xml": {
+      "present": true,
+      "size": 8623
+    },
+    "save/GaP_t1_e2eH.phsave/": {
+      "present": true
+    }
+  },
+  "freqs_cm1_asr": [
+    -0.0,
+    -0.0,
+    0.0,
+    359.18,
+    359.18,
+    359.18
+  ],
+  "freqs_cm1_raw": [
+    -2.842202,
+    -2.842202,
+    -2.842202,
+    359.200135,
+    359.200135,
+    359.200135
+  ],
+  "gate": "phonon",
+  "job_done": true,
+  "lpolar_recommended": true,
+  "max_abs_zstar": 2.172066361275892,
+  "max_freq_cm1": 359.18,
+  "nat": 2,
+  "optical_cm1_asr": [
+    359.18,
+    359.18,
+    359.18
+  ],
+  "optical_max_cm1": 359.18,
+  "ph_out": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/GaP_t1_e2eH/results/phonon/ph.out",
+  "polar": true,
+  "polar_measured": true,
+  "prefix": "GaP_t1_e2eH",
+  "reasons": [],
+  "softness": "stiff",
+  "softness_detail": {
+    "imaginary_cm1": [],
+    "lowest_optical_cm1": 359.18,
+    "softness": "stiff",
+    "threshold_cm1": 60.0
+  },
+  "stage_dir": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/GaP_t1_e2eH/results/phonon",
+  "status": "PASS"
+}

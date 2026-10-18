@@ -1,0 +1,9 @@
+# jobs.log: jobid | purpose | partition | nodes x hours (small/debug are shared: node-hours = cores/128 x hours) | node_h=<billed node-hours>
+22921749 | pw.x relax at fixed cell (9x9x6, 100 Ry): forces on the given positions already < 1e-4 Ry/bohr, 0 BFGS steps (15 s) | debug | 32 cores (0.25 node) x 0.02 h | node_h=0.005
+22921770 | pw.x scf (ok, 10 s) + ph.x, which stopped on an input error (diago_thr_init is not an &inputph variable) | debug | 64 cores (0.5 node) x 0.004 h | node_h=0.002
+22921771 | placeholder full-node job for the EPW mesh loop; started without its READY file and exited after 2 s | small | 1 node x 0.0006 h | node_h=0.001
+22921780 | ph.x at Gamma (epsil, tr2_ph 1e-16, 8 irreps, 5.5 min) + dynmat.x (asr=crystal) + EPW pp.py | debug | 64 cores (0.5 node) x 0.094 h | node_h=0.047
+22921847 | pw.x bands (211 k) + nscf 9x9x6 (486 k, nosym) + epw.x wannierize/epbwrite/epwwrite + kernel 24x24x13 (22.2 min) | debug | 64 cores (0.5 node) x 0.37 h | node_h=0.185
+22922082 | pw.x bands on the W90 path (181 k) + epw.x epwread kernels 24x24x13, 48x48x26 (53 min), 72x72x38 (175 min); 00:44-04:32 EEST | small | 1 node x 3.81 h | node_h=3.81
+22923502 | epw.x epwread kernel 96x96x51 in calc/epw96 (symlinked Wannier data); 03:00:25-08:03:12 EEST | small | 1 node x 5.046 h | node_h=5.046
+# total node_h = 9.096 of the 20 node-hour budget

@@ -1,0 +1,65 @@
+{
+  "schema": "cophon-bench.e.result.v1",
+  "material": "Bi2O2Se",
+  "kernel_file": "kernel/Gamma_alphabeta_s.dat",
+  "peak_ev": 3.8,
+  "peak_a2_per_ev": 40.11,
+  "mode_thz": 4.68,
+  "mode_irrep": "A_1g",
+  "mesh": "64x64x64",
+  "cell_angstrom": [
+    [
+      -1.96469684,
+      1.96469684,
+      6.20630152
+    ],
+    [
+      1.96469684,
+      -1.96469684,
+      6.20630152
+    ],
+    [
+      1.96469684,
+      1.96469684,
+      -6.20630152
+    ]
+  ],
+  "species": [
+    "Bi",
+    "Bi",
+    "Se",
+    "O",
+    "O"
+  ],
+  "positions_crystal": [
+    [
+      0.3531302438,
+      0.3531302438,
+      0.0
+    ],
+    [
+      0.6468697562,
+      0.6468697562,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.25,
+      0.75,
+      0.5
+    ],
+    [
+      0.75,
+      0.25,
+      0.5
+    ]
+  ],
+  "node_hours": 8.83,
+  "wall_hours": 12.3,
+  "model_usd": null,
+  "human_touches": 0
+}

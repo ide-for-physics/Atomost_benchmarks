@@ -1,0 +1,34 @@
+--
+&inputepw
+  prefix       = 'nbfesb'
+  outdir       = './k6'
+  amass(1)     = 92.906
+  amass(2)     = 55.845
+  amass(3)     = 121.760
+  dvscf_dir    = './save/'
+  filukk       = './k6/nbfesb.ukk'
+
+  elph         = .false.
+  epbwrite     = .false.
+  epwwrite     = .false.
+  epbread      = .false.
+  epwread      = .true.
+
+  wannierize   = .false.
+  nbndsub      = 16
+  bands_skipped = 'exclude_bands = 1:13'
+
+  efermi_read  = .true.
+  fermi_energy = 17.2377
+  temps        = 300
+  degaussw     = 0.025
+
+  nk1 = 6
+  nk2 = 6
+  nk3 = 6
+  nq1 = 1
+  nq2 = 1
+  nq3 = 1
+  band_plot    = .true.
+  filkf        = 'path.dat'
+/

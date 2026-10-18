@@ -1,0 +1,47 @@
+{
+  "schema": "cophon-bench.e.result.v1",
+  "material": "GaP_t1",
+  "kernel_file": "kernel/Gamma_alphabeta_s.dat",
+  "peak_ev": 2.82,
+  "peak_a2_per_ev": 29.78939,
+  "mode_thz": 10.7675,
+  "mode_irrep": "T2 (G15)",
+  "mesh": "96x96x96",
+  "cell_angstrom": [
+    [
+      0.0,
+      2.72358864,
+      2.72358864
+    ],
+    [
+      2.72358864,
+      0.0,
+      2.72358864
+    ],
+    [
+      2.72358864,
+      2.72358864,
+      0.0
+    ]
+  ],
+  "species": [
+    "Ga",
+    "P"
+  ],
+  "positions_crystal": [
+    [
+      0.25,
+      0.25,
+      0.25
+    ],
+    [
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "node_hours": 0.654,
+  "wall_hours": 4.8,
+  "model_usd": null,
+  "human_touches": 0
+}

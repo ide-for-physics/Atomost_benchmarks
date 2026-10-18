@@ -1,0 +1,6 @@
+&BANDS
+  prefix   = 'sns2'
+  outdir   = './tmp_bands'
+  filband  = 'bands_dft.dat'
+  lsym     = .false.
+/

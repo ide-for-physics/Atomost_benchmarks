@@ -1,0 +1,19 @@
+begin projections
+ Bi:s;p
+ O:s;p
+ Se:s;p
+end projections
+ exclude_bands = 1:15                                                                                                                                                                                                                                            
+num_wann =  20
+iprint =   2
+dis_win_min =    -9.500000000000
+dis_win_max =    20.700000000000
+dis_froz_min =    -9.500000000000
+dis_froz_max =    15.700000000000
+num_iter =    2000
+write_bvec = .true.
+ write_hr = .true.
+ dis_num_iter = 2000
+ dis_conv_tol = 1.0d-11
+ conv_tol = 1.0d-11
+ conv_window = 5

@@ -1,0 +1,6 @@
+&INPUT
+  fildyn  = 'sns2.dyn1'
+  asr     = 'crystal'
+  filout  = 'dynmat.out.axsf'
+  fileig  = 'dynmat.eig'
+/

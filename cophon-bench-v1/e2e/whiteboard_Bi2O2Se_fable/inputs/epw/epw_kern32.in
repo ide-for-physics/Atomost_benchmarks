@@ -1,0 +1,40 @@
+--
+&inputepw
+  prefix      = 'bos'
+  outdir      = '../run/tmp_nscf'
+  dvscf_dir   = '../run/save'
+  elph        = .true.
+  epbwrite    = .false.
+  epbread     = .false.
+  epwwrite    = .false.
+  epwread     = .true.
+  etf_mem     = 1
+  use_ws      = .true.
+  lpolar      = .false.
+  vme         = 'wannier'
+
+  wannierize  = .false.
+  nbndsub     = 20
+  bands_skipped = 'exclude_bands = 1:15'
+
+  elecselfen  = .false.
+  phonselfen  = .false.
+
+  lindabs      = .true.
+  omegamin     = 0.01
+  omegamax     = 6.00
+  omegastep    = 0.01
+  nstemp       = 1
+  temps        = 300.0
+  efermi_read  = .true.
+  fermi_energy = 10.8360
+  fsthick      = 8.0
+  degaussw     = 0.025
+  eps_acoustic = 10.0
+  mp_mesh_k    = .false.
+
+  nk1 = 8, nk2 = 8, nk3 = 8
+  nq1 = 1, nq2 = 1, nq3 = 1
+  nkf1 = 32, nkf2 = 32, nkf3 = 32
+  nqf1 = 1, nqf2 = 1, nqf3 = 1
+/

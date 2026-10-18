@@ -1,0 +1,6 @@
+&input
+  fildyn = 'bos.dyn1'
+  asr = 'crystal'
+  filout = 'bos.dynmat.out'
+  fileig = 'bos.dynmat.eig'
+/

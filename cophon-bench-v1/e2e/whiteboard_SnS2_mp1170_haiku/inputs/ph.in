@@ -1,0 +1,12 @@
+phonons of SnS2 at Gamma (sealed cell)
+&INPUTPH
+  prefix   = 'sns2'
+  outdir   = './tmp'
+  fildyn   = 'sns2.dyn'
+  fildvscf = 'dvscf'
+  tr2_ph   = 1.0d-16
+  epsil    = .true.
+  ldisp    = .true.
+  nq1 = 1, nq2 = 1, nq3 = 1
+  verbosity = 'high'
+/

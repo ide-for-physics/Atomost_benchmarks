@@ -1,0 +1,10 @@
+&projwfc
+  prefix  = 'kno'
+  outdir  = './tmp'
+  filproj = 'kno.proj'
+  lsym    = .false.
+  Emin    = 0.0
+  Emax    = 30.0
+  DeltaE  = 0.05
+  degauss = 0.01
+/

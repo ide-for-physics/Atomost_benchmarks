@@ -1,0 +1,341 @@
+{
+  "agent": {
+    "by_agent": {},
+    "rule": "sessions started in this repo, turns after the material entered the workflow, attributed to the material named in the tool call (sticky until another material is named); code-editing turns excluded (Machine B)",
+    "sessions": [],
+    "tokens": {},
+    "unpriced_models": [],
+    "usd": 0.0
+  },
+  "compute": {
+    "by_stage": {
+      "anharmonic": {
+        "core_hours": 9.031,
+        "exploration_node_seconds": 254,
+        "jobs": 1,
+        "node_seconds": 254
+      },
+      "electron": {
+        "clean_node_seconds": 184,
+        "core_hours": 6.542,
+        "jobs": 1,
+        "node_seconds": 184
+      },
+      "epw1": {
+        "clean_node_seconds": 562,
+        "core_hours": 19.982,
+        "jobs": 1,
+        "node_seconds": 562
+      },
+      "kernel": {
+        "clean_node_seconds": 3661,
+        "core_hours": 130.169,
+        "jobs": 4,
+        "node_seconds": 3661
+      },
+      "phonon": {
+        "clean_node_seconds": 240,
+        "core_hours": 8.533,
+        "jobs": 1,
+        "node_seconds": 240
+      },
+      "relax": {
+        "clean_node_seconds": 13,
+        "core_hours": 0.462,
+        "jobs": 1,
+        "node_seconds": 13
+      },
+      "superset": {
+        "clean_node_seconds": 157,
+        "core_hours": 5.582,
+        "jobs": 1,
+        "node_seconds": 157
+      },
+      "wannier": {
+        "clean_node_seconds": 713,
+        "core_hours": 25.351,
+        "jobs": 1,
+        "node_seconds": 713
+      }
+    },
+    "core_hours_per_node_hour": 128.0,
+    "jobs": [
+      {
+        "class": "clean",
+        "core_hours": 0.462,
+        "elapsed_s": 13,
+        "energy_kwh": 0.001,
+        "job": "22861540",
+        "name": "CdS_mp672_e2eF_relax",
+        "node_seconds": 13,
+        "nodes": 1,
+        "partition": "debug",
+        "stage": "relax",
+        "state": "COMPLETED",
+        "time": "2026-10-15T10:14:31+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.0181
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 6.542,
+        "elapsed_s": 184,
+        "energy_kwh": 0.0267,
+        "job": "22861762",
+        "name": "CdS_mp672_e2eF_electron",
+        "node_seconds": 184,
+        "nodes": 1,
+        "partition": "debug",
+        "stage": "electron",
+        "state": "COMPLETED",
+        "time": "2026-10-15T10:17:46+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.2556
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 5.582,
+        "elapsed_s": 157,
+        "energy_kwh": 0.0208,
+        "job": "22862174",
+        "name": "CdS_mp672_e2eF_superset",
+        "node_seconds": 157,
+        "nodes": 1,
+        "partition": "small",
+        "stage": "superset",
+        "state": "COMPLETED",
+        "time": "2026-10-15T10:24:05+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.2181
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 8.533,
+        "elapsed_s": 240,
+        "energy_kwh": 0.041,
+        "job": "22862182",
+        "name": "CdS_mp672_e2eF_phonon",
+        "node_seconds": 240,
+        "nodes": 1,
+        "partition": "debug",
+        "stage": "phonon",
+        "state": "COMPLETED",
+        "time": "2026-10-15T10:24:10+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.3333
+        }
+      },
+      {
+        "class": "exploration",
+        "core_hours": 9.031,
+        "elapsed_s": 254,
+        "energy_kwh": 0.0462,
+        "job": "22862441",
+        "name": "CdS_mp672_e2eF_anharmonic_lattice",
+        "node_seconds": 254,
+        "nodes": 1,
+        "partition": "small",
+        "stage": "anharmonic",
+        "state": "COMPLETED",
+        "time": "2026-10-15T10:30:48+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.3528
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 25.351,
+        "elapsed_s": 713,
+        "energy_kwh": 0.1222,
+        "job": "22862589",
+        "name": "CdS_mp672_e2eF_wannier_r1",
+        "node_seconds": 713,
+        "nodes": 1,
+        "partition": "small",
+        "stage": "wannier",
+        "state": "COMPLETED",
+        "time": "2026-10-15T10:32:32+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.9903
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 19.982,
+        "elapsed_s": 562,
+        "energy_kwh": 0.0919,
+        "job": "22863775",
+        "name": "CdS_mp672_e2eF_epw1",
+        "node_seconds": 562,
+        "nodes": 1,
+        "partition": "small",
+        "stage": "epw1",
+        "state": "COMPLETED",
+        "time": "2026-10-15T10:58:56+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.7806
+        }
+      },
+      {
+        "class": "exploration",
+        "job": "22865532",
+        "node_seconds": null,
+        "partition": "small",
+        "script": "anharmonic_forces.slurm",
+        "stage": "anharmonic",
+        "state": "UNKNOWN",
+        "time": "2026-10-15T11:46:50+02:00"
+      },
+      {
+        "class": "clean",
+        "core_hours": 12.444,
+        "elapsed_s": 350,
+        "energy_kwh": 0.0658,
+        "job": "22867345",
+        "name": "CdS_mp672_e2eF_kernel",
+        "node_seconds": 350,
+        "nodes": 1,
+        "partition": "debug",
+        "stage": "kernel",
+        "state": "COMPLETED",
+        "time": "2026-10-15T12:15:48+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.4861
+        }
+      },
+      {
+        "class": "clean",
+        "job": "22867657",
+        "node_seconds": null,
+        "partition": "small",
+        "script": "anharmonic_forces.slurm",
+        "stage": "anharmonic",
+        "state": "UNKNOWN",
+        "time": "2026-10-15T12:19:01+02:00"
+      },
+      {
+        "class": "clean",
+        "core_hours": 20.836,
+        "elapsed_s": 586,
+        "energy_kwh": 0.1079,
+        "job": "22867996",
+        "name": "CdS_mp672_e2eF_kernel",
+        "node_seconds": 586,
+        "nodes": 1,
+        "partition": "debug",
+        "stage": "kernel",
+        "state": "COMPLETED",
+        "time": "2026-10-15T12:23:50+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 0.8139
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 48.427,
+        "elapsed_s": 1362,
+        "energy_kwh": 0.2717,
+        "job": "22868788",
+        "name": "CdS_mp672_e2eF_kernel",
+        "node_seconds": 1362,
+        "nodes": 1,
+        "partition": "small",
+        "stage": "kernel",
+        "state": "COMPLETED",
+        "time": "2026-10-15T12:36:23+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 1.8917
+        }
+      },
+      {
+        "class": "clean",
+        "core_hours": 48.462,
+        "elapsed_s": 1363,
+        "energy_kwh": 0.2612,
+        "job": "22871033",
+        "name": "CdS_mp672_e2eF_kernel",
+        "node_seconds": 1363,
+        "nodes": 1,
+        "partition": "small",
+        "stage": "kernel",
+        "state": "COMPLETED",
+        "time": "2026-10-15T13:12:25+02:00",
+        "usd": {
+          "allocation": 0.0,
+          "commercial": 1.8931
+        }
+      }
+    ],
+    "missing_in_accounting": [
+      "22865532",
+      "22867657"
+    ],
+    "scenario": "commercial",
+    "totals": {
+      "all": {
+        "core_hours": 205.653,
+        "energy_kwh": 1.056,
+        "jobs": 11,
+        "node_seconds": 5784,
+        "usd": 8.033
+      },
+      "clean": {
+        "core_hours": 196.622,
+        "energy_kwh": 1.01,
+        "jobs": 10,
+        "node_seconds": 5530,
+        "usd": 7.681
+      },
+      "exploration": {
+        "core_hours": 9.031,
+        "energy_kwh": 0.046,
+        "jobs": 1,
+        "node_seconds": 254,
+        "usd": 0.353
+      }
+    },
+    "unit": "node-seconds; core_hours = node_seconds/3600 x core_hours_per_node_hour",
+    "usd_per_node_hour": 5.0
+  },
+  "currency": "USD",
+  "generated": "2026-10-15T13:53:13+02:00",
+  "human_assumed": {
+    "minutes": 20,
+    "usd": 26.67,
+    "usd_per_hour": 80.0
+  },
+  "material": "CdS_mp672_e2eF",
+  "rates_version": "2026-09-19",
+  "storage": {
+    "bank_gb": 0.22,
+    "bank_path": "/projappl/project_<id>/<user>/cphon_bank/CdS_mp672_e2eF/epw1_22863775",
+    "local_gb": 0.104,
+    "usd_per_gb_month": 0.02,
+    "usd_per_month": 0.0065
+  },
+  "summary": {
+    "agent_usd": 0.0,
+    "compute_core_hours_all": 205.7,
+    "compute_core_hours_clean": 196.6,
+    "compute_node_hours_all": 1.607,
+    "compute_node_hours_clean": 1.536,
+    "compute_usd_all": 8.03,
+    "compute_usd_clean": 7.68,
+    "storage_usd_per_month": 0.0065,
+    "unit_cost_note": "compute (all jobs) + operating-agent tokens + one month of storage; human review shown separately as assumed",
+    "unit_cost_usd": 8.04
+  }
+}

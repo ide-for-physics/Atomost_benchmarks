@@ -1,0 +1,51 @@
+{
+  "cell_functional": "PBEsol",
+  "checks": [
+    {
+      "limit": true,
+      "name": "job_done",
+      "pass": true,
+      "value": true
+    },
+    {
+      "limit": true,
+      "name": "scf_converged_last",
+      "pass": true,
+      "value": true
+    },
+    {
+      "limit": true,
+      "name": "bfgs_converged",
+      "pass": true,
+      "value": true
+    },
+    {
+      "limit": 0.000282842712474619,
+      "name": "max_force_ry_bohr",
+      "pass": true,
+      "value": 0.0
+    },
+    {
+      "limit": 1.0,
+      "name": "abs_pressure_kbar",
+      "pass": true,
+      "value": -0.25
+    },
+    {
+      "limit": false,
+      "name": "not_stopped_by_max_seconds",
+      "pass": true,
+      "value": false
+    }
+  ],
+  "code": {
+    "manifest_sha256": "e8050e6a9f5b3a0a7adc238b2ecb933202c3c2278ca8b031e317fe7ab418b09f",
+    "package": "kernel_pipeline",
+    "rules_sha256": "1885bf0303112ce03a6fc33fe1c50b31c05c71cbd5d96199b9ce7e0e0fc77891",
+    "sealed_at": "2026-10-15T09:12:51+02:00",
+    "version": "v2.0.12"
+  },
+  "status": "PASS",
+  "step": "cell",
+  "time": "2026-10-15T10:18:03+02:00"
+}

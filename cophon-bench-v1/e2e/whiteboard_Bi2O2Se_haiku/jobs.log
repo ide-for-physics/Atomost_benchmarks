@@ -1,0 +1,50 @@
+# jobid | purpose | partition | nodes x hours (processors/128 x elapsed) | state
+# processors = Slurm AllocCPUS (small partition charges 2 processors per task)
+22888429 | relax attempt 1 (pseudo_dir wrong) - failed at read | small | 0.500 node x 0.001 h (64 proc) | FAILED
+22888440 | SCF smoke test 4x4x4 60 Ry | debug | 0.250 node x 0.004 h (32 proc) | COMPLETED
+22888450 | relax attempt 2 (pseudo_dir wrong) - failed | small | 0.500 node x 0.001 h (64 proc) | FAILED
+22888471 | relax mis-submitted (quoting), cancelled before start | small | 0.500 node x 0.001 h (64 proc) | FAILED
+22888472 | relaxation of internal coordinates at sealed cell (converged) | small | 0.500 node x 0.021 h (64 proc) | COMPLETED
+22888496 | chain SCF8x8x8 + NSCF full list + ph.x (ph.x used 512-pt list: too slow) - cancelled | small | 0.500 node x 0.524 h (64 proc) | CANCELLED+
+22888887 | DFPT at Gamma from fresh SCF 8x8x8 (pp.py failed; gathered manually) | small | 0.500 node x 0.474 h (64 proc) | FAILED
+22889223 | EPW Wannierize 18 WF (simple ASR) + kernel 48^3 (run1, superseded) | small | 0.500 node x 1.895 h (64 proc) | COMPLETED
+22892670 | EPW kernel attempt (epbread+epwread conflict) - failed | small | 0.500 node x 0.001 h (64 proc) | FAILED
+22892671 | EPW kernel attempt - failed | small | 0.500 node x 0.001 h (64 proc) | FAILED
+22892672 | EPW kernel attempt - failed | small | 0.500 node x 0.001 h (64 proc) | FAILED
+22892687 | DFT bands along G-A-B-G-C (49 k) for Wannier check | small | 0.500 node x 0.010 h (64 proc) | COMPLETED
+22892690 | EPW kernel attempt (loadbm ukk missing) - failed | small | 0.500 node x 0.001 h (64 proc) | FAILED
+22892691 | EPW kernel attempt - failed | small | 0.500 node x 0.001 h (64 proc) | FAILED
+22892692 | EPW kernel attempt - failed | small | 0.500 node x 0.002 h (64 proc) | FAILED
+22892723 | EPW kernel attempt (crystal.fmt missing) - failed | small | 0.500 node x 0.001 h (64 proc) | FAILED
+22892724 | EPW kernel attempt - failed | small | 0.500 node x 0.001 h (64 proc) | FAILED
+22892725 | EPW kernel attempt - failed | small | 0.500 node x 0.001 h (64 proc) | FAILED
+22892732 | EPW kernel attempt (epwdata lifc mismatch) - failed | small | 0.500 node x 0.001 h (64 proc) | FAILED
+22892733 | EPW kernel attempt - failed | small | 0.500 node x 0.001 h (64 proc) | FAILED
+22892734 | EPW kernel attempt - failed | small | 0.500 node x 0.001 h (64 proc) | FAILED
+22892753 | EPW kernel attempt (vmedata missing) - failed | small | 0.500 node x 0.008 h (64 proc) | FAILED
+22892754 | EPW kernel attempt - failed | small | 0.500 node x 0.008 h (64 proc) | FAILED
+22892755 | EPW kernel attempt - failed | small | 0.500 node x 0.007 h (64 proc) | FAILED
+22892785 | EPW prep: regenerate epwdata with lifc=.true./asr crystal | small | 0.500 node x 0.071 h (64 proc) | COMPLETED
+22892809 | EPW kernel attempt (epmatwp missing) - failed | small | 0.500 node x 0.003 h (64 proc) | FAILED
+22892810 | EPW kernel attempt - failed | small | 0.500 node x 0.003 h (64 proc) | FAILED
+22892812 | EPW kernel attempt - failed | small | 0.500 node x 0.003 h (64 proc) | FAILED
+22892911 | EPW kernel 32^3, lifc+crystal ASR, old Wannier 18WF (superseded) | small | 0.500 node x 0.590 h (64 proc) | COMPLETED
+22892912 | EPW kernel 48^3, lifc+crystal ASR, old Wannier 18WF (superseded) | small | 0.500 node x 1.924 h (64 proc) | COMPLETED
+22892913 | EPW kernel 64^3 attempt OOM at 32 tasks - failed | small | 0.500 node x 0.007 h (64 proc) | FAILED
+22892933 | EPW band-plot check, attempt 1 (filkf/nkf conflict) - failed | small | 0.500 node x 0.001 h (64 proc) | FAILED
+22893421 | EPW kernel 64^3, old Wannier 18WF (superseded, cancelled at 2.6 h) | small | 0.500 node x 2.601 h (64 proc) | CANCELLED+
+22893422 | EPW band-plot check (old Wannier) - completed | small | 0.500 node x 0.003 h (64 proc) | COMPLETED
+22893659 | Wannier variant wv1 (20 WF incl O:s, wide outer window) - failed dis window, cancelled | small | 0.500 node x 0.862 h (64 proc) | CANCELLED+
+22893660 | Wannier variant wv2 (18 WF, froz VBM-6..+5): prep + band check | small | 0.500 node x 0.075 h (64 proc) | COMPLETED
+22894600 | wv3 queued on small, cancelled (resubmitted to debug) | small | 0.000 node x 0.000 h (0 proc) | CANCELLED+
+22894601 | wv4 queued on small, cancelled (resubmitted to debug) | small | 0.000 node x 0.000 h (0 proc) | CANCELLED+
+22897956 | Wannier variant wv3 (20 WF, outer -2..22) prep + band check (debug) | debug | 0.500 node x 0.086 h (64 proc) | COMPLETED
+22897957 | Wannier variant wv4 (20 WF, froz VBM-7..+6.5) prep + band check (debug) | debug | 0.500 node x 0.088 h (64 proc) | COMPLETED
+22898468 | Wannier variant wv5 (18 WF, froz VBM-6..+5.5) prep + band check (debug) - ADOPTED | debug | 0.500 node x 0.074 h (64 proc) | COMPLETED
+22898469 | Wannier variant wv6 (18 WF, froz VBM-6..+6) prep + band check (debug) | debug | 0.500 node x 0.076 h (64 proc) | COMPLETED
+22898983 | FINAL 32^3 kernel: wv5 Wannier prep + kernel, lifc+crystal ASR | small | 0.500 node x 0.700 h (64 proc) | COMPLETED
+22898984 | FINAL 48^3 kernel: wv5 Wannier prep + kernel, lifc+crystal ASR | small | 0.500 node x 2.733 h (64 proc) | COMPLETED
+22898986 | FINAL 64^3 chain attempt OOM at 32 tasks - failed | small | 0.500 node x 0.079 h (64 proc) | FAILED
+22899988 | FINAL 64^3 kernel: wv5 Wannier prep + kernel, lifc+crystal ASR (--mem=230G) | small | 0.500 node x 4.721 h (64 proc) | COMPLETED
+22915505 | FINAL 80^3 kernel: cancelled while queued on Priority (not run) | small | 0.000 node x 0.000 h (0 proc) | CANCELLED+
+# TOTAL node-hours 8.83 over 47 jobs

@@ -1,0 +1,59 @@
+&inputepw
+  prefix      = 'bi2o2se'
+  amass(1)    = 208.98040
+  amass(2)    = 78.971
+  amass(3)    = 15.9994
+  outdir      = './tmp'
+  dvscf_dir   = './save/'
+
+  elph        = .true.
+  epbwrite    = .false.
+  epbread     = .false.
+  epwwrite    = .false.
+  etf_mem     = 0
+
+  wannierize  = .false.
+  epwread     = .true.
+  lifc        = .true.
+  asr_typ     = 'crystal'
+  nbndsub     = 18
+  num_iter    = 300
+  iprint      = 2
+  dis_win_min = -0.331
+  dis_win_max = 20.669
+  dis_froz_min = 4.669
+  dis_froz_max = 16.169
+  proj(1)     = 'Bi:s;p'
+  proj(2)     = 'Se:s;p'
+  proj(3)     = 'O:p'
+
+  elecselfen  = .false.
+  phonselfen  = .false.
+  a2f         = .false.
+
+  efermi_read = .true.
+  fermi_energy = 10.8335
+  fsthick     = 9.0
+  temps       = 300
+  degaussw    = 0.025
+
+  lindabs     = .false.
+  omegamin    = 0.01
+  omegamax    = 6.0
+  omegastep   = 0.01
+
+  band_plot   = .true.
+  filkf       = 'path_kpts.txt'
+  nk1         = 8
+  nk2         = 8
+  nk3         = 8
+  nq1         = 1
+  nq2         = 1
+  nq3         = 1
+  nkf1        = 0
+  nkf2        = 0
+  nkf3        = 0
+  nqf1        = 1
+  nqf2        = 1
+  nqf3        = 1
+/

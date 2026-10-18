@@ -1,0 +1,6 @@
+&input
+  fildyn = 'cds.dyn1'
+  asr = 'crystal'
+  filout = 'cds.dynmat_asr.out'
+  fileig = 'cds.dynmat_asr.eig'
+/

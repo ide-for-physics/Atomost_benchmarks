@@ -1,0 +1,194 @@
+{
+  "figures": [
+    "sns2_mp1170_e2eh_all_modes_k64_sharey.png",
+    "sns2_mp1170_e2eh_all_modes_k64.png",
+    "sns2_mp1170_e2eh_mode_channel_heatmap_k64.png",
+    "sns2_mp1170_e2eh_invariant_k64.png"
+  ],
+  "first_nonzero_photon_ev": 1.8,
+  "gamma_file": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/SnS2_mp1170_e2eH/results/kernel_k64/Gamma_alphabeta_s.dat",
+  "gamma_sha256": "57504265f4e9b5efa362b326fa51d85932bbdd104138d8f6993916e0e2f2659a",
+  "global_amplitude_peak_angstrom": 5.5179041336299,
+  "global_kernel_peak": 31.873312633769334,
+  "invariant": {
+    "amplitude_peak_A": 8.543585548444568,
+    "amplitude_peak_eV": 5.46,
+    "channel_peaks_mode_summed": {
+      "xx": 30.30483499777345,
+      "xy": 3.1981152715437373,
+      "xz": 10.286567470077097,
+      "yx": 3.1987424600262746,
+      "yy": 30.318933602112565,
+      "yz": 10.30960811539009,
+      "zx": 10.405799627111184,
+      "zy": 10.426744272473599,
+      "zz": 31.873320720006053
+    },
+    "diag_over_offdiag": 3.0568814087203613,
+    "mean": 15.097184383214238,
+    "peak_A2_per_eV": 47.06566253149284,
+    "peak_eV": 5.46
+  },
+  "material": "SnS2_mp1170_e2eH",
+  "mesh": "64\u00d764\u00d764",
+  "mode_peaks": [
+    {
+      "amplitude_peak_angstrom": 0.0043627089712227046,
+      "amplitude_peak_channel": "yy",
+      "amplitude_peak_photon_ev": 3.87,
+      "kernel_peak": 0.02045615081705256,
+      "kernel_peak_channel": "yy",
+      "kernel_peak_photon_ev": 3.87,
+      "mode": 4,
+      "phonon_mev": 25.465887
+    },
+    {
+      "amplitude_peak_angstrom": 0.004463918545133075,
+      "amplitude_peak_channel": "yy",
+      "amplitude_peak_photon_ev": 4.8,
+      "kernel_peak": 0.020930708785896382,
+      "kernel_peak_channel": "yy",
+      "kernel_peak_photon_ev": 4.8,
+      "mode": 5,
+      "phonon_mev": 25.465887
+    },
+    {
+      "amplitude_peak_angstrom": 2.21844257825063,
+      "amplitude_peak_channel": "zy",
+      "amplitude_peak_photon_ev": 5.46,
+      "kernel_peak": 10.426742569072086,
+      "kernel_peak_channel": "zy",
+      "kernel_peak_photon_ev": 5.46,
+      "mode": 6,
+      "phonon_mev": 25.5872951
+    },
+    {
+      "amplitude_peak_angstrom": 2.213985158369589,
+      "amplitude_peak_channel": "zx",
+      "amplitude_peak_photon_ev": 5.46,
+      "kernel_peak": 10.405792570150533,
+      "kernel_peak_channel": "zx",
+      "kernel_peak_photon_ev": 5.46,
+      "mode": 7,
+      "phonon_mev": 25.5872951
+    },
+    {
+      "amplitude_peak_angstrom": 5.5179041336299,
+      "amplitude_peak_channel": "zz",
+      "amplitude_peak_photon_ev": 5.46,
+      "kernel_peak": 31.873312633769334,
+      "kernel_peak_channel": "zz",
+      "kernel_peak_photon_ev": 5.46,
+      "mode": 8,
+      "phonon_mev": 38.6482259
+    },
+    {
+      "amplitude_peak_angstrom": 0.0026113512589658527,
+      "amplitude_peak_channel": "xx",
+      "amplitude_peak_photon_ev": 5.64,
+      "kernel_peak": 0.01576436637114223,
+      "kernel_peak_channel": "xx",
+      "kernel_peak_photon_ev": 5.64,
+      "mode": 9,
+      "phonon_mev": 42.2129702
+    }
+  ],
+  "modes": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "nat": 3,
+  "peak_amplitude_matrix_angstrom": {
+    "4": {
+      "xx": 0.0041177115556051466,
+      "xy": 0.001791000394944162,
+      "xz": 0.0011412728141429534,
+      "yx": 0.0016869212182779128,
+      "yy": 0.0043627089712227046,
+      "yz": 0.0015999102158708698,
+      "zx": 0.001231452800500726,
+      "zy": 0.0016397676110649884,
+      "zz": 0.0003338002214284664
+    },
+    "5": {
+      "xx": 0.003956731265998715,
+      "xy": 0.004288221883069174,
+      "xz": 0.0015760009278762077,
+      "yx": 0.004304499330973232,
+      "yy": 0.004463918545133075,
+      "yz": 0.0011626681809716155,
+      "zx": 0.0016286847506582732,
+      "zy": 0.0012554359168058774,
+      "zz": 0.002356255669502075
+    },
+    "6": {
+      "xx": 0.6809083580402676,
+      "xy": 0.0008060439593759337,
+      "xz": 0.0007357554432175731,
+      "yx": 0.0009195503878165445,
+      "yy": 0.6819906350255949,
+      "yz": 2.1935200526448844,
+      "zx": 0.0007042082503095245,
+      "zy": 2.21844257825063,
+      "zz": 0.01152619645242304
+    },
+    "7": {
+      "xx": 0.0017637144413285438,
+      "xy": 0.6804442759365816,
+      "xz": 2.1886168309994565,
+      "yx": 0.6805775740585092,
+      "yy": 0.00103195828399238,
+      "yz": 0.0007182550038068714,
+      "zx": 2.213985158369589,
+      "zy": 0.0006792854252350667,
+      "zz": 0.001506262991193539
+    },
+    "8": {
+      "xx": 5.2449873615099945,
+      "xy": 0.0017191242715387336,
+      "xz": 0.0012166370347330704,
+      "yx": 0.0017190609124112595,
+      "yy": 5.247412303039922,
+      "yz": 0.003863228869539101,
+      "zx": 0.0011955109991711088,
+      "zy": 0.0039924076310151055,
+      "zz": 5.5179041336299
+    },
+    "9": {
+      "xx": 0.0026113512589658527,
+      "xy": 0.001220294222401276,
+      "xz": 0.0017564519206160582,
+      "yx": 0.0012238287807798253,
+      "yy": 0.0025684029050856887,
+      "yz": 0.00019864128753470066,
+      "zx": 0.001852437686448758,
+      "zy": 0.00019632895814183723,
+      "zz": 0.0016954612857236276
+    }
+  },
+  "phonon_mev": [
+    25.465887,
+    25.465887,
+    25.5872951,
+    25.5872951,
+    38.6482259,
+    42.2129702
+  ],
+  "photon_grid": {
+    "count": 200,
+    "max_ev": 6.0,
+    "min_ev": 0.03,
+    "step_ev": 0.030000000000000027
+  },
+  "pulse_convention": {
+    "E0_V_per_angstrom": 0.35,
+    "T_p_fs": 8.0,
+    "formula": "<dQ> = Qbar E0^2 T_p |Gamma| / (2 hbar), M0 = 1 amu (v2.0.13)"
+  },
+  "scope": "Gamma_c only (lgammae=.false.), fixed smearing",
+  "tag": "k64"
+}

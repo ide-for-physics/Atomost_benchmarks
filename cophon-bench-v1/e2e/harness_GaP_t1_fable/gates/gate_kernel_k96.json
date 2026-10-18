@@ -1,0 +1,161 @@
+{
+  "checks": [
+    {
+      "limit": "parseable",
+      "name": "kernel_parse",
+      "pass": true,
+      "value": "ok"
+    },
+    {
+      "limit": 3,
+      "name": "kernel_n_modes",
+      "pass": true,
+      "value": 3
+    },
+    {
+      "limit": 200,
+      "name": "kernel_n_omega",
+      "pass": true,
+      "value": 200
+    },
+    {
+      "limit": [
+        4,
+        5,
+        6
+      ],
+      "name": "kernel_mode_labels",
+      "pass": true,
+      "value": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "limit": true,
+      "name": "kernel_finite",
+      "pass": true,
+      "value": true
+    },
+    {
+      "limit": "> 0",
+      "name": "kernel_phonon_energies_positive",
+      "pass": true,
+      "value": [
+        44.534862,
+        44.534862,
+        44.534862
+      ]
+    },
+    {
+      "limit": [
+        0.03,
+        6.0,
+        0.03
+      ],
+      "name": "kernel_photon_grid",
+      "pass": true,
+      "value": [
+        0.03,
+        6.0,
+        0.030000000000000027
+      ]
+    },
+    {
+      "limit": 0.1,
+      "name": "kernel_mode_energies_match_dfpt",
+      "pass": true,
+      "value": 0.0
+    },
+    {
+      "limit": 0.1,
+      "name": "kernel_silent_modes_share",
+      "pass": true,
+      "silent_modes": [],
+      "value": 0.0
+    }
+  ],
+  "code": {
+    "manifest_sha256": "e8050e6a9f5b3a0a7adc238b2ecb933202c3c2278ca8b031e317fe7ab418b09f",
+    "package": "kernel_pipeline",
+    "rules_sha256": "1885bf0303112ce03a6fc33fe1c50b31c05c71cbd5d96199b9ce7e0e0fc77891",
+    "sealed_at": "2026-10-15T09:12:51+02:00",
+    "version": "v2.0.12"
+  },
+  "convergence_vs_next": null,
+  "convergence_vs_previous": {
+    "abs_floor_pass": false,
+    "amplitude_invariant": {
+      "nrmse_by_finer_peak": 0.028000867622674352,
+      "pearson": 0.9932851501257348,
+      "relative_l2_vs_finer": 0.08982987056443659
+    },
+    "below_detection_floor": false,
+    "checks": [
+      {
+        "limit": 0.03,
+        "name": "envelope_rel_l2",
+        "pass": true,
+        "value": 0.010492877490194213
+      },
+      {
+        "limit": {
+          "abs_floor": 0.01,
+          "detection_floor": 0.5
+        },
+        "name": "envelope_abs_floor_reported",
+        "pass": true,
+        "value": {
+          "abs_floor_pass": false,
+          "below_detection_floor": false,
+          "envelope_peak_cur": 11.981837756980683,
+          "rms_diff_A2_per_eV": 0.051631747237605025
+        }
+      },
+      {
+        "limit": "report only",
+        "name": "envelope_rel_l2_raw_reported",
+        "pass": true,
+        "value": 0.08962174550343739
+      }
+    ],
+    "coarse_peak_eV": 2.91,
+    "compared_up_to_ev": 5.8,
+    "cur": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/GaP_t1_e2eF/results/kernel_k96/Gamma_alphabeta_s.dat",
+    "cur_sha256": "ed9a8ffd2c2323ac3d3ca8ff913da1081b6911f657d256e1e713dff11acc9304",
+    "diag_over_offdiag_cur": 0.008377474228361836,
+    "diag_over_offdiag_prev": 0.008719174745322031,
+    "edge_exclude_ev": 0.2,
+    "envelope_peak_cur": 11.981837756980683,
+    "envelope_peak_prev": 11.961641374982733,
+    "envelope_peak_shift_eV": 0.0,
+    "gate": "envelope_convergence",
+    "limit": 0.03,
+    "nrmse_envelope": 0.0043091676155875246,
+    "nrmse_raw": 0.028428707827586573,
+    "offdiag_channels": {
+      "nrmse_by_finer_peak": 0.028011631463952698,
+      "pearson": 0.9999912544049869,
+      "relative_l2_vs_finer": 0.08986623821114109
+    },
+    "peak_eV": 2.91,
+    "pearson_envelope": 0.9999103970410154,
+    "pearson_raw": 0.9932184068419492,
+    "prev": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/GaP_t1_e2eF/results/kernel_k80/Gamma_alphabeta_s.dat",
+    "prev_sha256": "2ceaff068074bf81e5a17d25b6a1cf520acd315bb190bc891219937bedd94efc",
+    "raw_peak_cur": 16.054479575949916,
+    "raw_peak_eV_cur": 2.82,
+    "raw_peak_eV_prev": 2.82,
+    "raw_peak_prev": 16.519612540592714,
+    "reasons": [],
+    "rel_l2_envelope": 0.010492877490194213,
+    "rel_l2_raw": 0.08962174550343739,
+    "rms_diff_envelope": 0.051631747237605025,
+    "sigma_ev": 0.1,
+    "status": "PASS"
+  },
+  "mesh": 96,
+  "status": "PASS",
+  "time": "2026-10-15T12:52:16+02:00"
+}

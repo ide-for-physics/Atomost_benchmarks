@@ -1,0 +1,29 @@
+&control
+  calculation = 'bands', prefix = 'gap', outdir = './tmp_bands', pseudo_dir = './pseudo'
+  verbosity = 'high'
+/
+&system
+  ibrav = 0, nat = 2, ntyp = 2, ecutwfc = 80.0, ecutrho = 320.0
+  occupations = 'fixed', nbnd = 20
+/
+&electrons
+  conv_thr = 1.0d-10, mixing_beta = 0.5, diago_thr_init = 5.0d-6
+/
+ATOMIC_SPECIES
+Ga 69.723 Ga.upf
+P  30.974 P.upf
+CELL_PARAMETERS angstrom
+0.00000000 2.72358864 2.72358864
+2.72358864 0.00000000 2.72358864
+2.72358864 2.72358864 0.00000000
+ATOMIC_POSITIONS crystal
+Ga 0.25 0.25 0.25
+P  0.00 0.00 0.00
+K_POINTS crystal_b
+6
+0.00000000 0.00000000 0.00000000 30
+0.00000000 0.49999948 0.49999948 30
+0.24999974 0.49999948 0.74999922 30
+0.37499961 0.37499961 0.74999922 30
+0.00000000 0.00000000 0.00000000 30
+0.49999948 0.49999948 0.49999948 30

@@ -1,0 +1,34 @@
+&control
+  calculation = 'scf'
+  prefix = 'mos2'
+  outdir = './tmp'
+  pseudo_dir = '../pseudos'
+  tprnfor = .true.
+  tstress = .false.
+/
+&system
+  ibrav = 0
+  nat = 3
+  ntyp = 2
+  ecutwfc = 90.0
+  occupations = 'fixed'
+  nbnd = 16
+/
+&electrons
+  conv_thr = 1.0d-10
+  mixing_beta = 0.5
+  diago_thr_init = 5.0d-6
+/
+ATOMIC_SPECIES
+Mo 95.95 Mo.upf
+S  32.065 S.upf
+CELL_PARAMETERS angstrom
+  1.59278871 -2.75879097 0.00000000
+  1.59278871  2.75879097 0.00000000
+  0.00000000  0.00000000 18.12832700
+ATOMIC_POSITIONS crystal
+Mo 0.66666667 0.33333333 0.00000000
+S  0.33333333 0.66666667 0.08622170
+S  0.33333333 0.66666667 0.91377800
+K_POINTS automatic
+12 12 1 0 0 0

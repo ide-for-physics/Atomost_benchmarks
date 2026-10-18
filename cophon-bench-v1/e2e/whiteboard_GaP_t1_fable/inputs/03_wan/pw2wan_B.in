@@ -1,0 +1,3 @@
+&inputpp
+  outdir = './tmp', prefix = 'gap', seedname = 'gapB', write_mmn = .true., write_amn = .true., write_unk = .false.
+/

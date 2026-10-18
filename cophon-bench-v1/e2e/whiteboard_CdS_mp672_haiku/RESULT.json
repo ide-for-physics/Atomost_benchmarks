@@ -1,0 +1,17 @@
+{
+  "schema": "cophon-bench.e.result.v1",
+  "material": "CdS_mp672",
+  "kernel_file": "kernel/Gamma_alphabeta_s.dat",
+  "peak_ev": 5.78,
+  "peak_a2_per_ev": 244.58,
+  "mode_thz": 1.128,
+  "mode_irrep": "E2",
+  "mesh": "72x72x48",
+  "cell_angstrom": [[2.06064203, -3.56913669, 0.0], [2.06064203, 3.56913669, 0.0], [0.0, 0.0, 6.70487960]],
+  "species": ["Cd", "Cd", "S", "S"],
+  "positions_crystal": [[0.666667, 0.333333, 0.50022255], [0.333333, 0.666667, 0.00022255], [0.666667, 0.333333, 0.87677745], [0.333333, 0.666667, 0.37677745]],
+  "node_hours": 4.26,
+  "wall_hours": 6.05,
+  "model_usd": null,
+  "human_touches": 0
+}

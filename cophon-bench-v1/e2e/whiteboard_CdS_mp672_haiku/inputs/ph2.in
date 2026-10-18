@@ -1,0 +1,14 @@
+phonons at Gamma, CdS_mp672, sealed cell; rerun writing dvscf_q for EPW
+&inputph
+    prefix     = 'cds'
+    outdir     = '/scratch/project_<id>/<user>/theory2code/cphon/bench_whiteboard_v1/CdS_mp672/tmp_ph2'
+    fildyn     = 'cds.dyn'
+    fildvscf   = 'dvscf'
+    tr2_ph     = 1.0d-14
+    epsil      = .true.
+    trans      = .true.
+    dvscf_star%open = .true.
+    dvscf_star%dir  = '/scratch/project_<id>/<user>/theory2code/cphon/bench_whiteboard_v1/CdS_mp672/dvscf/'
+    dvscf_star%pat  = .true.
+/
+0.0 0.0 0.0

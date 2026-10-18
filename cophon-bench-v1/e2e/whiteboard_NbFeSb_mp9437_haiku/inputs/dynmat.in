@@ -1,0 +1,4 @@
+&input
+  fildyn = 'nbfesb.dyn'
+  asr = 'crystal'
+/

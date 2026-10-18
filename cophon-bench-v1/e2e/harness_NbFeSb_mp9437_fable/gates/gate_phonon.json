@@ -1,0 +1,263 @@
+{
+  "acoustic_cm1_asr": [
+    -0.0,
+    -0.0,
+    0.0
+  ],
+  "acoustic_tol_cm1": 1.0,
+  "checks": [
+    {
+      "limit": "inferred or given",
+      "name": "phonon_prefix_known",
+      "pass": true,
+      "value": "NbFeSb_mp9437_e2eF"
+    },
+    {
+      "limit": "present",
+      "name": "phonon_ph_output_present",
+      "pass": true,
+      "value": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/NbFeSb_mp9437_e2eF/results/phonon/ph.out"
+    },
+    {
+      "limit": true,
+      "name": "phonon_job_done",
+      "pass": true,
+      "value": true
+    },
+    {
+      "limit": false,
+      "name": "phonon_within_max_seconds",
+      "pass": true,
+      "value": false
+    },
+    {
+      "limit": 0,
+      "name": "phonon_scf_blocks_converged",
+      "pass": true,
+      "value": 0
+    },
+    {
+      "limit": "> 0",
+      "name": "phonon_scf_blocks_present",
+      "pass": true,
+      "value": 3
+    },
+    {
+      "limit": 9,
+      "name": "phonon_raw_mode_count",
+      "pass": true,
+      "value": 9
+    },
+    {
+      "limit": "present",
+      "name": "phonon_dynmat_output_present",
+      "pass": true,
+      "value": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/NbFeSb_mp9437_e2eF/results/phonon/dynmat.out"
+    },
+    {
+      "limit": 9,
+      "name": "phonon_asr_mode_count",
+      "pass": true,
+      "value": 9
+    },
+    {
+      "limit": 1.0,
+      "name": "phonon_acoustic_after_asr",
+      "pass": true,
+      "value": [
+        -0.0,
+        -0.0,
+        0.0
+      ]
+    },
+    {
+      "limit": "> 0",
+      "name": "phonon_optical_modes_present",
+      "pass": true,
+      "value": 6
+    },
+    {
+      "limit": "non-empty",
+      "name": "phonon_file_NbFeSb_mp9437_e2eF.dvscf_q1",
+      "pass": true,
+      "value": {
+        "present": true,
+        "size": 15925248
+      }
+    },
+    {
+      "limit": "non-empty",
+      "name": "phonon_file_NbFeSb_mp9437_e2eF.dyn_q1.xml",
+      "pass": true,
+      "value": {
+        "present": true,
+        "size": 14966
+      }
+    },
+    {
+      "limit": "non-empty directory",
+      "name": "phonon_dir_NbFeSb_mp9437_e2eF.phsave",
+      "pass": true,
+      "value": true
+    },
+    {
+      "limit": "present",
+      "name": "phonon_file_NbFeSb_mp9437_e2eF.dyn0",
+      "pass": true,
+      "value": "NbFeSb_mp9437_e2eF.dyn0.xml"
+    },
+    {
+      "limit": "parseable",
+      "name": "phonon_dyn_xml_parse",
+      "pass": true,
+      "value": "ok"
+    },
+    {
+      "limit": 3,
+      "name": "phonon_dyn_xml_nat",
+      "pass": true,
+      "value": 3
+    },
+    {
+      "limit": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "phonon_dyn_xml_q_is_gamma",
+      "pass": true,
+      "value": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "limit": "present",
+      "name": "phonon_epsilon_present",
+      "pass": true,
+      "value": [
+        [
+          24.02146483729645,
+          -4.25853109737965e-15,
+          4.25853109737965e-15
+        ],
+        [
+          -6.034887936779901e-15,
+          24.02146483729645,
+          4.25853109737965e-15
+        ],
+        [
+          2.4821742579794e-15,
+          1.136395845498065e-14,
+          24.02146483729645
+        ]
+      ]
+    },
+    {
+      "limit": "present",
+      "name": "phonon_zstar_present",
+      "pass": true,
+      "value": [
+        "1",
+        "2",
+        "3"
+      ]
+    }
+  ],
+  "code": {
+    "manifest_sha256": "e8050e6a9f5b3a0a7adc238b2ecb933202c3c2278ca8b031e317fe7ab418b09f",
+    "package": "kernel_pipeline",
+    "rules_sha256": "1885bf0303112ce03a6fc33fe1c50b31c05c71cbd5d96199b9ce7e0e0fc77891",
+    "sealed_at": "2026-10-15T09:12:51+02:00",
+    "version": "v2.0.12"
+  },
+  "converged": true,
+  "dynmat_out": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/NbFeSb_mp9437_e2eF/results/phonon/dynmat.out",
+  "epsil": true,
+  "epsilon": [
+    [
+      24.02146483729645,
+      -4.25853109737965e-15,
+      4.25853109737965e-15
+    ],
+    [
+      -6.034887936779901e-15,
+      24.02146483729645,
+      4.25853109737965e-15
+    ],
+    [
+      2.4821742579794e-15,
+      1.136395845498065e-14,
+      24.02146483729645
+    ]
+  ],
+  "files": {
+    "NbFeSb_mp9437_e2eF.dyn0": {
+      "path": "NbFeSb_mp9437_e2eF.dyn0.xml",
+      "present": true
+    },
+    "save/NbFeSb_mp9437_e2eF.dvscf_q1": {
+      "present": true,
+      "size": 15925248
+    },
+    "save/NbFeSb_mp9437_e2eF.dyn_q1.xml": {
+      "present": true,
+      "size": 14966
+    },
+    "save/NbFeSb_mp9437_e2eF.phsave/": {
+      "present": true
+    }
+  },
+  "freqs_cm1_asr": [
+    -0.0,
+    -0.0,
+    0.0,
+    214.65,
+    214.65,
+    214.65,
+    275.44,
+    275.44,
+    275.44
+  ],
+  "freqs_cm1_raw": [
+    2.546828,
+    2.546828,
+    2.546828,
+    214.65029,
+    214.65029,
+    214.65029,
+    275.501812,
+    275.501812,
+    275.501812
+  ],
+  "gate": "phonon",
+  "job_done": true,
+  "lpolar_recommended": true,
+  "max_abs_zstar": 7.625591024902459,
+  "max_freq_cm1": 275.44,
+  "nat": 3,
+  "optical_cm1_asr": [
+    214.65,
+    214.65,
+    214.65,
+    275.44,
+    275.44,
+    275.44
+  ],
+  "optical_max_cm1": 275.44,
+  "ph_out": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/NbFeSb_mp9437_e2eF/results/phonon/ph.out",
+  "polar": true,
+  "polar_measured": true,
+  "prefix": "NbFeSb_mp9437_e2eF",
+  "reasons": [],
+  "softness": "stiff",
+  "softness_detail": {
+    "imaginary_cm1": [],
+    "lowest_optical_cm1": 214.65,
+    "softness": "stiff",
+    "threshold_cm1": 60.0
+  },
+  "stage_dir": "<cophon>/benchmarks/cophon-bench-v1/e2e_library/NbFeSb_mp9437_e2eF/results/phonon",
+  "status": "PASS"
+}

@@ -1,0 +1,48 @@
+--
+&inputepw
+  prefix      = 'bos'
+  outdir      = '../run/tmp_nscf'
+  dvscf_dir   = '../run/save'
+  elph        = .true.
+  epbwrite    = .false.
+  epbread     = .false.
+  epwwrite    = .true.
+  epwread     = .false.
+  etf_mem     = 1
+  use_ws      = .true.
+  lpolar      = .false.
+  vme         = 'wannier'
+
+  wannierize  = .false.
+  nbndsub     = 20
+  bands_skipped = 'exclude_bands = 1:15'
+  num_iter    = 2000
+  iprint      = 2
+  dis_win_min  = -9.5
+  dis_win_max  = 20.7
+  dis_froz_min = -9.5
+  dis_froz_max = 15.7
+  proj(1)     = 'Bi:s;p'
+  proj(2)     = 'O:s;p'
+  proj(3)     = 'Se:s;p'
+  wdata(1)    = 'write_hr = .true.'
+  wdata(2)    = 'dis_num_iter = 2000'
+  wdata(3)    = 'dis_conv_tol = 1.0d-11'
+  wdata(4)    = 'conv_tol = 1.0d-11'
+  wdata(5)    = 'conv_window = 5'
+
+  elecselfen  = .false.
+  phonselfen  = .false.
+  band_plot   = .true.
+  filkf       = 'path_epw.txt'
+  filqf       = 'qgamma.txt'
+
+  efermi_read  = .true.
+  fermi_energy = 10.8360
+  fsthick      = 8.0
+  degaussw     = 0.025
+  eps_acoustic = 10.0
+
+  nk1 = 8, nk2 = 8, nk3 = 8
+  nq1 = 1, nq2 = 1, nq3 = 1
+/

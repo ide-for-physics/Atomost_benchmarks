@@ -1,0 +1,11 @@
+phonons of CdS at Gamma
+&inputph
+  prefix = 'cds'
+  outdir = './'
+  fildyn = 'cds.dyn'
+  fildvscf = 'dvscf'
+  ldisp = .true.
+  nq1 = 1, nq2 = 1, nq3 = 1
+  epsil = .true.
+  tr2_ph = 1.0d-16
+/
