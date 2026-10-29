@@ -1,0 +1,12 @@
+atomost-bench v1: the frozen-file list (FREEZE.sha256) is private; its file names include the team's internal memory titles.
+sha256 of the private list: c34facd529abb160025033aacc7cf7bfea28b2925e7bb6271e560f7a311cf74a
+files frozen: 577
+
+files per folder:
+  DESIGN.md, FREEZE_NOTE.md                2
+  arms                                     225
+  bin                                      30
+  engine                                   6
+  gov                                      86
+  items                                    223
+  scripts (atomost_bench/)                 5
